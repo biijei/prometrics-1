@@ -20,7 +20,7 @@ const PaEstate = () => {
             <p className='text-[14px] font-medium mb-2'>PRACTICE AREAS</p>
             <h2>We Are Especially Skilled in the Following Practice Areas</h2>
           </div>
-          <div className='md:grid grid-cols-[345px_auto] gap-x-16'>
+          <div className='lg:grid grid-cols-[345px_auto] gap-x-16'>
             <div className='flex flex-col gap-y-4 mb-10'>
               <Accordion 
                 title='Employment Based Immigration Consult (EB2-NIW & EB-1A)' 
@@ -108,7 +108,7 @@ const PaEstate = () => {
             <h2 className='max-w-[311px] mb-8 leading-tight'>What Our Clients Are Saying About Us</h2>
           </div>
 
-          <div className='flex flex-col gap-4 mb-4 md:mb-0 md:h-[520px]'>
+          <div className='flex flex-col gap-4 mb-4 md:mb-0'>
             <div className='flex flex-col border border-[#E4D4C1] rounded-[18px] bg-white max-w-[392px] min-h-[183px] p-[16px] md:mb-auto'>
               <p className='text-[13px] font-light mb-4 '>`Folake&apos;s dedication and expertise in the field of immigration coaching are truly commendable. What sets Fola apart is her personalized approach to coaching. She takes the time to understand her client&apos;s specific circumstances, aspirations, and concerns. I wholeheartedly recommend her as an immigration coach because her professionalism, expertise, and genuine commitment to her clients make her a standout in the field. Fola delivers in a timely manner.`</p>
               <p className='text-[13px] text-primary font-medium mb-1'>Bukola Amao-Taiwo (Ph.D)</p>
@@ -121,7 +121,7 @@ const PaEstate = () => {
             </div>
           </div>
 
-          <div className='flex flex-col gap-4 md:h-[520px]'>
+          <div className='flex flex-col gap-4'>
             <div className='flex flex-col border border-[#E4D4C1] rounded-[18px] bg-white max-w-[392px] min-h-[183px] p-[16px] md:mb-auto'>
               <p className='text-[13px] font-light mb-4 '>`Fola&apos;s level of professionalism in reviewing my CV was topnotch and the way she interpreted my roles and was able to communicate same in my CV was very brillant.Thank you Fola`</p>
               <p className='text-[13px] text-primary font-medium mb-1'>Ola&apos; Aruwayo</p>

@@ -15,13 +15,13 @@ const Home = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-center items-center px-[5%] py-10 md:py-0 text-center text-[#FFFFFF] fixed top-[110px] left-0 right-0 z-10'>
+      <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-10 md:py-0 text-center text-[#FFFFFF] fixed top-[110px] left-0 right-0 z-10'>
         `We&apos;re back and better than ever—now fully digital and at your service!` <a href="/contact" className='text-primary'> Contact us today.</a>
       </div>
       <div className='bg-tertiary mt-[250px] md:mt-[110px] py-[50px]'>
         {/* Hero Section */}
-        <div className=' px-[5%] flex flex-col md:flex-row flex-wrap items-center gap-x-14 pb-[50px]'>
-          <div className='max-w-[599px]'>
+        <div className=' px-[5%] flex flex-col md:flex-row justify-between items-center flex-wrap gap-x-14 pb-[50px]'>
+          <div className='max-w-[599px] lg:max-w-full'>
             <h1 className='text-[38px] sm:text-[50px] md:text-[62px] font-semibold leading-none'>Elevate Your Legal Strategy with Prometrics </h1>
             <p className='text-base mt-6'>From intricate case analyses to comprehensive regulatory compliance, we&apos;re committed to delivering exceptional results. Partner with us and unlock the full potential of your legal strategy.</p>
             <div className='flex flex-col sm:flex-row items-center gap-x-6 gap-y-4 mt-4'>
@@ -45,13 +45,13 @@ const Home = () => {
             </div>
           </div>
           <div className=''>
-            <div className='hidden md:block relative  top-[200px] right-[100px] shadow-3xl rounded-[40px] w-[250px] h-[50px]'/>
+            <div className='hidden md:block relative top-[200px] right-[100px] shadow-3xl rounded-[40px] w-[250px] h-[50px]'/>
             <img src={ceo} alt="Prometrics CEO" className='' />
           </div>
         </div>
 
         {/* About Section */}
-        <div className=' flex flex-col-reverse md:flex-row items-center'>
+        <div className=' flex flex-col-reverse lg:flex-row items-center'>
           <img src={aboutCeo} alt="Prometrics CEO" className=''/>
           <div className='px-[5%] py-[50px]'>
             <p className='text-[14px] font-medium mb-2'>ABOUT PROMETRICS</p>
@@ -117,7 +117,7 @@ const Home = () => {
             <p className='text-[14px] font-medium mb-2'>PRACTICE AREAS</p>
             <h2 className='mb-8'>We Are Especially Skilled in the Following Practice Areas</h2>
           </div>
-          <div className='flex flex-col md:flex-row items-center flex-wrap gap-7 mb-7'>
+          <div className='flex flex-col md:flex-row justify-center items-center flex-wrap gap-7 mb-7'>
             <div className='flex flex-col border border-[#2A6EDB] rounded-[18px] bg-white max-w-[384px] min-h-[350px] p-6 '>
               <div className='bg-[#2A6EDB] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>1</div>
               <h4 className='mb-2 text-[20px] font-semibold leading-tight'>Employment Based Immigration Consult (EB2-NIW & EB-1A)</h4>
@@ -140,7 +140,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='flex flex-col md:flex-row items-center flex-wrap gap-7'>
+          <div className='flex flex-col md:flex-row justify-center items-center flex-wrap gap-7'>
             <div className='flex flex-col border border-[#3B88C3] rounded-[18px] bg-white max-w-[384px] min-h-[350px] p-6 '>
               <div className='bg-[#3B88C3] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>4</div>
               <h4 className='mb-2 text-[20px] font-semibold leading-tight'>Business Planning</h4>
