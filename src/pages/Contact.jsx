@@ -46,7 +46,7 @@ const Contact = () => {
       <div className='bg-tertiary mt-[110px] pb-[50px]'>
         <HeroSection subtitile='Reach Out' titile='Contact Us' menu='Contact' bgimage='aboutbg'/>
         {/* Contact Cards */}
-        <div className='px-[5%] flex flex-col md:flex-row justify-end items-center gap-8 md:absolute left-0 right-0'>
+        <div className='px-[5%] flex flex-col md:flex-row justify-center items-center gap-8 md:absolute left-0 right-0'>
           <div className='bg-white max-w-[520px] h-[461px] rounded-[12px] p-[40px] flex flex-col justify-center items-center gap-8 '>
             <img src={headphone} alt="Call Prometrics" />
             <h4 className='text-[18px] md:text-[23px] text-center  font-semibold leading-tight '>Book Your Consultation Today!</h4>
