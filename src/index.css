@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base; @tailwind components; @tailwind utilities;
+
+
+@font-face {
+  font-family: "Reckless Neue";
+  src: url("./assets/fonts/RecklessNeue-Medium.woff2") format("woff2"),
+    url("./assets/fonts/RecklessNeue-Medium.woff") format("woff"),
+    url("./assets/fonts/RecklessNeue-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reckless Neue";
+  src: url("./assets/fonts/RecklessNeue-Bold.woff2") format("woff2"),
+    url("./assets/fonts/RecklessNeue-Bold.woff") format("woff"),
+    url("./assets/fonts/RecklessNeue-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reckless Neue";
+  src: url("./assets/fonts/RecklessNeue-Heavy.woff2") format("woff2"),
+    url("./assets/fonts/RecklessNeue-Heavy.woff") format("woff"),
+    url("./assets/fonts/RecklessNeue-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* html,body{
+  font-family: "Manrope", sans-serif;
+} */
+
+/* reusable stylying */
+html, body {
+  @apply  text-secondary font-manrope scroll-smooth;
+}
+h1,h2,h3,h4,h5,h6{
+@apply  font-reckless
+}
+h2{
+  @apply text-[28px] md:text-[41px] leading-none font-medium
+}
+p{
+  @apply text-base font-normal;
+}
+label{
+  @apply text-[#C2C6CA]
+}
+input{
+  @apply h-[56px];
+}
+input, textarea{
+  @apply outline-none border border-[#D0D5DD] placeholder-[#B6BABD] text-[#C2C6CA] rounded-[6px] p-[16px] bg-transparent
+}
+.homeHeader {
+  @apply flex justify-between items-center px-[5%] text-base h-[110px] fixed top-0 right-0 left-0 z-20;
+}
+.homeNavMenu {
+  @apply bg-[#F2F8FC] pt-4 pb-8 px-[5%] w-full fixed top-[110px] bottom-0 transition-all z-10 no-scrollbar overflow-y-auto;
+}
+.menuList{
+  @apply text-[#15110D] hover:text-primary focus:text-primary
+}
+.active {
+  @apply text-primary font-bold;
+}
+
+
+/* Contained */
+.contained-button {
+  position: relative;
+  border: none;
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+.contained-button:active {
+  transform: scale(0.95);
+}
+.contained-button .outside-border {
+position: absolute;
+border: 0.15em solid #C39F76;
+transition: all 0.3s 0.08s linear;
+top: 50%;
+left: 50%;
+width: 10em;
+height: 3em;
+transform: translate(-50%, -50%);
+}
+.contained-button:hover .outside-border {
+display: block;
+width: 230px;
+height: 4.7em;
+}
+.full-rounded {
+border-radius: 2em;
+}
+
+/* Outline Button */
+.outline-button {
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.outline-btn-txt {
+  z-index: 1;
+}
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #C39F76;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+.outline-button:hover {
+  box-shadow: 1px 1px 200px #C39F76;
+  color: #fff;
+  border: none;
+}
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+/* Forward Button */
+.forward-button {
+  display: inline-block;
+  transition: all 0.5s;
+}
+.forward-button span {
+  position: relative;
+  transition: 0.5s;
+}
+.forward-button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: -5;
+  right: -15px;
+  transition: 0.5s;
+}
+.forward-button:hover span {
+  padding-right: 15px;
+}
+.forward-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Backgrounds */
+.aboutbg{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(./assets/images/lawbg.png)
+}
+
+
+
+
+/* Input type number will not have increase or decrease arrow */
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* no scrollbar */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
