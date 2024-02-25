@@ -16,7 +16,7 @@ const Home = () => {
     <div>
       <Header/>
       <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-10 md:py-0 text-center text-[#FFFFFF] fixed top-[110px] left-0 right-0 z-10'>
-        `We&apos;re back and better than ever—now fully digital and at your service!` <a href="/contact" className='text-primary'> Contact us today.</a>
+        `We&apos;re back and better than ever— now fully digital and at your service!` <a href="/contact" className='text-primary'> Contact us today.</a>
       </div>
       <div className='bg-tertiary mt-[250px] md:mt-[110px] py-[50px]'>
         {/* Hero Section */}
