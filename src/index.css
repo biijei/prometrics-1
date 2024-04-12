@@ -60,7 +60,7 @@ input, textarea{
   @apply outline-none border border-[#D0D5DD] placeholder-[#B6BABD] text-[#C2C6CA] rounded-[6px] p-[16px] bg-transparent
 }
 .homeHeader {
-  @apply flex justify-between items-center px-[5%] text-base h-[110px] fixed top-0 right-0 left-0 z-20;
+  @apply flex justify-between items-center gap-4 px-[5%] text-base h-[110px] fixed top-0 right-0 left-0 z-20;
 }
 .homeNavMenu {
   @apply bg-[#F2F8FC] pt-4 pb-8 px-[5%] w-full fixed top-[110px] bottom-0 transition-all z-10 no-scrollbar overflow-y-auto;

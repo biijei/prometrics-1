@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import Accordion from '../components/Accordion'
 import pa from '../assets/images/employment-based.png'
+import member from '../assets/images/member.jpg'
 import { Link } from 'react-router-dom'
 import AccordionFaq from '../components/AccordionFaq'
 
@@ -21,7 +22,8 @@ const PaEmploymentBased = () => {
             <p className='text-[14px] font-medium mb-2'>PRACTICE AREAS</p>
             <h2>We Are Especially Skilled in the Following Practice Areas</h2>
           </div>
-          <div className='lg:grid grid-cols-[345px_auto] gap-x-16'>
+          <div className='md:grid grid-cols-[345px_auto] gap-x-16'>
+            <div>
             <div className='flex flex-col gap-y-4 mb-10'>
               <Accordion 
                 title='Employment Based Immigration Consult (EB2-NIW & EB-1A)' 
@@ -48,13 +50,16 @@ const PaEmploymentBased = () => {
                 content='Our reliable notarization services offer authentication and verification for a wide range of legal documents, contracts, and agreements.'
               />
             </div>
+            <img src={member} alt="Americal Immigration Lawters Association" className='mt-10 mb-6 rounded-[16px]'/>
+            </div>
 
             <div>
               <img src={pa} alt="Employment Based Immigration Consult"  className='mb-6'/>
               <h3 className='text-[23px] font-semibold leading-tight mb-6'>Employment Based Immigration Consult (EB2-NIW & EB-1A)</h3>
-              <p className='mb-6'>Are you a skilled professional seeking to advance your career in the United States? Look no further than our Employment Based Immigration Consult services at Prometrics Law Consulting. With specialized expertise in EB2-NIW (National Interest Waiver) and EB-1A (Extraordinary Ability) visa categories, we offer expert guidance to individuals looking to secure employment-based visas and pursue exciting opportunities in the U.S. market. Our dedicated team understands the complexities of the immigration process and is committed to providing personalized support every step of the way.</p>
-              <p className='mb-6'>At Prometrics Law Consulting, we recognize the unique challenges and aspirations of talented professionals like you. That&apos;s why we go above and beyond to ensure a smooth and seamless transition into the U.S. workforce. Whether you&apos;re a highly skilled researcher, academic, entrepreneur, or professional in any field, our comprehensive services are tailored to meet your specific needs and objectives. From initial consultation to visa application preparation and beyond, we&apos;re here to empower you to achieve your career goals with confidence and peace of mind.</p>
-              <p className='mb-10'>With our proven track record of success and unwavering dedication to client satisfaction, Prometrics Law Consulting is your trusted partner in navigating the complex landscape of employment-based immigration. Let us help you unlock new opportunities and embark on an exciting journey toward professional growth and fulfillment in the United States. Contact us today to learn more about how we can assist you in securing your EB2-NIW or EB-1A visa and kickstart your career in the land of opportunity.</p>
+              <p className='mb-6'>Are you a skilled professional seeking to advance your career in the United States? Look no further than our Employment Based Immigration Consult services at Prometrics Legal Hub. With specialized expertise in EB2-NIW (National Interest Waiver) and EB-1A (Extraordinary Ability) visa categories, we offer expert guidance to individuals looking to secure employment-based visas and pursue exciting employment and business opportunities in the U.S. market. </p>
+              <p className='mb-6'>Our dedicated team understands the complexities of the U.S. immigration process and is committed to providing personalized support every step of the way.</p>
+              <p className='mb-6'>At Prometrics Legal Hub, we recognize the unique challenges and aspirations of talented professionals like you. This is why we go above and beyond to ensure a smooth and seamless transition into the U.S. workforce. Whether you are a highly skilled business professional, researcher, academic, entrepreneur, or professional in any field, our comprehensive services are tailored to meet your specific needs and objectives. From initial consultation to immigration preparation or visa application preparation and beyond, we are here to empower you to achieve your career goals with confidence and peace of mind.</p>
+              <p className='mb-10'>With our proven track record of success and unwavering dedication to client satisfaction, Prometrics Legal Hub is your trusted partner in navigating the complex landscape of business processes and employment-based immigration. Let us help you unlock new opportunities and embark on an exciting journey toward professional growth and fulfillment in the United States. Contact us today to learn more about how we can assist you in enhancing your business operations in securing your EB2-NIW or EB-1A visa and kickstart your career in the United States of America - the great land of opportunities!</p>
               <div className='flex flex-col sm:flex-row items-center gap-x-6 gap-y-4 mt-4'>
                 <button className='full-rounded contained-button w-full sm:w-[218px] bg-primary rounded-[40px] text-white text-base px-4 py-5 font-semibold'>
                   <a href="https://calendly.com/prometricspro/legal-consult" target='_blank'>

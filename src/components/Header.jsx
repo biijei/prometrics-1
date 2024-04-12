@@ -25,7 +25,7 @@ const  Header = () =>{
     <div className= {showMenu ? 'bg-[#F2F8FC]  homeHeader ' : 'bg-[#F2F8FC] homeHeader'}>
       <div className='flex justify-center items-center gap-2'>
         <Link to='/'><img src={logo} alt="logo" className='w-[39px]'/></Link> 
-        <p className='text-[#15110D] text-[25px] font-bold'>Prometrics</p>
+        <p className='text-[#15110D] text-[25px] font-bold'>Prometrics Legal Hub, LLC</p>
       </div>
       {/* mobile Menu */}
       <div className="md:hidden text-right" >

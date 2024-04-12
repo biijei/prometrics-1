@@ -10,6 +10,7 @@ import instagram from '../assets/icons/instagram.svg'
 import linkedIn from '../assets/icons/linkedIn.svg'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
+import CoreValues from '../components/CoreValues'
 
 const Home = () => {
   return (
@@ -20,10 +21,10 @@ const Home = () => {
       </div>
       <div className='bg-tertiary mt-[250px] md:mt-[110px] py-[50px]'>
         {/* Hero Section */}
-        <div className=' px-[5%] flex flex-col md:flex-row justify-between items-center flex-wrap gap-x-14 pb-[50px]'>
-          <div className='max-w-[599px] lg:max-w-full'>
+        <div className=' px-[5%] flex flex-col md:flex-row justify-between items-center gap-x-14 pb-[50px]'>
+          <div className='flex-1  xlg:max-w-full'>
             <h1 className='text-[38px] sm:text-[50px] md:text-[62px] font-semibold leading-none'>Elevate Your Legal Strategy with Prometrics </h1>
-            <p className='text-base mt-6'>From intricate case analyses to comprehensive regulatory compliance, we&apos;re committed to delivering exceptional results. Partner with us and unlock the full potential of your legal strategy.</p>
+            <p className='text-base mt-6'>From intricate case analyses to comprehensive regulatory compliance, we are committed to delivering exceptional results. Partner with us and unlock the full potential of your business and legal strategy.</p>
             <div className='flex flex-col sm:flex-row items-center gap-x-6 gap-y-4 mt-4'>
               <button className='full-rounded contained-button w-full sm:w-[218px] bg-primary rounded-[40px] text-white text-base px-4 py-5 font-semibold'>
                 <Link to='/pa-employment-based'>
@@ -54,13 +55,12 @@ const Home = () => {
         <div className=' flex flex-col-reverse lg:flex-row items-center'>
           <img src={aboutCeo} alt="Prometrics CEO" className=''/>
           <div className='px-[5%] py-[50px]'>
-            <p className='text-[14px] font-medium mb-2'>ABOUT PROMETRICS</p>
-            <h2 className='max-w-[427px] mb-6'>Dive into the Heart of Prometrics: Discover Who We Are!</h2>
-            <p className='mb-6'>Our mission is to simplify your US employment journey  seamlessly whether by helping you in your employment-based immigration journey, tax strategy, financial planning, business strategy, HR-strategy or estate planning.</p>
-            <p className='mb-6'>We have a team of diverse thorough bred experienced professionals to serve your varied consultation needs. We have PhD holders, MBA holders,  Attorneys, Scientists, Engineers and Cybersecurity Experts on our team. </p>
-            <p className='mb-6'>Our General Counsel also culminates three cutting-edge degrees and several fellowship level certifications across multiple continents of the world: Our General Counsel has a PhD in Law, MBA, Attorney licenses across different jurisdictions as well as fellowship level memberships in different global organizations including The Chartered Institute of Arbitrators, UK and is extremely skilled in written communication and the art of expressing very complex concepts with compelling simplicity.</p>
-            <p>Send us an email now at <a href="mailto:info@prometricspro.com" className='text-primary '>info@prometricspro.com</a>. A trial will convince you!</p>
-            {/* <p>At Prometrics, we pride ourselves on our commitment to excellence and our unwavering dedication to client satisfaction. Whether you&apos;re navigating complex legal matters, seeking strategic guidance, or aiming to enhance your organizational compliance, we&apos;re here to support you every step of the way. With a focus on collaboration, integrity, and results-driven approaches, we strive to exceed expectations and empower our clients to thrive in today&apos;s dynamic legal environment.</p> */}
+            <p className='text-[14px] font-medium mb-2'>ABOUT PROMETRICS LEGAL HUB</p>
+            <h2 className='max-w-full mb-6'>Up Close and Personal - Discover Who We Are:</h2>
+            <p className='mb-6 leading-relaxed '>Our mission is to be your go-to business consulting hub and one-stop shop. All businesses need employees to thrive. It is therefore our commitment to make your business employees or self-employment US employment journey seamless, including by helping you in your employment-based immigration journey, employment tax strategy, business strategy, financial planning, HR-strategy and estate planning.</p>
+            <p className='mb-6 leading-relaxed '>We have a team of diverse thorough bred experienced professionals to serve your varied consultation needs. We have Ph.D. Holders, MBA Holders, Attorneys, Licensed HR Practitioners, Scientists, Engineers and Cybersecurity Experts on our team. </p>
+            <p className='mb-4 leading-relaxed '>Our General Counsel also culminates three cutting-edge degrees and several fellowship level certifications across multiple continents of the world: Our General Counsel has a PhD in Law, an MBA, Attorney licenses across different global jurisdictions and high-level fellowship level memberships in different global organizations including the Chartered Institute of Arbitrators, UK, the Chartered Taxation Institute, Corporate Taxation Institute and HR Institute, together with a Human Resources Practitioner&apos;s License. Our General Counsel is also an active member of the American Immigration Lawyers Association (AILA). Our team is extremely skilled in written communication and the art of expressing very complex concepts with compelling simplicity.</p>
+            <p>Send us an email now at <a className='text-primary font-semibold' href="mailto:info@prometricspro.com">info@prometricspro.com</a> A trial will convince you!</p>
             <button className='outline-button type1 outline-btn-txt w-[194px] h-[46px] border-2 border-primary rounded-[40px] mt-6 text-primary font-semibold '>
               <Link to='/about-us'>Learn More</Link>
             </button>
@@ -68,48 +68,7 @@ const Home = () => {
         </div>
 
         {/* Our Core Values */}
-        <div className='px-[5%] py-[100px] bg-[#15110D] text-white'>
-          <p className='text-[14px] font-medium mb-2'>OUR CORE VALUES</p>
-          <h2 className='max-w-[451px] mb-8'>Prometrics&apos; Pillars: Our Guiding Lights</h2>
-          <div className='flex flex-col md:flex-row gap-x-10 gap-y-8 mb-8'>
-            <div className='basis-full'>
-              <h4 className='mb-4'>EXCELLENCE</h4>
-              <p className='text-[14px]'>You can bank on our expertise to implement tailor-fit, practical strategies that deliver the desired results to you.</p>
-            </div>
-            <div className='basis-full'>
-              <h4 className='mb-4 uppercase'>Integrity</h4>
-              <p className='text-[14px]'>We draw the line at cutting corners. We simply won’t do it for anyone!</p>
-            </div>
-            <div className='basis-full'>
-              <h4 className='mb-4 uppercase'>Responsiveness</h4>
-              <p className='text-[14px]'>We pride ourselves in being accessible to our clients at all times.</p>
-            </div>
-          </div>
-          <div className='flex flex-col md:flex-row gap-x-10 gap-y-8 mb-8'>
-            <div className='basis-full'>
-              <h4 className='mb-4 uppercase'>Passion</h4>
-              <p className='text-[14px]'>Our passion always shines through to our clients.</p>
-            </div>
-            <div className='basis-full'>
-              <h4 className='mb-4 uppercase'>Efficiency</h4>
-              <p className='text-[14px]'>We favor practical speedy solutions over bureaucratic legal jargons.</p>
-            </div>
-            <div className='basis-full'>
-              <h4 className='mb-4 uppercase'>Simplicity</h4>
-              <p className='text-[14px]'>We keep it simple. Our mantra is that if a 10-year old cannot understand your documents, you haven’t communicated.</p>
-            </div>
-          </div>
-          <div className='flex flex-col md:flex-row gap-x-10 gap-y-8'>
-            <div className='basis-full'>
-              <h4 className='mb-4 uppercase'>Convenience</h4>
-              <p className='text-[14px]'>We take up your legal burdens and have sleepless nights so you can rest easy.</p>
-            </div>
-            <div className='basis-full'>
-              <h4 className='mb-4 uppercase'>Authenticity</h4>
-              <p className='text-[14px]'>We keep it real. You always know where you stand with us.</p>
-            </div>
-          </div>
-        </div>
+        <CoreValues/>
 
         {/* Practice Areas */}
         <div className='px-[5%] py-[100px]'>
@@ -128,14 +87,14 @@ const Home = () => {
             <div className='flex flex-col border border-[#F7966B] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
               <div className='bg-[#F7966B] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>2</div>
               <h4 className='mb-4 text-[20px] font-semibold leading-tight'>Employment Consultation</h4>
-              <p className='mb-auto text-[14px]'>Our employment consultation services provide personalized support to individuals and businesses, offering strategic guidance on various employment matters, including recruitment, employee relations, compliance, and workforce management, to foster a productive and harmonious work environment.</p>
+              <p className='mb-auto text-[14px]'>Our employment consultation services provide personalized support to businesses and individuals, offering strategic guidance on various employment matters, including recruitment, employee relations, compliance, and workforce management, to foster a productive and harmonious work environment.</p>
               <Link to='/pa-employment-consult'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#F7966B] font-semibold '>READ MORE <MoveRight /> </div></Link>
             </div>
 
             <div className='flex flex-col border border-[#00B2FF] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
               <div className='bg-[#00B2FF] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>3</div>
               <h4 className='mb-4 text-[20px] font-semibold leading-tight'>Tax Planning</h4>
-              <p className='mb-auto text-[14px]'>Tailored tax planning solutions crafted by our experienced tax professionals help individuals and businesses navigate complex tax laws, minimize tax liabilities, maximize savings, and optimize financial outcomes, ensuring compliance with regulations while enhancing overall financial well-being.</p>
+              <p className='mb-auto text-[14px]'>Tailored tax planning solutions crafted by our experienced in-house tax professionals, help individuals and businesses navigate complex tax laws, minimize tax liabilities, maximize savings, and optimize financial outcomes, ensuring compliance with regulations while enhancing overall financial well-being.</p>
               <Link to='/pa-tax'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#00B2FF] font-semibold '>READ MORE <MoveRight /> </div></Link>
             </div>
           </div>
@@ -192,13 +151,13 @@ const Home = () => {
           <div className='flex flex-col gap-4 mb-4 md:mb-0'>
             <div className='flex flex-col border border-[#E4D4C1] rounded-[18px] bg-white max-w-[392px] min-h-[183px] p-[16px]'>
               <p className='text-[13px] font-light mb-4 '>`Fola has great experience in this field, which is based on our personal engagement, in addition to feedback I have received from others who have engaged Fola. Without mincing words, I recommend Fola for any immigration inquiries you are curious about.`</p>
-              <p className='text-[13px] text-primary font-medium mb-1'>Abass Opeyemi SuaraAbass Opeyemi Suara</p>
-              <p className='text-[13px] font-light'>MBA Candidate 2025 (STEM)</p>
+              <p className='text-[13px] text-primary font-medium mb-1'>Abass Opeyemi Suara</p>
+              <p className='text-[13px] font-light'>Global Sports Administrator and MBA Candidate 2025 (STEM)</p>
             </div>
             <div className='flex flex-col border border-[#E4D4C1] rounded-[18px] bg-white max-w-[392px] min-h-[183px] p-[16px]'>
               <p className='text-[13px] font-light mb-4 '>`Fola&apos;s level of professionalism in reviewing my CV was topnotch and the way she interpreted my roles and was able to communicate same in my CV was very brillant.Thank you Fola`</p>
               <p className='text-[13px] text-primary font-medium mb-1'>Ola&apos; Aruwayo</p>
-              <p className='text-[13px] font-light'>International Business law</p>
+              <p className='text-[13px] font-light'>International Business Law</p>
             </div>
           </div>
 
@@ -206,12 +165,12 @@ const Home = () => {
             <div className='flex flex-col border border-[#E4D4C1] rounded-[18px] bg-white max-w-[392px] min-h-[183px] p-[16px]'>
               <p className='text-[13px] font-light mb-4 '>`It was amazing! Fola was super helpful in assisting me negotiate legal settlements. Her guidance and counsel enabled me make better informed decisions.`</p>
               <p className='text-[13px] text-primary font-medium mb-1'>Daniel Ejairu</p>
-              <p className='text-[13px] font-light'>Supply chain Analyst at Belden Inc.</p>
+              <p className='text-[13px] font-light'>Global Supply Chain Analyst </p>
             </div>
             <div className='flex flex-col border border-[#E4D4C1] rounded-[18px] bg-white max-w-[392px] min-h-[183px] p-[16px]'>
               <p className='text-[13px] font-light mb-4 '>`Fola’s career development coaching services are impeccable. She hand-held me as I transitioned from being a HND polytechnic graduate in Nigeria to an MBA graduate student in USA with a graduate assistantship offer. She was accessible and pleasant to work it, providing me with career, legal, and immigration advice. With her help, I secured the MBA admission, US F1 student visa and a graduate assistantship. Till now, she remains accessible in coaching me. I recommend Fola for expert services.`</p>
               <p className='text-[13px] text-primary font-medium mb-1'>Iyadunni Aderotoye</p>
-              <p className='text-[13px] font-light'>Graduate Teaching Assistant </p>
+              <p className='text-[13px] font-light'>MBA Graduate Teaching Assistant</p>
             </div>
           </div>
         </div>
