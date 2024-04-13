@@ -5,7 +5,7 @@ import HeroSection from '../components/HeroSection'
 import AccordionFaq from '../components/AccordionFaq'
 import { Link } from 'react-router-dom'
 import Accordion from '../components/Accordion'
-import pa from '../assets/images/employment-consult.png'
+import pa from '../assets/images/employment-based.png'
 import Testimonials from '../components/Testimonials'
 
 const PaTax = () => {
