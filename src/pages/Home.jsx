@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           </div>
           <div className=''>
-            <div className='hidden md:block relative top-[200px] right-[100px] shadow-3xl rounded-[40px] w-[250px] h-[50px]'/>
+            {/* <div className='hidden md:block relative top-[200px] right-[100px] shadow-3xl rounded-[40px] w-[250px] h-[50px]'/> */}
             <img src={ceo} alt="Prometrics CEO" className='' />
           </div>
         </div>
