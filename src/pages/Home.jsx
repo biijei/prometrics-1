@@ -62,7 +62,7 @@ const Home = () => {
             <p className='mb-6 leading-relaxed '>Our mission is to be your go-to business consulting hub and one-stop shop. All businesses need employees to thrive. It is therefore our commitment to make your business employees or self-employment US employment journey seamless, including by helping you in your employment-based immigration journey, employment tax strategy, business strategy, financial planning, HR-strategy and estate planning.</p>
             <p className='mb-6 leading-relaxed '>We have a team of diverse thorough bred experienced professionals to serve your varied consultation needs. We have Ph.D. Holders, MBA Holders, Attorneys, Licensed HR Practitioners, Scientists, Engineers and Cybersecurity Experts on our team. </p>
             <p className='mb-4 leading-relaxed '>Our General Counsel also culminates three cutting-edge degrees and several fellowship level certifications across multiple continents of the world: Our General Counsel has a PhD in Law, an MBA, Attorney licenses across different global jurisdictions and high-level fellowship level memberships in different global organizations including the Chartered Institute of Arbitrators, UK, the Chartered Taxation Institute, Corporate Taxation Institute and HR Institute, together with a Human Resources Practitioner&apos;s License. Our General Counsel is also an active member of the American Immigration Lawyers Association (AILA). Our team is extremely skilled in written communication and the art of expressing very complex concepts with compelling simplicity.</p>
-            <p>Send us an email now at <a className='text-primary font-semibold' href="mailto:info@prometricspro.com">info@prometricspro.com</a> A trial will convince you!</p>
+            <p>Send us an email now at <a className='text-primary font-semibold' href="mailto:info@prometricspro.com">info@prometricspro.com</a>. A trial will convince you!</p>
             <button className='outline-button type1 outline-btn-txt w-[194px] h-[46px] border-2 border-primary rounded-[40px] mt-6 text-primary font-semibold '>
               <Link to='/about-us'>Learn More</Link>
             </button>
@@ -129,7 +129,7 @@ const Home = () => {
         <div className='px-[5%] md:mx-[5%] pt-[50px] md:py-0 bg-[#E2E7ED] my-[50px] rounded-[24px] flex flex-col md:flex-row flex-wrap justify-center items-center gap-x-[60px] '>
           <div className='max-w-[530px] '>
             <p className=' text-[18px] md:text-[23px] text-[#555758] leading-tight mb-8'> Prometrics represents clients in employment consult, employment based immigration consult, estate planning, tax planning, business planning and notariization.</p>
-            <p className='text-[23px] md:text-[28px] font-semibold mb-2 '>Dr. Fola Odion, JD, MBA</p>
+            <p className='text-[23px] md:text-[28px] font-semibold mb-2 '>Dr. (Mrs.). Fola Odion, JD, MBA</p>
             <p className='text-[16px] md:text-[18px] md:[20px] font-medium mb-8 '>Ph.D. in Law l MBA l General Counsel</p>
             <div className='flex gap-x-2'>
               <a href="https://www.facebook.com/prometricspro?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Prometrics Facebook" /></a>

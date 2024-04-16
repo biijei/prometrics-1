@@ -1,6 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import './slider.css'
 import pa from '../assets/images/employment-based.png'
+import ca1 from '../assets/images/caros1.png'
+import ca2 from '../assets/images/caros2.png'
+import ca3 from '../assets/images/caros3.png'
+import ca4 from '../assets/images/caros4.png'
+import ca5 from '../assets/images/caros5.png'
+import ca6 from '../assets/images/caros6.png'
+import ca7 from '../assets/images/caros7.png'
+import ca8 from '../assets/images/caros8.png'
 
 const Slider = () => {
   const delay = 8000;
@@ -68,25 +76,43 @@ const Slider = () => {
 
 const slides = [
   {
-    img: pa,
+    img: ca8,
     title: "Self Petition Approval",
     subTitle:
       "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
   },
   {
-    img: pa,
+    img: ca6,
     title: "Self Petition Approval",
     subTitle:
       "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
   },
   {
-    img: pa,
+    img: ca7,
     title: "Self Petition Approval",
     subTitle:
       "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
   },
   {
-    img: pa,
+    img: ca1,
+    title: "Self Petition Approval",
+    subTitle:
+      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  },
+  {
+    img: ca2,
+    title: "Self Petition Approval",
+    subTitle:
+      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  },
+  {
+    img: ca4,
+    title: "Self Petition Approval",
+    subTitle:
+      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  },
+  {
+    img: ca5,
     title: "Self Petition Approval",
     subTitle:
       "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
