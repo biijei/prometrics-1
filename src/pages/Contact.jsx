@@ -26,7 +26,8 @@ const Contact = () => {
     setIsLoading(true)
     e.preventDefault(); // prevents the page from reloading when you hit “Submit”
 
-    emailjs.sendForm('service_m6b7qy', 'template_e06hrra', form.current, 'FlvwZvrN2MNcdmDc')
+    // Service ID, Template ID, Public Key
+    emailjs.sendForm('service_qzmls84', 'template_gnlnccx', form.current, '5ljy3r4KJ-WrwILR7')
       .then((result) => {
         // show the user a success message
         console.log(result.text);

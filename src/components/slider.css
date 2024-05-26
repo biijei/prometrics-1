@@ -2,7 +2,6 @@
 .slideshow {
   overflow: hidden;
   /* max-width: 610px; */
-  
 }
 
 .slideshowSlider {
@@ -19,8 +18,8 @@
 }
 .slideshowDot {
   display: inline-block;
-  height: 2px;
-  width: 154px;
+  height: 3px;
+  width: 90px;
   border-radius: 19px;
   cursor: pointer;
   margin: 15px 7px 0px;
