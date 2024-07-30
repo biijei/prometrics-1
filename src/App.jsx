@@ -14,6 +14,8 @@ import PaEstate from "./pages/PaEstate";
 import PaNotarization from "./pages/PaNotarization";
 import Faqs from "./pages/Faqs";
 import Contact from "./pages/Contact";
+import Template from "./pages/Template";
+import DownloadTemplate from "./pages/DownloadTemplate";
 
 function App() {
 
@@ -31,6 +33,9 @@ function App() {
         <Route path="/pa-notarization" element={<PaNotarization />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/template" element={<Template />} />
+        <Route path="/get-template" element={<DownloadTemplate />} />
+
       </Routes>
     </BrowserRouter>
     

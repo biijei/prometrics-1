@@ -52,7 +52,7 @@ const  Header = () =>{
             <li className='mb-4 hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <button className='mx-auto md:hidden flex justify-center items-center w-full rounded-[40px] bg-[#C39F76] text-white font-semibold py-5 px-4'>
-            <a href="https://calendly.com/prometricspro/legal-consult" target='_blank' >Book a Consultation </a>
+            <Link to="/template">Get Template</Link>
           </button>
         </nav>
       </div>
@@ -105,12 +105,12 @@ const  Header = () =>{
           <li className='hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
         </ul>
       </nav>
-      <a href="https://calendly.com/prometricspro/legal-consult" target='_blank' className='hidden md:flex justify-center items-center'> 
+      <Link to="/template" className='hidden md:flex justify-center items-center'> 
         <button className='full-rounded contained-button text-base w-[218px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-5'>
-          <span>Book a Consultation</span>
+          <span>Get Template</span>
           <div className="outside-border full-rounded"></div>
         </button>
-      </a>
+      </Link>
     </div>
   )
 }
