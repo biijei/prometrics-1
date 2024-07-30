@@ -14,8 +14,8 @@ const DownloadTemplate = () => {
           <p className='text-[18px]'>With 5 different template accross all industry you are set for your journey to greatness.</p>
         </div>
         
-        <p className='text-[24px] font-medium'>Download the template that is applicable to your industry</p>
-        <div className='flex flex-col md:flex-row items-center gap-x-14 text-white pb-[50px] py-8 '>
+        <p className='text-[24px] font-medium mb-8'>Download the template that is applicable to your industry</p>
+        <div className='flex flex-col md:flex-row items-center gap-x-10 text-white mb-8'>
           <TemplateCard
             img={<Scale className="text-white bg-primary p-1 w-8 h-8 rounded-sm" />}
             title='Engineering'
@@ -32,7 +32,7 @@ const DownloadTemplate = () => {
             text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, alias!'
           />
         </div>
-        <div className='flex flex-col md:flex-row items-center gap-x-14 text-white pb-[50px] py-8 '>
+        <div className='flex flex-col md:flex-row items-center gap-x-10 text-white'>
           <TemplateCard
             img={<Scale className="text-white bg-primary p-1 w-8 h-8 rounded-sm" />}
             title='Business'
