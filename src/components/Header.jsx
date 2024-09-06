@@ -51,8 +51,11 @@ const  Header = () =>{
             <li className='hover:text-primary'><NavLink to="/faqs">FAQS</NavLink></li>
             <li className='mb-4 hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
           </ul>
-          <button className='mx-auto md:hidden flex justify-center items-center w-full rounded-[40px] bg-[#C39F76] text-white font-semibold py-5 px-4'>
+          {/* <button className='mx-auto md:hidden flex justify-center items-center w-full rounded-[40px] bg-[#C39F76] text-white font-semibold py-5 px-4'>
             <Link to="/template">Get Template</Link>
+          </button> */}
+          <button className='mx-auto md:hidden flex justify-center items-center w-full rounded-[40px] bg-[#C39F76] text-white font-semibold py-5 px-4'>
+            <Link to="/contact">Get in touch</Link>
           </button>
         </nav>
       </div>
@@ -105,9 +108,15 @@ const  Header = () =>{
           <li className='hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
         </ul>
       </nav>
-      <Link to="/template" className='hidden md:flex justify-center items-center'> 
+      {/* <Link to="/template" className='hidden md:flex justify-center items-center'> 
         <button className='full-rounded contained-button text-base w-[218px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-5'>
           <span>Get Template</span>
+          <div className="outside-border full-rounded"></div>
+        </button>
+      </Link> */}
+      <Link to="/contact" className='hidden md:flex justify-center items-center'> 
+        <button className='full-rounded contained-button text-base w-[218px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-5'>
+          <span>Get in touch</span>
           <div className="outside-border full-rounded"></div>
         </button>
       </Link>
