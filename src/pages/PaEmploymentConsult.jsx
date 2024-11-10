@@ -12,7 +12,7 @@ const PaEmploymentConsult = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-tertiary mt-[110px] pb-[50px]'>
+      <div className='bg-tertiary mt-[90px] pb-[50px]'>
         <HeroSection subtitile='Practice Areas' titile='Employment Consult' 
           menu='Practice Areas' menudetails = '/ Employment Consult' bgimage='aboutbg'
         />

@@ -8,7 +8,7 @@ const DownloadTemplate = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-white mt-[110px] px-[5%] pt-[50px] pb-[50px]'>
+      <div className='bg-white mt-[90px] px-[5%] pt-[50px] pb-[50px]'>
         <div className='text-center mb-[50px]'>
           <h2 className='mb-4'>Get The Template You Want For Growth</h2>
           <p className='text-[18px]'>With 5 different template accross all industry you are set for your journey to greatness.</p>

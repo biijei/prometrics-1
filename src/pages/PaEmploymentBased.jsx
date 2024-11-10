@@ -13,7 +13,7 @@ const PaEmploymentBased = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-tertiary mt-[110px] pb-[50px]'>
+      <div className='bg-tertiary mt-[90px] pb-[50px]'>
         <HeroSection subtitile='Practice Areas' titile='Employment Based Immigration Consult (EB2-NIW & EB-1A)' 
           menu='Practice Areas' menudetails = '/ Employment Based Immi...' bgimage='aboutbg'
         />

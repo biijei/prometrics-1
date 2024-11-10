@@ -8,7 +8,7 @@ const Template = () => {
   return (
     <div>
       <Header/>
-      <div className='flex flex-col md:flex-row justify-between items-center gap-x-14 h-[calc(100vh-110px)] bg-[#040404] text-white mt-[110px] pb-[50px] px-[5%] py-8 '>
+      <div className='flex flex-col md:flex-row justify-between items-center gap-x-14 h-[calc(100vh-90px)] bg-[#040404] text-white mt-[90px] pb-[50px] px-[5%] py-8 '>
         <div >
           <p>Do you want a template for your industry?</p>
           <h2 className='mb-6'>Get a Template for $10</h2>

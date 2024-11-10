@@ -12,7 +12,7 @@ const PaEstate = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-tertiary mt-[110px] pb-[50px]'>
+      <div className='bg-tertiary mt-[90px] pb-[50px]'>
         <HeroSection subtitile='Practice Areas' titile='Estate Planning' 
           menu='Practice Areas' menudetails = '/ Estate Planning' bgimage='aboutbg'
         />

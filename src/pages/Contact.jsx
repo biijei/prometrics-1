@@ -44,7 +44,7 @@ const Contact = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-tertiary mt-[110px] pb-[50px]'>
+      <div className='bg-tertiary mt-[90px] pb-[50px]'>
         <HeroSection subtitile='Reach Out' titile='Contact Us' menu='Contact' bgimage='aboutbg'/>
         {/* Contact Cards */}
         <div className='px-[5%] flex flex-col md:flex-row justify-center items-center gap-8 md:absolute left-0 right-0'>

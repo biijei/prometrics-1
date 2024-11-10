@@ -13,7 +13,7 @@ const Faqs = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-tertiary mt-[110px] pb-[50px]'>
+      <div className='bg-tertiary mt-[90px] pb-[50px]'>
         <HeroSection subtitile='FAQs' titile='Ask Us Anything' menu='FAQs' bgimage='aboutbg'/>
 
         {/* FAQ */}

@@ -47,7 +47,7 @@ const Slider = () => {
             // style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${slide.bgimage})`}}
           >
             <div className="w-fit mx-auto mb-[20px]">
-              <img src={slide?.img} alt="Achievent" />
+              <img src={slide?.img} alt="Achievent" className="w-[1000px]"/>
               {/* <h2 className="text-wrap text-[30px] font-semibold leading-10 mt-4 mb-[10px]">
                 {slide.title}
               </h2>

@@ -12,7 +12,7 @@ const PaBusiness = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-tertiary mt-[110px] pb-[50px]'>
+      <div className='bg-tertiary mt-[90px] pb-[50px]'>
         <HeroSection subtitile='Practice Areas' titile='Business Planning' 
           menu='Practice Areas' menudetails = '/ Business Planning' bgimage='aboutbg'
         />
