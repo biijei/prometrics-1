@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import './slider.css'
-import pa from '../assets/images/employment-based.png'
 import ca1 from '../assets/images/caros1.png'
 import ca2 from '../assets/images/caros2.png'
 import ca3 from '../assets/images/caros3.png'
