@@ -34,8 +34,36 @@ const Slider = () => {
       resetTimeout();
     };
   }, [index]);
+
+  const goToPrevious = () => {
+    const isFirstSlide = index === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : index - 1;
+    setIndex(newIndex);
+  };
+
+  const goToNext = () => {
+    const isLastSlide = index === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : index + 1;
+    setIndex(newIndex);
+  };
+
   return (
-    <div className="slideshow">
+    <div className="slideshow relative">
+      {/* Left Navigation Button */}
+      <button 
+        onClick={goToPrevious} 
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 z-10 bg-white hover:bg-primary hover:text-white p-2 rounded-full"
+      >
+        &#10094; {/* Left arrow character */}
+      </button>
+
+      {/* Right Navigation Button */}
+      <button 
+        onClick={goToNext} 
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 z-10 bg-white hover:bg-primary hover:text-white p-2 rounded-full"
+      >
+        &#10095; {/* Right arrow character */}
+      </button>
       <div
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
@@ -47,7 +75,7 @@ const Slider = () => {
             // style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${slide.bgimage})`}}
           >
             <div className="w-fit mx-auto mb-[20px]">
-              <img src={slide?.img} alt="Achievent" className="w-[1000px]"/>
+              <img src={slide?.img} alt="Achievent" className="w-[1000px] "/>
               {/* <h2 className="text-wrap text-[30px] font-semibold leading-10 mt-4 mb-[10px]">
                 {slide.title}
               </h2>

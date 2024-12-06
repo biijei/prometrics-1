@@ -31,7 +31,7 @@ const  Header = () =>{
       <div className="md:hidden text-right" >
         {/* handburger - Open menu */}
         <button className='relative' onClick={handleClick}>
-        {showMenu ? <X className='border border-primary rounded-lg p-2 w-10 h-10'/>: <Menu />}
+          {showMenu ? <X className='border border-primary rounded-lg p-2 w-10 h-10'/> : <Menu />}
         </button>
         <nav className={showMenu ? 'homeNavMenu right-0 duration-300' : 'homeNavMenu -right-full duration-700'}>
           <ul className="flex flex-col gap-5 text-center text-[#15110D] font-medium">
@@ -50,6 +50,7 @@ const  Header = () =>{
             </li>
             <li className='hover:text-primary'><NavLink to="/faqs">FAQS</NavLink></li>
             <li className='mb-4 hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
+            <li className='mb-4 hover:text-primary'><NavLink to="/gallery">Gallery</NavLink></li>
           </ul>
           {/* <button className='mx-auto md:hidden flex justify-center items-center w-full rounded-[40px] bg-[#C39F76] text-white font-semibold py-5 px-4'>
             <Link to="/template">Get Template</Link>
@@ -67,9 +68,9 @@ const  Header = () =>{
         <ul className="flex items-center gap-6 text-[#15110D] font-medium">
           <li className="hover:text-primary"><NavLink to="/">Home</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/about-us">About us</NavLink></li>
-          <li className='dropdown py-10'>
+          <li className='dropdown py-8'>
             <button  className="flex">Practice Areas <ChevronDown /></button>
-            <div className="hidden absolute top-[100px] left-0 w-full z-10">
+            <div className="hidden absolute top-[92px] left-0 w-full z-10">
             {/* <div className={display ? "absolute top-[110px] left-0 w-full z-10" : "hidden absolute top-[110px] left-0 w-full z-10"}> */}
               <div className='flex justify-around items-center gap-24 p-8 bg-[#faf6f3] rounded-[40px] mx-[5%]'>
                 <div className='flex flex-col gap-5'>
@@ -106,6 +107,7 @@ const  Header = () =>{
           </li>
           <li className='hover:text-primary'><NavLink to="/faqs">FAQS</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
+          <li className='hover:text-primary'><NavLink to="/gallery">Gallery</NavLink></li>
         </ul>
       </nav>
       {/* <Link to="/template" className='hidden md:flex justify-center items-center'> 
