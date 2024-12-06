@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-4 md:py-0 text-center text-[#FFFFFF] fixed top-[90px] left-0 right-0 z-10'>
+      <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-4 md:py-0 text-center text-[#FFFFFF] fixed top-[90px] left-0 right-0 z-20'>
         `We&apos;re back and better than ever— now fully digital and at your service!` <a href="/contact" className='text-primary'> Contact us today.</a>
       </div>
       <div className='bg-tertiary mt-[250px] md:mt-[110px] py-[50px]'>
