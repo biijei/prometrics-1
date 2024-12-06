@@ -1,13 +1,19 @@
 import { useState, useEffect, useRef } from "react";
 import './slider.css'
-import ca1 from '../assets/images/caros1.png'
-import ca2 from '../assets/images/caros2.png'
-import ca3 from '../assets/images/caros3.png'
-import ca4 from '../assets/images/caros4.png'
-import ca5 from '../assets/images/caros5.png'
-import ca6 from '../assets/images/caros6.png'
-import ca7 from '../assets/images/caros7.png'
-import ca8 from '../assets/images/caros8.png'
+// import ca1 from '../assets/images/caros1.png'
+// import ca2 from '../assets/images/caros2.png'
+// import ca3 from '../assets/images/caros3.png'
+// import ca4 from '../assets/images/caros4.png'
+// import ca5 from '../assets/images/caros5.png'
+// import ca6 from '../assets/images/caros6.png'
+// import ca7 from '../assets/images/caros7.png'
+// import ca8 from '../assets/images/caros8.png'
+import ca10 from '../assets/images/caros10.png'
+import ca11 from '../assets/images/caros11.png'
+import ca12 from '../assets/images/caros12.png'
+import ca13 from '../assets/images/caros13.png'
+import ca14 from '../assets/images/caros14.png'
+import ca15 from '../assets/images/caros15.png'
 
 const Slider = () => {
   const delay = 8000;
@@ -103,47 +109,65 @@ const Slider = () => {
 
 const slides = [
   {
-    img: ca8,
-    title: "Self Petition Approval",
-    subTitle:
-      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+    img: ca10,
   },
   {
-    img: ca6,
-    title: "Self Petition Approval",
-    subTitle:
-      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+    img: ca11,
   },
   {
-    img: ca7,
-    title: "Self Petition Approval",
-    subTitle:
-      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+    img: ca12,
   },
   {
-    img: ca1,
-    title: "Self Petition Approval",
-    subTitle:
-      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+    img: ca13,
   },
   {
-    img: ca2,
-    title: "Self Petition Approval",
-    subTitle:
-      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+    img: ca14,
   },
   {
-    img: ca4,
-    title: "Self Petition Approval",
-    subTitle:
-      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+    img: ca15,
   },
-  {
-    img: ca5,
-    title: "Self Petition Approval",
-    subTitle:
-      "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
-  },
+  // {
+  //   img: ca8,
+  //   title: "Self Petition Approval",
+  //   subTitle:
+  //     "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  // },
+  // {
+  //   img: ca6,
+  //   title: "Self Petition Approval",
+  //   subTitle:
+  //     "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  // },
+  // {
+  //   img: ca7,
+  //   title: "Self Petition Approval",
+  //   subTitle:
+  //     "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  // },
+  // {
+  //   img: ca1,
+  //   title: "Self Petition Approval",
+  //   subTitle:
+  //     "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  // },
+  // {
+  //   img: ca2,
+  //   title: "Self Petition Approval",
+  //   subTitle:
+  //     "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  // },
+  // {
+  //   img: ca4,
+  //   title: "Self Petition Approval",
+  //   subTitle:
+  //     "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  // },
+  // {
+  //   img: ca5,
+  //   title: "Self Petition Approval",
+  //   subTitle:
+  //     "We’re ecstatic to share that our client’s EB-2 NIW petition has been SUCCESSFULLY APPROVED!",
+  // },
 ];
 
 export default Slider;
