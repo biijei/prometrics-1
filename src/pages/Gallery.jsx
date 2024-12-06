@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import Header from '../components/Header';
-import ca1 from '../assets/images/caros1.png'
-import ca2 from '../assets/images/caros2.png'
-import ca3 from '../assets/images/caros3.png'
-import ca4 from '../assets/images/caros4.png'
-import ca5 from '../assets/images/caros5.png'
-import ca6 from '../assets/images/caros6.png'
-import ca7 from '../assets/images/caros7.png'
-import ca8 from '../assets/images/caros8.png'
+import ca10 from '../assets/images/caros10.png'
+import ca11 from '../assets/images/caros11.png'
+import ca12 from '../assets/images/caros12.png'
+import ca13 from '../assets/images/caros13.png'
+import ca14 from '../assets/images/caros14.png'
+import ca15 from '../assets/images/caros15.png'
+import Footer from '../components/Footer';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -38,7 +37,7 @@ const Gallery = () => {
       <div className='bg-[#15110D] text-2xl text-[#FFFFFF] font-semibold px-[5%] py-[15px] mt-[90px]'>
         Gallery
       </div>
-      <div className='bg-tertiary pb-[50px]'>
+      <div className='bg-tertiary '>
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {images.map((image, index) => (
@@ -99,6 +98,7 @@ const Gallery = () => {
           )}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
@@ -106,20 +106,10 @@ const Gallery = () => {
 export default Gallery;
 
 const images = [
-  { url: ca1, alt: 'Testimonial' },
-  { url: ca2, alt: 'Testimonial' },
-  { url: ca3, alt: 'Testimonial' },
-  { url: ca4, alt: 'Testimonial' },
-  { url: ca5, alt: 'Testimonial' },
-  { url: ca6, alt: 'Testimonial' },
-  { url: ca7, alt: 'Testimonial' },
-  { url: ca8, alt: 'Testimonial' },
+  { url: ca10, alt: 'Testimonial' },
+  { url: ca11, alt: 'Testimonial' },
+  { url: ca12, alt: 'Testimonial' },
+  { url: ca13, alt: 'Testimonial' },
+  { url: ca14, alt: 'Testimonial' },
+  { url: ca15, alt: 'Testimonial' },
 ];
-
-// Example usage:
-// const images = [
-//   { url: '/path/to/image1.jpg', alt: 'Description 1' },
-//   { url: '/path/to/image2.jpg', alt: 'Description 2' },
-//   // ... more images
-// ];
-// <ImageGallery images={images} />
