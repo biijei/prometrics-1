@@ -6,6 +6,17 @@ import ca12 from '../assets/images/caros12.png'
 import ca13 from '../assets/images/caros13.png'
 import ca14 from '../assets/images/caros14.png'
 import ca15 from '../assets/images/caros15.png'
+import ca16 from '../assets/images/caros16.png'
+import ca17 from '../assets/images/caros17.png'
+import ca18 from '../assets/images/caros18.png'
+import ca19 from '../assets/images/caros19.png'
+import ca20 from '../assets/images/caros20.png'
+import ca21 from '../assets/images/caros21.png'
+import ca22 from '../assets/images/caros22.png'
+import ca23 from '../assets/images/caros23.png'
+import ca24 from '../assets/images/caros24.png'
+import ca25 from '../assets/images/caros25.png'
+import ca26 from '../assets/images/caros26.png'
 
 const Slider = () => {
   const delay = 8000;
@@ -94,6 +105,39 @@ const Slider = () => {
 
 const slides = [
   {
+    img: ca26,
+  },
+  {
+    img: ca25,
+  },
+  {
+    img: ca24,
+  },
+  {
+    img: ca23,
+  },
+  {
+    img: ca22,
+  },
+  {
+    img: ca21,
+  },
+  {
+    img: ca20,
+  },
+  {
+    img: ca19,
+  },
+  {
+    img: ca18,
+  },
+  {
+    img: ca17,
+  },
+  {
+    img: ca16,
+  },
+  {
     img: ca10,
   },
   {
@@ -111,7 +155,7 @@ const slides = [
   {
     img: ca15,
   },
-  
+ 
 ];
 
 export default Slider;
