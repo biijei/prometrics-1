@@ -12,9 +12,22 @@ import Footer from '../components/Footer';
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeCategory, setActiveCategory] = useState('all');
+
+  const categories = [
+    { id: 'all', label: 'All' },
+    { id: 'eb1a', label: 'EB-1A Category' },
+    { id: 'eb2niw', label: 'EB2-NIW Category' },
+    { id: 'h1b', label: 'H-1B Category' },
+    { id: 'status-change', label: 'Change of Status' },
+    { id: 'others', label: 'Others' }
+  ];
 
   const openModal = (index) => {
-    setSelectedImage(images[index]);
+    const filteredImages = images.filter(img => 
+      activeCategory === 'all' ? true : img.category === activeCategory
+    );
+    setSelectedImage(filteredImages[index]);
     setCurrentIndex(index);
   };
 
@@ -23,13 +36,20 @@ const Gallery = () => {
   };
 
   const navigateImage = (direction) => {
+    const filteredImages = images.filter(img => 
+      activeCategory === 'all' ? true : img.category === activeCategory
+    );
     const newIndex = direction === 'next' 
-      ? (currentIndex + 1) % images.length 
-      : (currentIndex - 1 + images.length) % images.length;
+      ? (currentIndex + 1) % filteredImages.length 
+      : (currentIndex - 1 + filteredImages.length) % filteredImages.length;
     
-    setSelectedImage(images[newIndex]);
+    setSelectedImage(filteredImages[newIndex]);
     setCurrentIndex(newIndex);
   };
+
+  const filteredImages = images?.filter(img => 
+    activeCategory === 'all' ? true : img?.category === activeCategory
+  );
 
   return (
     <div>
@@ -37,18 +57,37 @@ const Gallery = () => {
       <div className='bg-[#15110D] text-2xl text-[#FFFFFF] font-semibold px-[5%] py-[15px] mt-[90px]'>
         Gallery
       </div>
-      <div className='bg-tertiary '>
+      <div className='bg-tertiary'>
+        {/* Category Buttons */}
+        <div className="container mx-auto px-4 pt-8">
+          <div className="flex flex-wrap gap-2 justify-center mb-8">
+            {categories.map((category) => (
+              <button
+                key={category?.id}
+                onClick={() => setActiveCategory(category?.id)}
+                className={`px-4 py-2 rounded-lg transition-all duration-300 ${
+                  activeCategory === category?.id
+                    ? 'bg-primary text-white'
+                    : 'bg-gray-200 hover:bg-gray-300 text-gray-800'
+                }`}
+              >
+                {category?.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {images.map((image, index) => (
+            {filteredImages?.map((image, index) => (
               <div 
                 key={index} 
                 className="relative overflow-hidden rounded-lg cursor-pointer"
                 onClick={() => openModal(index)}
               >
                 <img 
-                  src={image.url} 
-                  alt={image.alt} 
+                  src={image?.url} 
+                  alt={image?.alt} 
                   className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300" />
@@ -58,22 +97,13 @@ const Gallery = () => {
 
           {selectedImage && (
             <div 
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+              className="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-75"
               onClick={closeModal}
             >
               <div 
                 className="relative max-w-4xl max-h-[80vh] flex items-center"
                 onClick={(e) => e.stopPropagation()}
               >
-                {/* Close Button */}
-                {/* <button 
-                  onClick={closeModal} 
-                  className="absolute top-2 right-2 z-60 bg-white rounded-full p-2"
-                >
-                  <X size={24} />
-                </button> */}
-
-                {/* Navigation Buttons */}
                 <button 
                   onClick={() => navigateImage('prev')} 
                   className="absolute left-0 z-60 bg-white/50 rounded-full hover:bg-primary hover:text-white p-2 ml-[-50px]"
@@ -106,10 +136,10 @@ const Gallery = () => {
 export default Gallery;
 
 const images = [
-  { url: ca10, alt: 'Testimonial' },
-  { url: ca11, alt: 'Testimonial' },
-  { url: ca12, alt: 'Testimonial' },
-  { url: ca13, alt: 'Testimonial' },
-  { url: ca14, alt: 'Testimonial' },
-  { url: ca15, alt: 'Testimonial' },
+  { url: ca10, alt: 'Testimonial', category: 'eb1a' },
+  { url: ca11, alt: 'Testimonial', category: 'eb1a' },
+  { url: ca12, alt: 'Testimonial', category: 'eb2niw' },
+  { url: ca13, alt: 'Testimonial', category: 'h1b' },
+  { url: ca14, alt: 'Testimonial', category: 'status-change' },
+  { url: ca15, alt: 'Testimonial', category: 'others' },
 ];
