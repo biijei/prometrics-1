@@ -101,7 +101,6 @@ const  Header = () =>{
                     <p className='text-sm font-regular text-[#6D6D6D]'>Our reliable notarization services offer authentication and verification</p>
                   </div>
                 </div>
-                
               </div>
             </div>
           </li>
