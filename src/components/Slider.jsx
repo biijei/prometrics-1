@@ -1,22 +1,22 @@
 import { useState, useEffect, useRef } from "react";
 import './slider.css'
-import ca10 from '../assets/images/caros10.png'
-import ca11 from '../assets/images/caros11.png'
-import ca12 from '../assets/images/caros12.png'
-import ca13 from '../assets/images/caros13.png'
-import ca14 from '../assets/images/caros14.png'
-import ca15 from '../assets/images/caros15.png'
-import ca16 from '../assets/images/caros16.png'
-import ca17 from '../assets/images/caros17.png'
-import ca18 from '../assets/images/caros18.png'
-import ca19 from '../assets/images/caros19.png'
-import ca20 from '../assets/images/caros20.png'
-import ca21 from '../assets/images/caros21.png'
-import ca22 from '../assets/images/caros22.png'
-import ca23 from '../assets/images/caros23.png'
-import ca24 from '../assets/images/caros24.png'
-import ca25 from '../assets/images/caros25.png'
-import ca26 from '../assets/images/caros26.png'
+import ca27 from '../assets/images/caros27.png'
+import ca28 from '../assets/images/caros28.png'
+import ca29 from '../assets/images/caros29.png'
+import ca30 from '../assets/images/caros30.png'
+import ca31 from '../assets/images/caros31.png'
+import ca32 from '../assets/images/caros32.png'
+import ca33 from '../assets/images/caros33.png'
+import ca34 from '../assets/images/caros34.png'
+import ca35 from '../assets/images/caros35.png'
+import ca36 from '../assets/images/caros36.png'
+// import ca20 from '../assets/images/caros20.png'
+// import ca21 from '../assets/images/caros21.png'
+// import ca22 from '../assets/images/caros22.png'
+// import ca23 from '../assets/images/caros23.png'
+// import ca24 from '../assets/images/caros24.png'
+// import ca25 from '../assets/images/caros25.png'
+// import ca26 from '../assets/images/caros26.png'
 
 const Slider = () => {
   const delay = 8000;
@@ -105,56 +105,56 @@ const Slider = () => {
 
 const slides = [
   {
-    img: ca26,
+    img: ca27,
   },
   {
-    img: ca25,
+    img: ca28,
   },
   {
-    img: ca24,
+    img: ca29,
   },
   {
-    img: ca23,
+    img: ca30,
   },
   {
-    img: ca22,
+    img: ca31,
   },
   {
-    img: ca21,
+    img: ca32,
   },
   {
-    img: ca20,
+    img: ca33,
   },
   {
-    img: ca19,
+    img: ca34,
   },
   {
-    img: ca18,
+    img: ca35,
   },
   {
-    img: ca17,
+    img: ca36,
   },
-  {
-    img: ca16,
-  },
-  {
-    img: ca10,
-  },
-  {
-    img: ca11,
-  },
-  {
-    img: ca12,
-  },
-  {
-    img: ca13,
-  },
-  {
-    img: ca14,
-  },
-  {
-    img: ca15,
-  },
+  // {
+  //   img: ca16,
+  // },
+  // {
+  //   img: ca10,
+  // },
+  // {
+  //   img: ca11,
+  // },
+  // {
+  //   img: ca12,
+  // },
+  // {
+  //   img: ca13,
+  // },
+  // {
+  //   img: ca14,
+  // },
+  // {
+  //   img: ca15,
+  // },
  
 ];
 
