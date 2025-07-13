@@ -67,11 +67,10 @@ const CoreValues = () => {
         <div className="flex-1">
           <h4 className="mb-2">AFFORDABILITY</h4>
           <p className="text-[14px]">
-            We are not cheap but we are affordable, providing you with
+            We are affordable, providing you with
             fit-for-purpose strategy, practical valuable outcomes, and positive
             results leveraging our expertise in law, business and strategy, that
-            far exceeds any price you pay. Our mantra is that it is difficult to
-            value what costs you nothing!
+            far exceeds any price you pay.
           </p>
         </div>
       </div>
