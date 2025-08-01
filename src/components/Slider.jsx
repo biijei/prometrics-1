@@ -8,8 +8,10 @@ import ca31 from '../assets/images/caros31.png'
 import ca32 from '../assets/images/caros32.png'
 import ca33 from '../assets/images/caros33.png'
 import ca34 from '../assets/images/caros34.png'
-import ca35 from '../assets/images/caros35.png'
-import ca36 from '../assets/images/caros36.png'
+import ca37 from '../assets/images/caros37.png'
+import ca38 from '../assets/images/caros38.png'
+// import ca35 from '../assets/images/caros35.png'
+// import ca36 from '../assets/images/caros36.png'
 // import ca20 from '../assets/images/caros20.png'
 // import ca21 from '../assets/images/caros21.png'
 // import ca22 from '../assets/images/caros22.png'
@@ -105,6 +107,12 @@ const Slider = () => {
 
 const slides = [
   {
+    img: ca38,
+  },
+  {
+    img: ca37,
+  },
+  {
     img: ca27,
   },
   {
@@ -128,12 +136,12 @@ const slides = [
   {
     img: ca34,
   },
-  {
-    img: ca35,
-  },
-  {
-    img: ca36,
-  },
+  // {
+  //   img: ca35,
+  // },
+  // {
+  //   img: ca36,
+  // },
   // {
   //   img: ca16,
   // },
