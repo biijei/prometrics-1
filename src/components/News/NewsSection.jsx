@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import NewsCard from "./NewsCard";
-import { newsData } from "./NewsData";
+import { getPublicNews } from "../../util/getPublicNews";
 
 const NewsSection = () => {
+  const publicNews = getPublicNews();
   const navigate = useNavigate();
 
   const handleNewsClick = (newsItem) => {
@@ -14,7 +15,7 @@ const NewsSection = () => {
     );
     
   };
-  
+
   return(
     <section className="mb-12">
       <div className="text-center mb-8">
@@ -23,12 +24,12 @@ const NewsSection = () => {
       </div>
       
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {newsData.slice(0, 3).map(news => (
-          <NewsCard
-            key={news.id}
-            news={news}
-            onClick={() => handleNewsClick(news)}
-          />
+        {publicNews.slice(0, 3).map(news => (
+            <NewsCard
+              key={news.id}
+              news={news}
+              onClick={() => handleNewsClick(news)}
+            />
         ))}
       </div>
     </section>

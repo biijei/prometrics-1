@@ -2,28 +2,28 @@ import { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight, ChevronLeft, Filter } from "lucide-react";
 import NewsCard from "../components/News/NewsCard";
-import { newsData } from "../components/News/NewsData";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { getPublicNews } from "../util/getPublicNews";
 
 const NewsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const itemsPerPage = 6;
   const navigate = useNavigate();
+  const publicNews = getPublicNews();
 
   // Get unique categories
-  const getCategories = () => {
-    const categories = [...new Set(newsData.map(news => news.category))];
+   const getCategories = () => {const categories = [...new Set(publicNews.map(news => news.category))];
     return ['All', ...categories];
   };
   
   const categories = getCategories();
   
   const filteredNews = useMemo(() => {
-    if (selectedCategory === 'All') return newsData;
-    return newsData.filter(news => news.category === selectedCategory);
-  }, [selectedCategory]);
+    if (selectedCategory === 'All') return publicNews;
+    return publicNews.filter(news => news.category === selectedCategory);
+  }, [selectedCategory, publicNews]);
   
   const paginatedNews = useMemo(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;
