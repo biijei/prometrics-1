@@ -1,10 +1,10 @@
-import caro from '../../assets/images/caros.png';
+import revolutionary from '../../assets/images/news/revolutionary-ai-technology.png';
 export const newsData = [
   {
     id: '1',
     title: 'Revolutionary AI Technology Transforms Healthcare',
     excerpt: 'Latest breakthrough in artificial intelligence is helping doctors diagnose diseases faster and more accurately than ever before.',
-    coverImage: caro, // how to use an image from assets
+    coverImage: revolutionary, // how to use an image from assets
     author: 'Dr. Sarah Chen',
     publishDate: '2024-08-08',
     readTime: '5 min',
