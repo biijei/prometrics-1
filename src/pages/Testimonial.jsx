@@ -155,7 +155,7 @@ const TestimonialPage = () => {
                     onClick={handleLoadMore}
                     className="bg-primary text-white px-8 py-3 rounded-lg hover:secondary transition-colors font-medium"
                   >
-                    Load More Testimonials ({filteredTestimonials.length - visibleCount} remaining)
+                    Load More ({filteredTestimonials.length - visibleCount})
                   </button>
                 </div>
               )}
