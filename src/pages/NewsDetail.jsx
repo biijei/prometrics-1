@@ -1,6 +1,8 @@
 // NewsDetailPage.js
 import { ChevronLeft, Calendar, Clock, User, Quote } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const NewsDetailPage = () => {
   const navigate = useNavigate();
@@ -166,96 +168,102 @@ const NewsDetailPage = () => {
   };
   
   return (
-    <article className="max-w-4xl mx-auto py-8 px-4">
-      {/* Back Button */}
-      <button
-        onClick={() => navigate(-1)}
-        className="flex items-center gap-2 text-primary hover:text-secondary mb-8 transition-colors"
-      >
-        <ChevronLeft className="w-5 h-5" />
-        Back to News
-      </button>
-      
-      {/* Article Header */}
-      <header className="mb-8">
-        {/* Meta Information */}
-        <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
-          <span className="bg-primary text-white px-3 py-1 rounded-full font-medium">
-            {news.category}
-          </span>
-          <div className="flex items-center gap-1">
-            <Calendar className="w-4 h-4" />
-            {new Date(news.publishDate).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
-          </div>
-          <div className="flex items-center gap-1">
-            <Clock className="w-4 h-4" />
-            {news.readTime}
-          </div>
-        </div>
-        
-        {/* Title */}
-        <h1 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
-          {news.title}
-        </h1>
-        
-        {/* Author */}
-        <div className="flex items-center gap-3 mb-8">
-          <User className="w-5 h-5 text-gray-400" />
-          <span className="text-gray-600 font-medium text-lg">
-            {news.author}
-          </span>
-        </div>
-        
-        {/* Cover Image */}
-        <img
-          src={news.coverImage}
-          alt={news.title}
-          className="w-full h-96 object-cover rounded-lg shadow-lg mb-8"
-        />
-        
-        {/* Excerpt */}
-        <div className="bg-gray-50 border-l-4 border-primary p-6 mb-8">
-          <p className="text-xl text-gray-700 leading-relaxed font-medium italic">
-            {news.excerpt}
-          </p>
-        </div>
-      </header>
-      
-      {/* Article Content */}
-      <div className="prose prose-lg max-w-none">
-        {news.content && news.content.map((item, index) => renderContent(item, index))}
-      </div>
-      
-      {/* Article Footer */}
-      <footer className="mt-12 pt-8 border-t border-gray-200">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <User className="w-5 h-5 text-gray-400" />
-            <div>
-              <p className="font-medium text-gray-900">{news.author}</p>
-              <p className="text-sm text-gray-500">
-                Published on {new Date(news.publishDate).toLocaleDateString('en-US', {
+    <div>
+      <Header/>
+      <div className="px-[5%] bg-[#F9FAFB] py-[50px] mt-[90px]">
+        <article className="max-w-4xl mx-auto py-8 px-4">
+          {/* Back Button */}
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-2 text-primary hover:text-secondary mb-8 transition-colors"
+          >
+            <ChevronLeft className="w-5 h-5" />
+            Back to News
+          </button>
+          
+          {/* Article Header */}
+          <header className="mb-8">
+            {/* Meta Information */}
+            <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
+              <span className="bg-primary text-white px-3 py-1 rounded-full font-medium">
+                {news.category}
+              </span>
+              <div className="flex items-center gap-1">
+                <Calendar className="w-4 h-4" />
+                {new Date(news.publishDate).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric'
                 })}
+              </div>
+              <div className="flex items-center gap-1">
+                <Clock className="w-4 h-4" />
+                {news.readTime}
+              </div>
+            </div>
+            
+            {/* Title */}
+            <h1 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
+              {news.title}
+            </h1>
+            
+            {/* Author */}
+            <div className="flex items-center gap-3 mb-8">
+              <User className="w-5 h-5 text-gray-400" />
+              <span className="text-gray-600 font-medium text-lg">
+                {news.author}
+              </span>
+            </div>
+            
+            {/* Cover Image */}
+            <img
+              src={news.coverImage}
+              alt={news.title}
+              className="w-full h-96 object-cover rounded-lg shadow-lg mb-8"
+            />
+            
+            {/* Excerpt */}
+            <div className="bg-gray-50 border-l-4 border-primary p-6 mb-8">
+              <p className="text-xl text-gray-700 leading-relaxed font-medium italic">
+                {news.excerpt}
               </p>
             </div>
+          </header>
+          
+          {/* Article Content */}
+          <div className="prose prose-lg max-w-none">
+            {news.content && news.content.map((item, index) => renderContent(item, index))}
           </div>
           
-          <button
-            onClick={() => navigate('/news')}
-            className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors"
-          >
-            More News
-          </button>
-        </div>
-      </footer>
-    </article>
+          {/* Article Footer */}
+          <footer className="mt-12 pt-8 border-t border-gray-200">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <User className="w-5 h-5 text-gray-400" />
+                <div>
+                  <p className="font-medium text-gray-900">{news.author}</p>
+                  <p className="text-sm text-gray-500">
+                    Published on {new Date(news.publishDate).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </p>
+                </div>
+              </div>
+              
+              <button
+                onClick={() => navigate('/news')}
+                className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors"
+              >
+                More News
+              </button>
+            </div>
+          </footer>
+        </article>
+      </div>
+      <Footer/>
+    </div>
   );
 };
 
