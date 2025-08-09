@@ -13,6 +13,8 @@ export default {
         gray: "#6D6D6D",
         "black-rgba": "rgba(58, 58, 58, 0.6)",
         tertiary: "#F2F8FC",
+        border: "#E4D4C1",
+        
       },
       boxShadow: {
         "3xl":

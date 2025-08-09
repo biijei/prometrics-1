@@ -154,9 +154,9 @@ const Home = () => {
           <NewsSection/>
           <button 
             onClick={() => navigate('/news')}
-            className='w-[200px] bg-primary hover:bg-secondary rounded-[40px] text-white text-base px-3 py-4 font-semibold'
+            className='w-[200px] bg-primary hover:bg-secondary rounded-[40px] text-white text-base px-3 py-3 font-semibold'
           >
-            View All 
+            View All News
             <ChevronRight className="inline-block ml-1 -mt-1" />
           </button>
         </div>

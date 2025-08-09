@@ -16,6 +16,8 @@ import Faqs from "./pages/Faqs";
 import Contact from "./pages/Contact";
 import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";
+import Testimonial from "./pages/Testimonial";
+import TestimonialDetail from "./pages/TestimonialDetail";
 import Template from "./pages/Template";
 import DownloadTemplate from "./pages/DownloadTemplate";
 import Gallery from "./pages/Gallery";
@@ -37,7 +39,9 @@ function App() {
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<News />} />
-        <Route path="/news/:slug" element={<NewsDetail />} />
+        <Route path="/news/:slug" element={<NewsDetail />} /> 
+        <Route path="/testimonials" element={<Testimonial />} />
+        <Route path="/testimonials/:slug" element={<TestimonialDetail />} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/template" element={<Template />} />
         <Route path="/get-template" element={<DownloadTemplate />} />

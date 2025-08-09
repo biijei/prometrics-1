@@ -102,10 +102,10 @@ const NewsDetailPage = () => {
 
       case 'quote':
         return (
-          <blockquote key={index} className={`${baseClasses} border-l-4 border-primary pl-6 py-4 bg-gray-50 my-6`}>
+          <blockquote key={index} className={`${baseClasses} border-l-4 border-primary pl-6 py-4 bg-border/20 my-6`}>
             <div className="flex items-start gap-3">
               <Quote className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-              <p className="text-lg italic text-gray-700 leading-relaxed">
+              <p className="text-lg italic text-secondary leading-relaxed">
                 {item.content}
               </p>
             </div>
@@ -155,7 +155,7 @@ const NewsDetailPage = () => {
 
       case 'highlight':
         return (
-          <div key={index} className={`${baseClasses} bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6`}>
+          <div key={index} className={`${baseClasses} bg-border/20 border-l-4 border-border p-4 my-6`}>
             <p className="text-gray-800 text-lg leading-relaxed">
               {item.content}
             </p>

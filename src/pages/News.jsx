@@ -51,12 +51,15 @@ const NewsPage = () => {
     <div>
       <Header/>
       <div className="px-[5%] bg-[#F9FAFB] py-[50px] mt-[90px]">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-1">News & Reports</h1>
-          <p>
-            Stay informed with the latest news, updates, and changes in U.S. immigration laws that could impact your EB-1A or EB-2 NIW visa application.
-          </p>
-        </div>
+        {/* Header */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              News & Reports
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Stay informed with the latest news, updates, and changes in U.S. immigration laws that could impact your EB-1A or EB-2 NIW visa application.
+            </p>
+          </div>
         
         {/* Category Filter */}
         <div className="mb-8">
