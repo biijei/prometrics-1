@@ -11,7 +11,7 @@ const NewsCard = ({ news, onClick, showExcerpt = true }) => (
       className="w-full h-48 object-cover"
     />
     <div className="p-6">
-      <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+      <div className="flex items-center gap-2 sm:gap-4 text-sm text-gray-500 mb-3">
         <span className="bg-primary text-white px-2 py-1 rounded-full text-xs font-medium">
           {news.category}
         </span>

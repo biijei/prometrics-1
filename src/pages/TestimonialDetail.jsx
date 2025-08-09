@@ -159,7 +159,7 @@ const TestimonialDetailPage = () => {
           <header className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <div className="flex flex-col lg:flex-row gap-6">
               {/* Avatar and Basic Info */}
-              <div className="flex items-start gap-6">
+              <div className="flex flex-col sm:flex-row items-start gap-6">
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}

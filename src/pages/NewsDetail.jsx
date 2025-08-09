@@ -175,7 +175,7 @@ const NewsDetailPage = () => {
           {/* Back Button */}
           <button
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 text-primary hover:text-secondary mb-8 transition-colors"
+            className="flex items-center gap-2 text-secondary mb-8 transition-colors"
           >
             <ChevronLeft className="w-5 h-5" />
             Back to News
@@ -184,7 +184,7 @@ const NewsDetailPage = () => {
           {/* Article Header */}
           <header className="mb-8">
             {/* Meta Information */}
-            <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
+            <div className="flex items-center gap-2 sm:gap-4 text-sm text-gray-500 mb-6">
               <span className="bg-primary text-white px-3 py-1 rounded-full font-medium">
                 {news.category}
               </span>
@@ -254,7 +254,7 @@ const NewsDetailPage = () => {
               
               <button
                 onClick={() => navigate('/news')}
-                className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors"
+                className="bg-primary text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-secondary transition-colors"
               >
                 More News
               </button>
