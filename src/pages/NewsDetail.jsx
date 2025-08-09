@@ -47,7 +47,7 @@ const NewsDetailPage = () => {
         <article className="max-w-4xl mx-auto">
           <button
             onClick={() => navigate('/news')}
-            className="flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6"
+            className="flex items-center gap-2 text-primary hover:text-secondary mb-6"
           >
             <ChevronLeft className="w-5 h-5" />
             Back to News
@@ -55,7 +55,7 @@ const NewsDetailPage = () => {
           
           <div className="mb-6">
             <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
-              <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">
+              <span className="bg-primary text-white px-3 py-1 rounded-full font-medium">
                 {news.category}
               </span>
               <div className="flex items-center gap-1">
