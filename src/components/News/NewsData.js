@@ -1,9 +1,10 @@
+import caro from '../../assets/images/caros.png';
 export const newsData = [
   {
     id: '1',
     title: 'Revolutionary AI Technology Transforms Healthcare',
     excerpt: 'Latest breakthrough in artificial intelligence is helping doctors diagnose diseases faster and more accurately than ever before.',
-    coverImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
+    coverImage: caro, // how to use an image from assets
     author: 'Dr. Sarah Chen',
     publishDate: '2024-08-08',
     readTime: '5 min',

@@ -171,7 +171,7 @@ const NewsDetailPage = () => {
     <div>
       <Header/>
       <div className="px-[5%] bg-[#F9FAFB] py-[50px] mt-[90px]">
-        <article className="max-w-4xl mx-auto py-8 px-4">
+        <article className="max-w-4xl mx-auto">
           {/* Back Button */}
           <button
             onClick={() => navigate(-1)}
