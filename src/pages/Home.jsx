@@ -13,8 +13,12 @@ import { Link } from 'react-router-dom'
 import CoreValues from '../components/CoreValues'
 import Testimonials from '../components/Testimonials'
 import Slider from '../components/Slider'
+import NewsSection from '../components/News/NewsSection'
+import { ChevronRight } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header/>
@@ -145,6 +149,17 @@ const Home = () => {
 
         {/* Testimonial */}
         <Testimonials/>
+
+        <div className="px-[5%] py-[50px]">
+          <NewsSection/>
+          <button 
+            onClick={() => navigate('/news')}
+            className='w-[200px] bg-primary rounded-[40px] text-white text-base px-3 py-4 font-semibold'
+          >
+            View All 
+            <ChevronRight className="inline-block ml-1 -mt-1" />
+          </button>
+        </div>
 
         {/* Recent Wins Carousel */}
         <div className='px-[5%] py-[100px] bg-[#F9FAFB]'>

@@ -22,7 +22,7 @@ const  Header = () =>{
   }
   
   return (
-    <div className= {showMenu ? 'bg-[#F2F8FC]  homeHeader ' : 'bg-[#F2F8FC] homeHeader'}>
+    <div className= {showMenu ? 'bg-tertiary  homeHeader ' : 'bg-tertiary homeHeader'}>
       <div className='flex justify-center items-center gap-2'>
         <Link to='/'><img src={logo} alt="logo" className='w-[39px]'/></Link> 
         <p className='text-[#15110D] text-[25px] font-bold'>Prometrics Legal Hub, LLC</p>
