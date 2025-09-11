@@ -122,110 +122,110 @@ export const testimonialData = [
     ],
     tags: ['Financial Analytics', 'Risk Management', 'Data Processing', 'Compliance']
   },
-  {
-    id: '5',
-    name: 'Lisa Park',
-    position: 'Head of Learning & Development',
-    company: 'EduTech Innovations',
-    industry: 'Education',
-    location: 'Austin, TX',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
-    rating: 5,
-    date: '2024-07-10',
-    excerpt: 'The e-learning platform they created has revolutionized our educational delivery, increasing student engagement by 300% and completion rates by 85%.',
-    fullTestimonial: [
-      { type: 'paragraph', content: 'As an educator with over 15 years of experience, I have seen many attempts at digital learning solutions. This team has created something truly special – a platform that not only delivers content effectively but actually enhances the learning experience.' },
-      { type: 'highlight', content: 'Student completion rates increased from 45% to 85% after implementing the new platform.' },
-      { type: 'paragraph', content: 'The platform incorporates cutting-edge educational psychology principles, making learning more engaging and effective. Features like adaptive learning paths, gamification elements, and real-time progress tracking have transformed how our students interact with course material.' },
-      { type: 'bulletPoints', content: [
-        'Interactive multimedia content with video, audio, and simulations',
-        'Personalized learning paths based on individual progress',
-        'Comprehensive analytics for instructors and administrators',
-        'Mobile-responsive design for learning on any device',
-        'Integration with existing academic management systems'
-      ]},
-      { type: 'paragraph', content: 'The team worked closely with our faculty to understand pedagogical requirements and student needs. Their collaborative approach ensured that the final product truly served our educational mission while being technically robust and user-friendly.' },
-      { type: 'quote', content: 'This platform has not just digitized our courses – it has enhanced the entire educational experience for both students and instructors.' }
-    ],
-    tags: ['Educational Technology', 'User Experience', 'Student Engagement', 'Learning Analytics']
-  },
-  {
-    id: '6',
-    name: 'David Wilson',
-    position: 'Operations Manager',
-    company: 'Industrial Solutions Corp',
-    industry: 'Manufacturing',
-    location: 'Detroit, MI',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
-    rating: 5,
-    date: '2024-07-02',
-    excerpt: 'Their industrial automation system increased our production efficiency by 45% while reducing waste and improving workplace safety.',
-    fullTestimonial: [
-      { type: 'paragraph', content: 'Manufacturing is all about precision, efficiency, and safety. This team delivered an automation solution that addressed all these concerns while exceeding our performance expectations.' },
-      { type: 'mixedText', content: [
-        { type: 'text', content: 'Production efficiency increased by ' },
-        { type: 'bold', content: '45%' },
-        { type: 'text', content: ', while reducing material waste by ' },
-        { type: 'bold', content: '30%' },
-        { type: 'text', content: ' and improving overall equipment effectiveness to ' },
-        { type: 'bold', content: '92%' },
-        { type: 'text', content: '.' }
-      ]},
-      { type: 'paragraph', content: 'The system they implemented integrates seamlessly with our existing machinery while adding intelligent monitoring and control capabilities. Real-time data analytics help us identify potential issues before they become problems, reducing downtime significantly.' },
-      { type: 'numberedList', content: [
-        'Automated quality control with machine vision systems',
-        'Predictive maintenance scheduling based on equipment data',
-        'Real-time production monitoring and reporting dashboards',
-        'Integration with supply chain management systems',
-        'Enhanced safety protocols with automated shutdown procedures'
-      ]},
-      { type: 'quote', content: 'The return on investment has been remarkable. The system paid for itself within eight months through efficiency gains and waste reduction.' }
-    ],
-    tags: ['Industrial Automation', 'Efficiency Optimization', 'Safety Systems', 'ROI']
-  },
-  {
-    id: '7',
-    name: 'Amanda Foster',
-    position: 'Retail Operations Director',
-    company: 'Fashion Forward Stores',
-    industry: 'Retail',
-    location: 'Los Angeles, CA',
-    avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face',
-    rating: 5,
-    date: '2024-06-25',
-    excerpt: 'The omnichannel retail solution transformed our customer experience and increased sales by 180% across all channels.',
-    fullTestimonial: [
-      { type: 'paragraph', content: 'Retail is evolving rapidly, and staying competitive requires innovative solutions that seamlessly integrate online and offline experiences. This team delivered exactly what we needed to thrive in today\'s market.' },
-      { type: 'highlight', content: 'Customer satisfaction scores reached an all-time high of 94%, while return rates dropped by 25%.' },
-      { type: 'bulletPoints', content: [
-        'Unified inventory management across all sales channels',
-        'Personalized shopping recommendations powered by AI',
-        'Seamless integration between online and in-store experiences',
-        'Advanced analytics for inventory optimization and trend prediction',
-        'Mobile app with augmented reality try-on features'
-      ]},
-      { type: 'paragraph', content: 'The solution has transformed how we understand and serve our customers. The integrated analytics provide insights we never had before, helping us make data-driven decisions about inventory, pricing, and customer experience improvements.' }
-    ],
-    tags: ['Omnichannel Retail', 'Customer Experience', 'Inventory Management', 'AI Integration']
-  },
-  {
-    id: '8',
-    name: 'James Miller',
-    position: 'Environmental Consultant',
-    company: 'Green Earth Solutions',
-    industry: 'Environmental',
-    location: 'Portland, OR',
-    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face',
-    rating: 4,
-    date: '2024-06-20',
-    excerpt: 'Their environmental monitoring system has helped us track and reduce carbon emissions for our clients, resulting in significant cost savings and environmental impact.',
-    fullTestimonial: [
-      { type: 'paragraph', content: 'Environmental monitoring and compliance is becoming increasingly important for businesses across all industries. The system developed by this team has made it easier for our clients to track, measure, and reduce their environmental impact.' },
-      { type: 'paragraph', content: 'The real-time monitoring capabilities and comprehensive reporting features have streamlined our consulting process and provided our clients with actionable insights for sustainability improvements.' },
-      { type: 'quote', content: 'This system has transformed how we approach environmental consulting, making our services more effective and our clients more successful in their sustainability goals.' }
-    ],
-    tags: ['Environmental Monitoring', 'Sustainability', 'Compliance', 'Data Analytics']
-  }
+  // {
+  //   id: '5',
+  //   name: 'Lisa Park',
+  //   position: 'Head of Learning & Development',
+  //   company: 'EduTech Innovations',
+  //   industry: 'Education',
+  //   location: 'Austin, TX',
+  //   avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
+  //   rating: 5,
+  //   date: '2024-07-10',
+  //   excerpt: 'The e-learning platform they created has revolutionized our educational delivery, increasing student engagement by 300% and completion rates by 85%.',
+  //   fullTestimonial: [
+  //     { type: 'paragraph', content: 'As an educator with over 15 years of experience, I have seen many attempts at digital learning solutions. This team has created something truly special – a platform that not only delivers content effectively but actually enhances the learning experience.' },
+  //     { type: 'highlight', content: 'Student completion rates increased from 45% to 85% after implementing the new platform.' },
+  //     { type: 'paragraph', content: 'The platform incorporates cutting-edge educational psychology principles, making learning more engaging and effective. Features like adaptive learning paths, gamification elements, and real-time progress tracking have transformed how our students interact with course material.' },
+  //     { type: 'bulletPoints', content: [
+  //       'Interactive multimedia content with video, audio, and simulations',
+  //       'Personalized learning paths based on individual progress',
+  //       'Comprehensive analytics for instructors and administrators',
+  //       'Mobile-responsive design for learning on any device',
+  //       'Integration with existing academic management systems'
+  //     ]},
+  //     { type: 'paragraph', content: 'The team worked closely with our faculty to understand pedagogical requirements and student needs. Their collaborative approach ensured that the final product truly served our educational mission while being technically robust and user-friendly.' },
+  //     { type: 'quote', content: 'This platform has not just digitized our courses – it has enhanced the entire educational experience for both students and instructors.' }
+  //   ],
+  //   tags: ['Educational Technology', 'User Experience', 'Student Engagement', 'Learning Analytics']
+  // },
+  // {
+  //   id: '6',
+  //   name: 'David Wilson',
+  //   position: 'Operations Manager',
+  //   company: 'Industrial Solutions Corp',
+  //   industry: 'Manufacturing',
+  //   location: 'Detroit, MI',
+  //   avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
+  //   rating: 5,
+  //   date: '2024-07-02',
+  //   excerpt: 'Their industrial automation system increased our production efficiency by 45% while reducing waste and improving workplace safety.',
+  //   fullTestimonial: [
+  //     { type: 'paragraph', content: 'Manufacturing is all about precision, efficiency, and safety. This team delivered an automation solution that addressed all these concerns while exceeding our performance expectations.' },
+  //     { type: 'mixedText', content: [
+  //       { type: 'text', content: 'Production efficiency increased by ' },
+  //       { type: 'bold', content: '45%' },
+  //       { type: 'text', content: ', while reducing material waste by ' },
+  //       { type: 'bold', content: '30%' },
+  //       { type: 'text', content: ' and improving overall equipment effectiveness to ' },
+  //       { type: 'bold', content: '92%' },
+  //       { type: 'text', content: '.' }
+  //     ]},
+  //     { type: 'paragraph', content: 'The system they implemented integrates seamlessly with our existing machinery while adding intelligent monitoring and control capabilities. Real-time data analytics help us identify potential issues before they become problems, reducing downtime significantly.' },
+  //     { type: 'numberedList', content: [
+  //       'Automated quality control with machine vision systems',
+  //       'Predictive maintenance scheduling based on equipment data',
+  //       'Real-time production monitoring and reporting dashboards',
+  //       'Integration with supply chain management systems',
+  //       'Enhanced safety protocols with automated shutdown procedures'
+  //     ]},
+  //     { type: 'quote', content: 'The return on investment has been remarkable. The system paid for itself within eight months through efficiency gains and waste reduction.' }
+  //   ],
+  //   tags: ['Industrial Automation', 'Efficiency Optimization', 'Safety Systems', 'ROI']
+  // },
+  // {
+  //   id: '7',
+  //   name: 'Amanda Foster',
+  //   position: 'Retail Operations Director',
+  //   company: 'Fashion Forward Stores',
+  //   industry: 'Retail',
+  //   location: 'Los Angeles, CA',
+  //   avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face',
+  //   rating: 5,
+  //   date: '2024-06-25',
+  //   excerpt: 'The omnichannel retail solution transformed our customer experience and increased sales by 180% across all channels.',
+  //   fullTestimonial: [
+  //     { type: 'paragraph', content: 'Retail is evolving rapidly, and staying competitive requires innovative solutions that seamlessly integrate online and offline experiences. This team delivered exactly what we needed to thrive in today\'s market.' },
+  //     { type: 'highlight', content: 'Customer satisfaction scores reached an all-time high of 94%, while return rates dropped by 25%.' },
+  //     { type: 'bulletPoints', content: [
+  //       'Unified inventory management across all sales channels',
+  //       'Personalized shopping recommendations powered by AI',
+  //       'Seamless integration between online and in-store experiences',
+  //       'Advanced analytics for inventory optimization and trend prediction',
+  //       'Mobile app with augmented reality try-on features'
+  //     ]},
+  //     { type: 'paragraph', content: 'The solution has transformed how we understand and serve our customers. The integrated analytics provide insights we never had before, helping us make data-driven decisions about inventory, pricing, and customer experience improvements.' }
+  //   ],
+  //   tags: ['Omnichannel Retail', 'Customer Experience', 'Inventory Management', 'AI Integration']
+  // },
+  // {
+  //   id: '8',
+  //   name: 'James Miller',
+  //   position: 'Environmental Consultant',
+  //   company: 'Green Earth Solutions',
+  //   industry: 'Environmental',
+  //   location: 'Portland, OR',
+  //   avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face',
+  //   rating: 4,
+  //   date: '2024-06-20',
+  //   excerpt: 'Their environmental monitoring system has helped us track and reduce carbon emissions for our clients, resulting in significant cost savings and environmental impact.',
+  //   fullTestimonial: [
+  //     { type: 'paragraph', content: 'Environmental monitoring and compliance is becoming increasingly important for businesses across all industries. The system developed by this team has made it easier for our clients to track, measure, and reduce their environmental impact.' },
+  //     { type: 'paragraph', content: 'The real-time monitoring capabilities and comprehensive reporting features have streamlined our consulting process and provided our clients with actionable insights for sustainability improvements.' },
+  //     { type: 'quote', content: 'This system has transformed how we approach environmental consulting, making our services more effective and our clients more successful in their sustainability goals.' }
+  //   ],
+  //   tags: ['Environmental Monitoring', 'Sustainability', 'Compliance', 'Data Analytics']
+  // }
 ];
 
 // Get unique industries for filtering
