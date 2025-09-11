@@ -43,7 +43,7 @@ const Faqs = () => {
             <p className='text-[18px] mb-2'>Can’t find the answer you’re looking for? Please book an appointment with our team.</p>
             <p className='font-semibold'>This FAQs or booking a consult does not constitute legal advice or constitute an attorney-client/relationship.</p>
           </div>
-          <Link to="https://calendly.com/prometricspro/legal-consult">
+          <Link to="https://calendly.com/prometricspro/legal-consult" target='_blank'>
             <button className='forward-button bg-primary w-[150px] h-[42px] rounded-[8px] font-semibold text-white mt-4 md:mt-0 '>
               <span>Book Now</span>
             </button>
