@@ -6,6 +6,8 @@ import { Filter } from 'lucide-react';
 import { useMemo } from 'react';
 import { ChevronRight } from 'lucide-react';
 import { ChevronLeft } from 'lucide-react';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 // PayPal configuration
 // const PAYPAL_CLIENT_ID = "AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R"; 
@@ -376,122 +378,126 @@ const DownloadTemplate = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Premium Templates</h1>
-          <p className="text-gray-600">Professional templates for your application needs</p>
-        </div>
-        
-        {/* PayPal Status */}
-        <div className="mb-6">
-          {isLoading && (
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <div className="flex items-center justify-center">
-                <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-border mr-3"></div>
-                <span className="text-primary">Loading payment system...</span>
+    <div>
+      <Header/>
+      <div className="min-h-screen bg-gray-50 pb-[50px] mt-[130px]">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-2">Premium Templates</h1>
+            <p className="text-gray-600">Professional templates for your application needs</p>
+          </div>
+          
+          {/* PayPal Status */}
+          <div className="mb-6">
+            {isLoading && (
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div className="flex items-center justify-center">
+                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-border mr-3"></div>
+                  <span className="text-primary">Loading payment system...</span>
+                </div>
               </div>
-            </div>
-          )}
-          
-          {error && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <div className="flex items-center justify-between">
-                <span className="text-red-700">❌ {error}</span>
-                <button
-                  onClick={retry}
-                  className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors"
-                >
-                  Retry
-                </button>
+            )}
+            
+            {error && (
+              <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                <div className="flex items-center justify-between">
+                  <span className="text-red-700">❌ {error}</span>
+                  <button
+                    onClick={retry}
+                    className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors"
+                  >
+                    Retry
+                  </button>
+                </div>
               </div>
-            </div>
-          )}
+            )}
+            
+            {isLoaded && (
+              <div className="bg-tertiary border border-border rounded-lg p-4">
+                <span className="text-primary">Payment system ready</span>
+              </div>
+            )}
+          </div>
           
-          {isLoaded && (
-            <div className="bg-tertiary border border-border rounded-lg p-4">
-              <span className="text-primary">Payment system ready</span>
+          {/* Category Filter */}
+          <div className="mb-8">
+            <div className="flex items-center gap-2 mb-4">
+              <Filter className="w-5 h-5 text-gray-600" />
+              <span className="font-medium text-gray-700">Filter by Category:</span>
             </div>
-          )}
-        </div>
-        
-        {/* Category Filter */}
-        <div className="mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <Filter className="w-5 h-5 text-gray-600" />
-            <span className="font-medium text-gray-700">Filter by Category:</span>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {categories.map(category => (
-              <button
-                key={category}
-                onClick={() => handleCategoryChange(category)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                  selectedCategory === category
-                    ? 'bg-primary text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-        
-        <div className='mb-12'>
-          {/* Templates Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
-            {paginatedNews.map((template) => (
-              <TemplateCard key={template.id} template={template} />
-            ))}
-          </div>
-
-          {/* No Results Message */}
-          {paginatedNews.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-gray-500">No news found for the selected category.</p>
-            </div>
-          )}
-          
-          {/* Pagination */}
-          {totalPages > 1 && (
-            <div className="flex items-center justify-center gap-2">
-              <button
-                onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-                disabled={currentPage === 1}
-                className="p-2 rounded-lg border disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+            <div className="flex flex-wrap gap-2">
+              {categories.map(category => (
                 <button
-                  key={page}
-                  onClick={() => setCurrentPage(page)}
-                  className={`px-4 py-2 rounded-lg ${
-                    currentPage === page
+                  key={category}
+                  onClick={() => handleCategoryChange(category)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                    selectedCategory === category
                       ? 'bg-primary text-white'
-                      : 'border border-primary hover:bg-gray-50'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  {page}
+                  {category}
                 </button>
               ))}
-              
-              <button
-                onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-                disabled={currentPage === totalPages}
-                className="p-2 rounded-lg border border-primary disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
-              >
-                <ChevronRight className="w-5 h-5 text-primary" />
-              </button>
             </div>
-          )}
-        </div>
+          </div>
+          
+          <div className='mb-12'>
+            {/* Templates Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
+              {paginatedNews.map((template) => (
+                <TemplateCard key={template.id} template={template} />
+              ))}
+            </div>
 
-        {/* Payment History */}
-        <PaymentHistory />
+            {/* No Results Message */}
+            {paginatedNews.length === 0 && (
+              <div className="text-center py-12">
+                <p className="text-gray-500">No news found for the selected category.</p>
+              </div>
+            )}
+            
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="flex items-center justify-center gap-2">
+                <button
+                  onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                  disabled={currentPage === 1}
+                  className="p-2 rounded-lg border disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                  <button
+                    key={page}
+                    onClick={() => setCurrentPage(page)}
+                    className={`px-4 py-2 rounded-lg ${
+                      currentPage === page
+                        ? 'bg-primary text-white'
+                        : 'border border-primary hover:bg-gray-50'
+                    }`}
+                  >
+                    {page}
+                  </button>
+                ))}
+                
+                <button
+                  onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                  disabled={currentPage === totalPages}
+                  className="p-2 rounded-lg border border-primary disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+                >
+                  <ChevronRight className="w-5 h-5 text-primary" />
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Payment History */}
+          <PaymentHistory />
+        </div>
       </div>
+      <Footer/>
     </div>
   );
 };

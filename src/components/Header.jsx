@@ -67,9 +67,9 @@ const  Header = () =>{
       <nav className='hidden md:flex'>
         <ul className="flex items-center gap-6 text-[#15110D] font-medium">
           <li className="hover:text-primary"><NavLink to="/">Home</NavLink></li>
-          <li className='hover:text-primary'><NavLink to="/about-us">About us</NavLink></li>
+          <li className='hover:text-primary whitespace-nowrap'><NavLink to="/about-us">About us</NavLink></li>
           <li className='dropdown py-8'>
-            <button  className="flex">Practice Areas <ChevronDown /></button>
+            <button  className="flex whitespace-nowrap">Practice Areas <ChevronDown /></button>
             <div className="hidden absolute top-[92px] left-0 w-full z-10">
             {/* <div className={display ? "absolute top-[110px] left-0 w-full z-10" : "hidden absolute top-[110px] left-0 w-full z-10"}> */}
               <div className='flex justify-around items-center gap-24 p-8 bg-[#faf6f3] rounded-[40px] mx-[5%]'>
@@ -104,19 +104,14 @@ const  Header = () =>{
               </div>
             </div>
           </li>
+          <li className='hover:text-primary'><NavLink to="/get-template">Templates</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/faqs">FAQS</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/gallery">Gallery</NavLink></li>
         </ul>
       </nav>
-      {/* <Link to="/template" className='hidden md:flex justify-center items-center'> 
-        <button className='full-rounded contained-button text-base w-[218px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-5'>
-          <span>Get Template</span>
-          <div className="outside-border full-rounded"></div>
-        </button>
-      </Link> */}
       <Link to="/contact" className='hidden md:flex justify-center items-center'> 
-        <button className='full-rounded contained-button text-base w-[218px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-5'>
+        <button className='full-rounded contained-button text-base w-[200px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-5'>
           <span>Get in touch</span>
           <div className="outside-border full-rounded"></div>
         </button>
