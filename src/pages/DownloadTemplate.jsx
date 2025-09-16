@@ -380,7 +380,7 @@ const DownloadTemplate = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Premium Templates</h1>
-          <p className="text-gray-600">Professional templates for your Application needs needs</p>
+          <p className="text-gray-600">Professional templates for your application needs</p>
         </div>
         
         {/* PayPal Status */}

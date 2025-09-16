@@ -50,7 +50,7 @@ export const templates = [
     description: 'Sample EB-1A petition brief highlighting agricultural technology.'
   },
 
-  // Recommendation Letters
+  // Recommendation Letters ********************************************************************************
   {
     id: 'REC-001',
     name: 'Construction Law Recommendation letters Template',
@@ -157,7 +157,7 @@ export const templates = [
     description: 'Templates for recommendation letters in tax compliance.'
   },
 
-  // EB2-NIW Templates
+  // EB2-NIW Templates ***************************************************************************************
   {
     id: 'NIW-001',
     name: 'EB-2 NIW Petition Template Supply Chain Logistics Engineering',
@@ -215,7 +215,7 @@ export const templates = [
     description: 'EB2-NIW RFE response template focusing on law cases.'
   },
 
-  // Others
+  // Others *************************************************************************************************
   {
     id: 'OTH-001',
     name: 'Cover Letter for I-485 Derivative Applicant',
@@ -233,14 +233,14 @@ export const templates = [
   {
     id: 'OTH-003',
     name: 'Template Statement of Intent for I-485 (version 1)',
-    category: 'Introduction Letters Templates',
+    category: 'Others',
     price: 10,
     description: 'Statement of intent template for I-485 applications, version 1.'
   },
   {
     id: 'OTH-004',
     name: 'Template Statement of Intent for I-485 (version 2)',
-    category: 'Introduction Letters Templates',
+    category: 'Others',
     price: 10,
     description: 'Updated statement of intent template for I-485 applications, version 2.'
   },
