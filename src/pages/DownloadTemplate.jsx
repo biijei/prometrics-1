@@ -1,42 +1,11 @@
 import { X } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { toast } from 'react-toastify';
-
-const TEMPLATE_FILES = {
-  engineering: {
-    name: 'Engineering Template.pdf',
-    url: 'https://docs.google.com/document/d/16pphnCTQUebUAl_66QNE-gIMRDpxbgEH/export?format=pdf'
-  },
-  technology: {
-    name: 'Technology Template.pdf',
-    url: 'https://drive.google.com/uc?export=download&id=YOUR_TECH_DRIVE_FILE_ID'
-  },
-  accounting: {
-    name: 'Accounting Template.pdf',
-    url: 'https://drive.google.com/uc?export=download&id=YOUR_ACCOUNTING_DRIVE_FILE_ID'
-  }
-};
-
-const templates = [
-  {
-    id: 'engineering',
-    industry: 'Engineering',
-    price: 10,
-    description: 'Professional engineering templates for your projects'
-  },
-  {
-    id: 'technology',
-    industry: 'Technology',
-    price: 10,
-    description: 'Modern technology templates and documentation'
-  },
-  {
-    id: 'accounting',
-    industry: 'Accounting',
-    price: 10,
-    description: 'Comprehensive accounting templates and forms'
-  }
-];
+import { TEMPLATE_FILES, templates } from '../components/DownloadTemplate/DownloadTemplateData';
+import { Filter } from 'lucide-react';
+import { useMemo } from 'react';
+import { ChevronRight } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 
 // PayPal configuration
 // const PAYPAL_CLIENT_ID = "AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R"; 
@@ -235,14 +204,17 @@ const TemplateCard = ({ template }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 p-6">
-      <div className="flex items-center mb-4">
-        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-          <span className="text-blue-600 text-xl">📄</span>
+    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-border p-6">
+      <div className="flex items-center gap-2 mb-4">
+        <div className="w-12 h-12 bg-tertiary rounded-full flex items-center justify-center">
+          <span className="text-primary text-xl">📄</span>
         </div>
+        <h3 className="text-l font-semibold leading-tight">{template.name}</h3>
       </div>
       
-      <h3 className="text-xl font-semibold mb-2 text-gray-800">{template.industry}</h3>
+      <p className="w-fit bg-primary text-white px-2 py-1 rounded-full text-xs font-medium mb-1">
+        {template.category}
+      </p>
       <p className="text-gray-600 mb-4">{template.description}</p>
       
       <div className="border-t pt-4">
@@ -344,11 +316,11 @@ const PaymentHistory = () => {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200">
-      <div className="p-4 border-b">
+    <div className="bg-white rounded-lg shadow-sm border border-border">
+      <div className="p-4 border-b border-border">
         <h3 className="text-lg font-semibold">Purchase History</h3>
       </div>
-      <div className="divide-y divide-gray-200">
+      <div className="divide-y divide-border">
         {payments.map((payment, index) => (
           <div key={index} className="p-4 hover:bg-gray-50 transition-colors">
             <div className="flex justify-between items-start">
@@ -375,7 +347,33 @@ const PaymentHistory = () => {
 };
 
 const DownloadTemplate = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [selectedCategory, setSelectedCategory] = useState('All');
   const { isLoaded, isLoading, error, retry } = usePayPalSDK();
+  const itemsPerPage = 21;
+
+  // Get unique categories
+   const getCategories = () => {const categories = [...new Set(templates.map(news => news.category))];
+    return ['All', ...categories];
+  };
+  
+  const categories = getCategories()
+
+  const filteredTemplates = useMemo(() => {
+      if (selectedCategory === 'All') return templates;
+      return templates.filter(template => template.category === selectedCategory);
+    }, [selectedCategory]);
+
+    const paginatedNews = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    return filteredTemplates.slice(startIndex, startIndex + itemsPerPage);
+  }, [filteredTemplates, currentPage]);
+  
+  const totalPages = Math.ceil(filteredTemplates.length / itemsPerPage);
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
@@ -417,13 +415,80 @@ const DownloadTemplate = () => {
           )}
         </div>
         
-        {/* Templates Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {templates.map((template) => (
-            <TemplateCard key={template.id} template={template} />
-          ))}
+        {/* Category Filter */}
+        <div className="mb-8">
+          <div className="flex items-center gap-2 mb-4">
+            <Filter className="w-5 h-5 text-gray-600" />
+            <span className="font-medium text-gray-700">Filter by Category:</span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {categories.map(category => (
+              <button
+                key={category}
+                onClick={() => handleCategoryChange(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  selectedCategory === category
+                    ? 'bg-primary text-white'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
         </div>
         
+        <div className='mb-12'>
+          {/* Templates Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
+            {paginatedNews.map((template) => (
+              <TemplateCard key={template.id} template={template} />
+            ))}
+          </div>
+
+          {/* No Results Message */}
+          {paginatedNews.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-gray-500">No news found for the selected category.</p>
+            </div>
+          )}
+          
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-2">
+              <button
+                onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                disabled={currentPage === 1}
+                className="p-2 rounded-lg border disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                <button
+                  key={page}
+                  onClick={() => setCurrentPage(page)}
+                  className={`px-4 py-2 rounded-lg ${
+                    currentPage === page
+                      ? 'bg-primary text-white'
+                      : 'border border-primary hover:bg-gray-50'
+                  }`}
+                >
+                  {page}
+                </button>
+              ))}
+              
+              <button
+                onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                disabled={currentPage === totalPages}
+                className="p-2 rounded-lg border border-primary disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+              >
+                <ChevronRight className="w-5 h-5 text-primary" />
+              </button>
+            </div>
+          )}
+        </div>
+
         {/* Payment History */}
         <PaymentHistory />
       </div>

@@ -1,10 +1,11 @@
 import { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight, ChevronLeft, Filter } from "lucide-react";
-import NewsCard from "../components/News/NewsCard";
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { getPublicNews } from "../util/getPublicNews";
+import NewsCard from "../components/news/NewsCard";
 
 const NewsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
