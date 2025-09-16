@@ -23,7 +23,7 @@ const Faqs = () => {
           </div>
           <div className='flex flex-col md:flex-row items-center md:items-start justify-center flex-wrap gap-x-7 gap-y-8 mb-8'>
             {faqs.map(({question, answer, link, key}) => (
-              <div key={key} className='w-[300px] lg:w-[350px] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-border p-6'>
+              <div key={key} className='w-[300px] lg:w-[385px] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-border p-6'>
                 <h4 className='font-semibold mb-4'>{question}</h4>
                 <p className='text-[14px] text-justify'>{answer}</p>
                 <Link 

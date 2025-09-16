@@ -1,5 +1,6 @@
 // TestimonialCard.js
 import { Star, MapPin, Building, User, ArrowRight } from 'lucide-react';
+import { getInitials } from '../../util/getInitials';
 
 const TestimonialCard = ({ testimonial, onClick }) => {
   const renderStars = (rating) => {
@@ -20,11 +21,16 @@ const TestimonialCard = ({ testimonial, onClick }) => {
       <div className="p-6">
         {/* Header with Avatar and Basic Info */}
         <div className="flex items-start gap-4 mb-4">
-          <img
-            src={testimonial.avatar}
-            alt={testimonial.name}
-            className="w-16 h-16 rounded-full object-cover border-2 border-border"
-          />
+          {testimonial.avatar ? (
+              <img
+                src={testimonial.avatar}
+                alt={testimonial.name}
+                className="w-16 h-16 rounded-full object-cover border-2 border-border"
+              />) : (
+            <div className="w-16 h-16 bg-tertiary text-2xl text-primary border border-primary rounded-full flex items-center justify-center uppercase font-semibold">
+              {getInitials(`${testimonial.name}`)}
+            </div>
+          )}
           <div className="flex-1 min-w-0">
             <h3 className="text-lg font-bold text-gray-900 truncate">
               {testimonial.name}

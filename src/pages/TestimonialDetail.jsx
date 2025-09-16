@@ -3,6 +3,7 @@ import { ChevronLeft, Star, MapPin, Building, User, Calendar, Quote, Tag } from 
 import { useNavigate, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { getInitials } from '../util/getInitials';
 
 const TestimonialDetailPage = () => {
   const navigate = useNavigate();
@@ -160,11 +161,16 @@ const TestimonialDetailPage = () => {
             <div className="flex flex-col lg:flex-row gap-6">
               {/* Avatar and Basic Info */}
               <div className="flex flex-col sm:flex-row items-start gap-6">
-                <img
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  className="w-24 h-24 rounded-full object-cover border-4 border-border shadow-md"
-                />
+                {testimonial.avatar ? (
+                  <img
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    className="w-24 h-24 rounded-full object-cover border-4 border-border shadow-md"
+                  />) : (
+                  <div className="w-16 h-16 bg-tertiary text-2xl text-primary border border-primary rounded-full flex items-center justify-center uppercase font-semibold">
+                    {getInitials(`${testimonial.name}`)}
+                  </div>
+                )}
                 <div className="flex-1 min-w-0">
                   <h1 className="text-3xl font-bold text-gray-900 mb-2">
                     {testimonial.name}
@@ -260,11 +266,16 @@ const TestimonialDetailPage = () => {
           <footer className="bg-white rounded-lg shadow-lg p-8">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-4">
-                <img
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover border-2 border-border"
-                />
+                {testimonial.avatar ? (
+                  <img
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover border-2 border-border"
+                  />) : (
+                  <div className="w-16 h-16 bg-tertiary text-2xl text-primary border border-primary rounded-full flex items-center justify-center uppercase font-semibold">
+                    {getInitials(`${testimonial.name}`)}
+                  </div>
+                )}
                 <div>
                   <p className="font-bold text-gray-900 text-lg">{testimonial.name}</p>
                   <p className="text-gray-600">{testimonial.position}</p>

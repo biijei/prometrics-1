@@ -7,7 +7,7 @@ export const testimonialData = [
     company: 'TechCorp Solutions',
     industry: 'Technology',
     location: 'San Francisco, CA',
-    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b2e5ad76?w=150&h=150&fit=crop&crop=face',
+    avatar: '',
     rating: 5,
     date: '2024-08-05',
     excerpt: 'Fola has great experience in this field, which is based on our personal engagement, in addition to feedback I have received from others who have engaged Fola. Without mincing words, I recommend Fola for any immigration inquiries you are curious about.',
@@ -24,7 +24,6 @@ export const testimonialData = [
       { type: 'paragraph', content: 'The project was completed ahead of schedule and under budget, which is rare in the tech industry. Their communication throughout the process was exemplary – we always knew exactly where things stood and what to expect next.' },
       { type: 'highlight', content: 'I would recommend this team to any organization looking for top-tier technical solutions and exceptional service.' }
     ],
-    tags: ['Innovation', 'Technical Excellence', 'Project Management', 'Digital Transformation']
   },
   {
     id: '2',
@@ -33,7 +32,7 @@ export const testimonialData = [
     company: 'Global Brands Inc.',
     industry: 'Marketing',
     location: 'New York, NY',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    avatar: '',
     rating: 5,
     date: '2024-07-28',
     excerpt: 'Fola`s level of professionalism in reviewing my CV was topnotch and the way she interpreted my roles and was able to communicate same in my CV was very brillant.Thank you Fola',
@@ -59,7 +58,6 @@ export const testimonialData = [
       { type: 'quote', content: 'Their ability to understand our brand voice and translate it into effective marketing campaigns was remarkable. They became an extension of our internal team.' },
       { type: 'paragraph', content: 'The team was always proactive in their communication and quick to adapt strategies based on performance data. Their flexibility and responsiveness made them a pleasure to work with, even when we had tight deadlines or changing requirements.' }
     ],
-    tags: ['Brand Development', 'Digital Marketing', 'Analytics', 'ROI Growth']
   },
   {
     id: '3',
@@ -68,7 +66,7 @@ export const testimonialData = [
     company: 'Metropolitan Medical Center',
     industry: 'Healthcare',
     location: 'Chicago, IL',
-    avatar: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face',
+    avatar: '',
     rating: 5,
     date: '2024-07-20',
     excerpt: 'It was amazing! Fola was super helpful in assisting me negotiate legal settlements. Her guidance and counsel enabled me make better informed decisions.',
@@ -86,7 +84,6 @@ export const testimonialData = [
       { type: 'paragraph', content: 'What sets this team apart is their deep understanding of healthcare workflows and regulations. They didn\'t just build software – they created a solution that addressed the unique challenges of medical practice while ensuring full compliance with HIPAA and other healthcare regulations.' },
       { type: 'quote', content: 'The system has become indispensable to our daily operations. I cannot imagine running our hospital without it.' }
     ],
-    tags: ['Healthcare Innovation', 'System Integration', 'Compliance', 'Efficiency']
   },
   {
     id: '4',
@@ -95,7 +92,7 @@ export const testimonialData = [
     company: 'Elite Financial Group',
     industry: 'Finance',
     location: 'London, UK',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+    avatar: '',
     rating: 4,
     date: '2024-07-15',
     excerpt: 'Fola`s career development coaching services are impeccable. She hand-held me as I transitioned from being a HND polytechnic graduate in Nigeria to an MBA graduate student in USA with a graduate assistantship offer. She was accessible and pleasant to work it, providing me with career, legal, and immigration advice. With her help, I secured the MBA admission, US F1 student visa and a graduate assistantship. Till now, she remains accessible in coaching me. I recommend Fola for expert services.',
@@ -120,7 +117,170 @@ export const testimonialData = [
       ]},
       { type: 'quote', content: 'The level of customization and attention to detail in this platform is remarkable. It feels like it was built specifically for our unique needs.' }
     ],
-    tags: ['Financial Analytics', 'Risk Management', 'Data Processing', 'Compliance']
+  },
+  {
+    id: '5',
+    name: 'Akinjide Akinnuga',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 4,
+    date: '2024-01-15',
+    excerpt: 'Dr Fola competently handled my EB1 and I-485 applications after my initial attempt was denied. Her knowledge and commitment made the difference.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Dr Fola is a competent lawyer with knowledge of solving complex immigration matters. I initially applied for EB1 on my own and it was denied. As a result, a friend recommended Dr Fola and she advised that I should apply for the EB1 with I-485 concurrently with my family inclusive. The EB1 and I-485 applications were approved through the involvement of a knowledgeable and committed lawyer, Dr Fola. I am grateful for the job well done, clear communications and cheap services rendered by Prometrics Legal Hub.' }
+    ]
+  },
+  {
+    id: '6',
+    name: 'Francisca Udegbe',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2024-03-22',
+    excerpt: 'Working with Dr. Fola was a great experience. Her thoughtful approach and responsiveness made the process seamless and successful.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Working with Dr. Fola was a great experience. I’m very pleased that she was the attorney handling my case. At the beginning, I wasn’t familiar with how the process works or what to expect, but she took the time to explain everything clearly. Her thoughtful approach and attention to detail really made a difference and contributed to the positive outcome.' },
+      { type: 'paragraph', content: 'I also appreciate how responsive she was to my questions via email and messages, even with her busy schedule. Her support and guidance helped me stay focused and at ease throughout the process. With her help, and by God’s grace, I was able to achieve the result we were working toward. I couldn\'t be happier with the outcome!' }
+    ]
+  },
+  {
+    id: '7',
+    name: 'Adedolapo Adejugbe',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2024-05-09',
+    excerpt: 'Dr. Fola Odion is a passionate and meticulous advocate. Her unmatched petition writing and dedication transformed my immigration journey.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'From the very beginning of my immigration journey, Prometrics Legal Hub LLC, under the exceptional leadership of Dr. Fola Odion, has been nothing short of outstanding. Dr. Odion is not just an attorney—she is a passionate, meticulous, and extraordinarily gifted advocate who approaches every case with unwavering dedication and care.' },
+      { type: 'paragraph', content: 'Throughout the entire process, Dr. Odion demonstrated a level of thoroughness and precision that instilled confidence in me at every turn. Her ability to navigate the complexities of immigration law with clarity and ease is truly remarkable. Even in moments when fear and doubt crept in, she was a steady and reassuring guide—always professional, always present, and always prepared.' },
+      { type: 'paragraph', content: 'What sets Dr. Odion apart is not only her legal acumen but her unmatched talent in petition writing. Watching her craft a petition is like witnessing a master artist at work. Her ability to take your experiences, qualifications, and life’s journey—no matter how scattered they may seem—and weave them into a compelling, cohesive, and powerful narrative is awe-inspiring. She has a way of highlighting your strengths and telling your story in a way that even you didn’t realize was possible.' },
+      { type: 'paragraph', content: 'There were times when I questioned whether I had what it took to pursue and achieve the American dream, but Dr. Odion never wavered. She saw potential where I saw uncertainty, and her skillful, almost poetic approach to assembling my case reminded me that I was far more than I gave myself credit for. At the end of the process, I was left astounded—grateful, empowered, and deeply moved by how everything fit together so perfectly.' },
+      { type: 'paragraph', content: 'I wholeheartedly and unequivocally recommend Dr. Fola Odion and Prometrics Legal Hub LLC. If you are looking for a legal team that brings unmatched dedication, sharp expertise, and a genuine, human approach to their work, look no further. You will be in the best of hands. If you want someone who will walk the journey with you, carry the load when it gets heavy, and advocate for you with passion and excellence, Dr. Fola Odion is that person.' }
+    ]
+  },
+  {
+    id: '8',
+    name: 'Alex Olanrewaju Adekanmbi',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 4,
+    date: '2024-07-18',
+    excerpt: 'Dr. Fola’s deep knowledge, flexibility, and support led to my EB1 approval. She prioritized trust over money and guided me every step.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'I was introduced to the EB2/NIW Group 9 Forum by my friend, Aderemi Ziggy, and was immediately impressed by Dr. Fola’s active engagement and insightful responses. Her passion and deep knowledge stood out, so I reached out and booked a one-on-one consultation.' },
+      { type: 'paragraph', content: 'Although my initial goal was an EB2 petition, Dr. Fola reviewed my credentials and confidently advised we pursue the more prestigious and faster EB1 route. She was transparent about the work required but encouraged me to trust the process. What amazed me was her flexibility—she allowed a personalized payment plan and never pressured me, even when I faced delays. She prioritized trust over money, and in fact, covered certain expenses herself just to keep things moving.' },
+      { type: 'paragraph', content: 'Throughout the petition process, Dr. Fola kept me fully involved, revised drafts with care, and gave spiritual support, reminding me to "back it with prayers." When an RFE came, she handled it calmly and with expertise. Eventually, I received the golden call—"Congratulations, you’ve been approved!"' },
+      { type: 'paragraph', content: 'I’m grateful for her guidance and commitment. I’ve referred others already and will continue to do so. Thank you, Dr. Fola. Wishing you more wins and greater heights. God bless you' }
+    ]
+  },
+  {
+    id: '9',
+    name: 'Victoria Idehai',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2024-02-28',
+    excerpt: 'Dr. Fola is a highly knowledgeable and skilled expert who combines professionalism with empathy. She made the entire process seamless.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Dr. Fola is a highly knowledgeable and skilled expert in her field. She combines professionalism with genuine empathy, making the entire experience seamless. It was a pleasure working with her, and I would confidently recommend her to friends and family.' }
+    ]
+  },
+  {
+    id: '10',
+    name: 'Adebunmi Adewusi',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2024-04-12',
+    excerpt: 'Working with Dr. Fola and her team was one of the best choices I made. Their precision and care made my Green Card journey smooth.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Working with Dr. Fola Odion and her team at Prometrics Legal Hub was one of the best choices I made during my immigration journey. From our very first conversation, Dr. Fola was warm, patient, and incredibly professional. She broke everything down clearly and guided me through the EB-1A process with so much care and attention.' },
+      { type: 'paragraph', content: 'What I thought would be overwhelming turned out to be calm and smooth. Every time I had a question, she made time to answer it. Every step, every document, every detail was handled with precision. I filed in mid-January and by early May, my Green Card was approved.' },
+      { type: 'paragraph', content: 'Because of their support, I didn’t have to stress. I could focus on my studies knowing my future was in safe hands. This wasn’t just legal help, it was a team walking with me through one of the biggest moments of my life.' },
+      { type: 'paragraph', content: 'If you need people who truly know what they’re doing and genuinely care about your journey, I can’t recommend Prometrics Legal Hub enough. They helped make my dream a reality.' }
+    ]
+  },
+  {
+    id: '11',
+    name: 'Olakunle Abimbola Kumuyi',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 3,
+    date: '2024-06-05',
+    excerpt: 'Her competence outshines any small hiccups. Her skills and attention to detail made the experience outstanding.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Her competence outshines any small hiccups. Her skills and attention to details made the experience outstanding, making her expertise overcomes all else.' }
+    ]
+  },
+  {
+    id: '12',
+    name: 'Blessing Olatoyan',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 4,
+    date: '2024-08-14',
+    excerpt: 'Fola responded promptly and professionally, giving me confidence to proceed. My case was successfully approved on time.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Fola came highly recommended by a member of my church community. When I contacted her, she responded promptly and professionally—an immediate contrast to the other attorney I had been communicating with at the time. Her responsiveness and attentiveness gave me the confidence to proceed with her. She efficiently filed my petition, and through the expedited process, my case was successfully approved on time. I’m truly grateful for Fola’s support and expertise.' }
+    ]
+  },
+  {
+    id: '13',
+    name: 'Joshua Alahira',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2024-09-03',
+    excerpt: 'Dr. Fola expertly guided me through EB-1 and EB-2 petitions with patience and clarity. Her dedication gave me confidence throughout.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'I highly recommend Dr. Fola Odion for any immigration-related legal needs! Dr. Odion expertly guided me through the complex process of filing both EB-1 and EB-2 petitions. Her patience and ability to explain intricate details in a clear, concise manner made all the difference.' },
+      { type: 'paragraph', content: 'Dr. Odion took the time to thoroughly discuss my options, ensuring I understood the pros and cons of each path. Her attention to detail and thoroughness made the entire process seamless and easy to navigate.' },
+      { type: 'paragraph', content: 'Thanks to Dr. Odion\'s expertise and dedication, I felt confident and supported throughout the petition process. Her exceptional service and commitment to excellence are truly appreciated!' },
+      { type: 'paragraph', content: 'If you\'re seeking a knowledgeable, compassionate, and detail-oriented immigration attorney, look no further than Dr. Fola Odion. I\'m grateful for her assistance and highly recommend her to anyone in need of top-notch immigration legal services.' }
+    ]
+  },
+  {
+    id: '14',
+    name: 'Emmah Muema',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 4,
+    date: '2024-10-21',
+    excerpt: 'Her professionalism and support were invaluable in guiding me through immigration matters. Truly grateful for her assistance.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Her professionalism and support were invaluable in guiding me through immigration matters. Truly grateful for her assistance.' }
+    ]
   },
   // {
   //   id: '5',

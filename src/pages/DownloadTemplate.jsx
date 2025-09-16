@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { X } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
 import { toast } from 'react-toastify';
 
 const TEMPLATE_FILES = {
@@ -279,9 +280,28 @@ const TemplateCard = ({ template }) => {
         )}
         
         {showPayPal && (
-          <div className="mt-4 border-t pt-4">
-            <p className="text-sm text-gray-600 mb-3">Complete your payment:</p>
-            <div ref={paypalRef} className="paypal-button-container"></div>
+          <div className="fixed inset-0 z-50 animate-jump bg-[#3a3a3a]/30 bg-opacity-50 flex justify-center items-center p-4 sm:p-6">
+            <div className="relative w-fit max-w-[735px] max-h-[90vh] sm:max-h-[95vh] flex flex-col">
+              {/* Close Button - Always visible and accessible */}
+              <button
+                onClick={() => {
+                  setShowPayPal(!showPayPal);
+                }}
+                className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 z-10 bg-white h-8 w-8 sm:h-10 sm:w-10 text-gray-500 hover:text-gray-700 cursor-pointer justify-center items-center flex rounded-full shadow-lg border border-border"
+              >
+                <X size={16} className="sm:w-5 sm:h-5" />
+              </button>
+
+              {/* Modal Content - Scrollable */}
+              <div className="bg-[#ffffff] rounded-[16px] overflow-hidden flex flex-col items-center justify-between w-[300px] md:w-[400px] h-full">
+                <div className="flex-1 overflow-y-auto no-scrollbar px-4 sm:px-10 py-4 sm:py-6 lg:py-8">
+                  <div className="">
+                    <p className="text-lg font-semi bold text-secondary mb-3">Complete your payment:</p>
+                    <div ref={paypalRef} className="paypal-button-container"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         )}
       </div>
