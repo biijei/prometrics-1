@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import ceo from '../assets/images/ceo.png'
 import aboutCeo from '../assets/images/about-ceo.png'
 import practicingCeo from '../assets/images/practicing-ceo.png'
+import practicingCeo1 from '../assets/images/ceo-profile.png'
 import { MoveRight } from 'lucide-react'
 import facebook from '../assets/icons/facebook.svg'
 import twitter from '../assets/icons/twitter.svg'
@@ -147,7 +148,7 @@ const Home = () => {
             </div>
           </div>
           <div className='md:h-[435px]'>
-            <img src={practicingCeo} alt="Practing CEO of Promrtrics" className='relative md:top-[-100px]' />
+            <img src={practicingCeo1} alt="Practing CEO of Promrtrics" className='relative md:top-[-100px]' />
           </div>
         </div>
 
