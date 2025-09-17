@@ -66,7 +66,7 @@ const  Header = () =>{
       
       {/* Desktop Menu */}
       <nav className='hidden md:flex'>
-        <ul className="flex items-center gap-6 text-[#15110D] font-medium">
+        <ul className="flex items-center gap-4 text-sm text-[#15110D] font-medium">
           <li className="hover:text-primary"><NavLink to="/">Home</NavLink></li>
           <li className='hover:text-primary whitespace-nowrap'><NavLink to="/about-us">About us</NavLink></li>
           <li className='dropdown py-8'>
