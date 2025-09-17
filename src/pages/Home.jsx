@@ -44,10 +44,14 @@ const Home = () => {
                 </a>
               </button>
             </div>
-            <div>
-              <div className='text-[#555758] flex items-center gap-x-2 mt-4 mb-8'>
-                <span className='text-base font-semibold'>+1000</span> 
-                <span className='text-[13px] font-medium'> Satisfied clients</span>
+            <div className='flex items-center gap-4 mt-4'>
+              <div className='text-[#555758] flex items-center gap-x-1'>
+                <span className='text-xl font-semibold'>1,000+</span> 
+                <span className='text-base font-medium'> Satisfied Clients</span>
+              </div>
+              <div className='text-[#555758] flex items-center gap-x-1'>
+                <span className='text-xl font-semibold'>10+</span> 
+                <span className='text-base font-medium'> Industries Served</span>
               </div>
             </div>
           </div>

@@ -9,9 +9,9 @@ import Footer from '../components/Footer';
 
 const TestimonialPage = () => {
   const [selectedIndustry, setSelectedIndustry] = useState('All');
-  const [visibleCount, setVisibleCount] = useState(6); // Initial load count
+  const [visibleCount, setVisibleCount] = useState(9); // Initial load count
   const navigate = useNavigate();
-  const loadMoreCount = 3; // How many to load each time
+  const loadMoreCount = 6; // How many to load each time
 
   const industries = getIndustries();
 
@@ -76,7 +76,7 @@ const TestimonialPage = () => {
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
               <Users className="w-8 h-8 text-[#2A6EDB] mx-auto mb-3" />
               <div className="text-3xl font-bold text-gray-900 mb-1">{stats.total}</div>
-              <div className="text-gray-600">Happy Clients</div>
+              <div className="text-gray-600">Voices From Our Clients</div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
               <TrendingUp className="w-8 h-8 text-[#F7966B] mx-auto mb-3" />
@@ -86,7 +86,7 @@ const TestimonialPage = () => {
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
               <Filter className="w-8 h-8 text-[#00B2FF] mx-auto mb-3" />
               <div className="text-3xl font-bold text-gray-900 mb-1">{stats.industries}</div>
-              <div className="text-gray-600">Industries Served</div>
+              <div className="text-gray-600">Industries Represented</div>
             </div>
           </div>
 
