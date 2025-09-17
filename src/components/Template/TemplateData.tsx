@@ -50,6 +50,64 @@ export const templates = [
     description: 'Sample EB-1A petition brief highlighting agricultural technology.'
   },
 
+  // EB2-NIW Templates ***************************************************************************************
+  {
+    id: 'NIW-001',
+    name: 'EB-2 NIW Petition Template Supply Chain Logistics Engineering',
+    category: 'EB2-NIW Templates',
+    price: 1000,
+    description: 'Petition template for EB2-NIW in supply chain logistics engineering.'
+  },
+  {
+    id: 'NIW-002',
+    name: 'EB2-NIW Petition Brief (Fraud Detection, Statistics)',
+    category: 'EB2-NIW Templates',
+    price: 1000,
+    description: 'EB2-NIW petition brief template for fraud detection and statistics.'
+  },
+  {
+    id: 'NIW-003',
+    name: 'EB2-NIW Petition Brief (Geography GIS Template)',
+    category: 'EB2-NIW Templates',
+    price: 1000,
+    description: 'EB2-NIW petition brief template with a focus on GIS and geography.'
+  },
+  {
+    id: 'NIW-004',
+    name: 'EB2-NIW Petition Brief Template (Accounting Tax Compliance)',
+    category: 'EB2-NIW Templates',
+    price: 1000,
+    description: 'Petition brief template for accounting and tax compliance.'
+  },
+  {
+    id: 'NIW-005',
+    name: 'EB2-NIW Petition Brief Template (Chemistry)',
+    category: 'EB2-NIW Templates',
+    price: 1000,
+    description: 'Petition brief template for EB2-NIW chemistry cases.'
+  },
+  {
+    id: 'NIW-006',
+    name: 'EB2-NIW Petition Template (Biotechnology)',
+    category: 'EB2-NIW Templates',
+    price: 1000,
+    description: 'Petition template for EB2-NIW biotechnology applications.'
+  },
+  {
+    id: 'NIW-007',
+    name: 'EB2-NIW Template (IT)',
+    category: 'EB2-NIW Templates',
+    price: 1000,
+    description: 'EB2-NIW petition template for information technology cases.'
+  },
+  {
+    id: 'NIW-008',
+    name: 'EB2-NIW RFE Response Template (Law)',
+    category: 'EB2-NIW Templates',
+    price: 1000,
+    description: 'EB2-NIW RFE response template focusing on law cases.'
+  },
+
   // Recommendation Letters ********************************************************************************
   {
     id: 'REC-001',
@@ -156,65 +214,7 @@ export const templates = [
     price: 1000,
     description: 'Templates for recommendation letters in tax compliance.'
   },
-
-  // EB2-NIW Templates ***************************************************************************************
-  {
-    id: 'NIW-001',
-    name: 'EB-2 NIW Petition Template Supply Chain Logistics Engineering',
-    category: 'EB2-NIW Templates',
-    price: 1000,
-    description: 'Petition template for EB2-NIW in supply chain logistics engineering.'
-  },
-  {
-    id: 'NIW-002',
-    name: 'EB2-NIW Petition Brief (Fraud Detection, Statistics)',
-    category: 'EB2-NIW Templates',
-    price: 1000,
-    description: 'EB2-NIW petition brief template for fraud detection and statistics.'
-  },
-  {
-    id: 'NIW-003',
-    name: 'EB2-NIW Petition Brief (Geography GIS Template)',
-    category: 'EB2-NIW Templates',
-    price: 1000,
-    description: 'EB2-NIW petition brief template with a focus on GIS and geography.'
-  },
-  {
-    id: 'NIW-004',
-    name: 'EB2-NIW Petition Brief Template (Accounting Tax Compliance)',
-    category: 'EB2-NIW Templates',
-    price: 1000,
-    description: 'Petition brief template for accounting and tax compliance.'
-  },
-  {
-    id: 'NIW-005',
-    name: 'EB2-NIW Petition Brief Template (Chemistry)',
-    category: 'EB2-NIW Templates',
-    price: 1000,
-    description: 'Petition brief template for EB2-NIW chemistry cases.'
-  },
-  {
-    id: 'NIW-006',
-    name: 'EB2-NIW Petition Template (Biotechnology)',
-    category: 'EB2-NIW Templates',
-    price: 1000,
-    description: 'Petition template for EB2-NIW biotechnology applications.'
-  },
-  {
-    id: 'NIW-007',
-    name: 'EB2-NIW Template (IT)',
-    category: 'EB2-NIW Templates',
-    price: 1000,
-    description: 'EB2-NIW petition template for information technology cases.'
-  },
-  {
-    id: 'NIW-008',
-    name: 'EB2-NIW RFE Response Template (Law)',
-    category: 'EB2-NIW Templates',
-    price: 1000,
-    description: 'EB2-NIW RFE response template focusing on law cases.'
-  },
-
+  
   // Others *************************************************************************************************
   {
     id: 'OTH-001',
@@ -257,7 +257,7 @@ export const templates = [
     category: 'Others',
     price: 1000,
     description: 'Cover letter template for I-485 applications.'
-  }
+  },
 ];
 
 export const TEMPLATE_FILES = {
