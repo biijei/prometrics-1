@@ -1,231 +1,114 @@
-import revolutionary from '../../assets/images/news/revolutionary-ai-technology.png';
+import h2b from '../../assets/images/news/news_1.PNG';
+import specialAgent from '../../assets/images/news/news_2.PNG';
+import modernizeFees from '../../assets/images/news/news_3.PNG';
+
 export const newsData = [
   {
-    id: '1',
-    title: 'Revolutionary AI Technology Transforms Healthcare',
-    excerpt: 'Latest breakthrough in artificial intelligence is helping doctors diagnose diseases faster and more accurately than ever before.',
-    coverImage: revolutionary, // how to use an image from assets
-    author: 'Dr. Sarah Chen',
-    publishDate: '2024-08-08',
-    readTime: '5 min',
-    category: 'Technology',
+    id: '001',
+    title: 'USCIS Reaches H-2B Cap for First Half of Fiscal Year 2026',
+    excerpt: 'USCIS has confirmed that it has received enough petitions to meet the H-2B visa cap for the first half of fiscal year 2026, with final receipt date of September 12, 2025.',
+    coverImage: h2b,
+    author: 'USCIS',
+    publishDate: '2025-09-12',
+    readTime: '3 min',
+    category: 'Immigration',
     content: [
-      { type: 'heading', content: 'The Future of Medical Diagnosis' },
-      { type: 'paragraph', content: 'Artificial intelligence is revolutionizing healthcare by providing unprecedented accuracy in medical diagnosis. This breakthrough technology is enabling doctors to detect diseases earlier and with greater precision.' },
-      { type: 'image', content: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=300&fit=crop', alt: 'AI medical diagnosis' },
-      { type: 'bold', content: 'Key Benefits Include:' },
-      { type: 'bulletPoints', content: [
-        'Faster diagnosis with 40% improved accuracy',
-        'Early detection of cancers and rare diseases',
-        'Comprehensive analysis of medical images and lab results',
-        'Reduced human error in diagnostic processes'
-      ]},
-      { type: 'paragraph', content: 'The new AI system can analyze medical images, lab results, and patient history simultaneously, providing comprehensive diagnostic support. Early trials show remarkable results in various medical fields.' },
+      { type: 'paragraph', content: '📅 September 12, 2025' },
+      { type: 'paragraph', content: 'U.S. Citizenship and Immigration Services (USCIS) has confirmed that it has received enough petitions to meet the H-2B visa cap for the first half of fiscal year 2026. This cap sets the maximum number of H-2B visas that can be issued during a specific period.' },
       { type: 'mixedText', content: [
         { type: 'text', content: 'The ' },
-        { type: 'bold', content: 'most significant impact' },
-        { type: 'text', content: ' has been seen in ' },
-        { type: 'underline', content: 'oncology departments' },
-        { type: 'text', content: ' where early detection rates have ' },
-        { type: 'italic', content: 'dramatically improved' },
+        { type: 'bold', content: 'final receipt date' },
+        { type: 'text', content: ' for new petitions was ' },
+        { type: 'bold', content: 'September 12, 2025' },
+        { type: 'text', content: '. Any petitions filed after this date requesting employment start dates ' },
+        { type: 'bold', content: 'before April 1, 2026' },
+        { type: 'text', content: ' will be rejected.' }
+      ]},
+      { type: 'paragraph', content: 'Employers who still wish to petition for H-2B workers will need to plan for start dates on or after April 1, 2026.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'Cap Reached: The limit for H-2B visas for the first half of FY 2026 has been filled.',
+        'Petition Cut-Off: Petitions submitted after September 12, 2025, for employment before April 1, 2026, will not be considered.',
+        'Next Window: Employers may still prepare petitions for workers whose employment will begin on or after April 1, 2026.'
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages both ' },
+        { type: 'bold', content: 'U.S. workers and H-2B workers' },
+        { type: 'text', content: ' to share information about potential fraud, abuse, or violations related to the H-2B program. Reports can be submitted securely through the ' },
+        { type: 'bold', content: 'USCIS online tip form' },
         { type: 'text', content: '.' }
       ]},
-      { type: 'quote', content: '"This technology will save countless lives by catching diseases that might otherwise go unnoticed until it\'s too late." - Dr. Sarah Chen' },
-      { type: 'underline', content: 'Impact on Patient Care' },
-      { type: 'paragraph', content: 'Patients are experiencing faster treatment times and better outcomes. The technology is particularly effective in detecting early-stage cancers and rare diseases that might otherwise go unnoticed.' },
-      { type: 'numberedList', content: [
-        'Implementation in 50+ hospitals worldwide',
-        'Training programs for medical professionals',
-        'Integration with existing hospital systems',
-        'Continuous learning and improvement algorithms'
-      ]}
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'paragraph', content: 'Employers, workers, and stakeholders are advised to stay updated on H-2B processing times and cap counts. For official updates, visit the USCIS news page.' }
     ]
   },
   {
-    id: '2',
-    title: 'Climate Change Solutions: Green Energy Breakthrough',
-    excerpt: 'Scientists develop new solar panel technology that increases efficiency by 60% while reducing manufacturing costs significantly.',
-    coverImage: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&h=400&fit=crop',
-    author: 'Prof. Michael Green',
-    publishDate: '2024-08-07',
+    id: '002',
+    title: 'USCIS to Add Special Agents with New Law Enforcement Authorities',
+    excerpt: 'USCIS announces significant expansion of law enforcement authorities, allowing special agents to investigate, arrest, and prosecute immigration law violations.',
+    coverImage: specialAgent,
+    author: 'USCIS',
+    publishDate: '2025-09-04',
     readTime: '4 min',
-    category: 'Environment',
+    category: 'Law Enforcement',
     content: [
-      { type: 'heading', content: 'Revolutionary Solar Panel Technology' },
-      { type: 'paragraph', content: 'A team of researchers has developed a groundbreaking solar panel design that could transform the renewable energy landscape forever.' },
-      { type: 'bold', content: 'Technical Breakthrough:' },
-      { type: 'paragraph', content: 'The new panels use advanced perovskite materials combined with traditional silicon cells, creating a tandem structure that captures more of the solar spectrum.' },
+      { type: 'paragraph', content: '📅 September 4, 2025' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS has announced a significant expansion of its ' },
+        { type: 'bold', content: 'law enforcement authorities' },
+        { type: 'text', content: '. Under a newly published federal rule, USCIS special agents (classified as 1811 officers) will now be authorized to investigate, arrest, and present for prosecution individuals who violate U.S. immigration laws.' }
+      ]},
+      { type: 'heading', content: 'What This Means' },
       { type: 'bulletPoints', content: [
-        '60% increase in energy conversion efficiency',
-        '30% reduction in manufacturing costs',
-        'Longer lifespan than traditional panels',
-        'Better performance in low-light conditions'
+        'Expanded Powers: USCIS officers will now be able to make arrests, carry firearms, execute search and arrest warrants, and investigate civil and criminal violations of immigration law.',
+        'Support for DHS: The change allows USCIS to play a larger role in national security, fraud detection, and public safety, while also supporting the Department of Homeland Security and its law enforcement partners.',
+        'Efficiency Gains: Instead of referring certain cases to other agencies, USCIS will handle investigations from start to finish, helping to address immigration fraud more directly and reduce backlogs.',
+        'Training & Recruitment: USCIS plans to recruit and train special agents to exercise these new authorities, ensuring proper enforcement and oversight.'
       ]},
-      { type: 'image', content: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=300&fit=crop', alt: 'Solar panel installation' },
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
       { type: 'mixedText', content: [
-        { type: 'text', content: 'The breakthrough uses ' },
-        { type: 'bold', content: 'perovskite-silicon tandem cells' },
-        { type: 'text', content: ' which can capture ' },
-        { type: 'underline', content: 'both visible and infrared light' },
-        { type: 'text', content: ' more effectively than ever before.' }
+        { type: 'text', content: 'USCIS continues to encourage the public to report any concerns about ' },
+        { type: 'bold', content: 'immigration fraud, abuse, or violations' },
+        { type: 'text', content: '. Reports can be submitted through the USCIS online tip form.' }
       ]},
-      { type: 'underline', content: 'Economic Impact' },
-      { type: 'paragraph', content: 'Manufacturing costs are expected to decrease by 30% within the next two years, making solar energy more accessible to developing nations and residential consumers worldwide.' },
-      { type: 'quote', content: '"This technology could finally make solar energy cost-competitive with fossil fuels in every market." - Prof. Michael Green' }
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'paragraph', content: 'This rule becomes effective 30 days after publication. For full details, see the official announcement in the USCIS news page.' }
     ]
   },
   {
-    id: '3',
-    title: 'Space Exploration: Mars Mission Update',
-    excerpt: 'Latest updates from the Mars exploration mission reveal fascinating discoveries about the Red Planet\'s geological history.',
-    coverImage: 'https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=600&h=400&fit=crop',
-    author: 'Dr. Lisa Rodriguez',
-    publishDate: '2024-08-06',
-    readTime: '6 min',
-    category: 'Science',
+    id: '003',
+    title: 'USCIS to Modernize Fee Payments with Electronic Funds',
+    excerpt: 'USCIS introduces new electronic payment option using secure direct debit from U.S. bank accounts, phasing out paper checks and money orders by October 28, 2025.',
+    coverImage: modernizeFees,
+    author: 'USCIS',
+    publishDate: '2025-08-29',
+    readTime: '3 min',
+    category: 'Process Update',
     content: [
-      { type: 'heading', content: 'Discovering Mars\' Ancient Past' },
-      { type: 'paragraph', content: 'The latest Mars rover mission has uncovered compelling evidence of ancient water systems that once flowed across the planet\'s surface.' },
+      { type: 'paragraph', content: '📅 August 29, 2025' },
       { type: 'mixedText', content: [
-        { type: 'text', content: 'These findings suggest that Mars may have ' },
-        { type: 'bold', content: 'supported life billions of years ago' },
-        { type: 'text', content: ', fundamentally changing our understanding of ' },
-        { type: 'italic', content: 'planetary evolution' },
-        { type: 'text', content: '.' }
+        { type: 'text', content: 'USCIS has introduced a new way for applicants and petitioners to ' },
+        { type: 'bold', content: 'pay filing fees electronically' },
+        { type: 'text', content: ' using secure direct debit from a U.S. bank account. Effective immediately, individuals can complete ' },
+        { type: 'bold', content: 'Form G-1650, Authorization for ACH Transactions' },
+        { type: 'text', content: ', and submit it with their application, petition, or request.' }
       ]},
-      { type: 'bold', content: 'Key Discoveries:' },
+      { type: 'heading', content: 'What This Means' },
       { type: 'bulletPoints', content: [
-        'Ancient river valleys and lake bed formations',
-        'Mineral deposits indicating long-term water presence',
-        'Organic compounds in rock samples',
-        'Evidence of seasonal water flow patterns'
+        'New ACH Option: Applicants may now pay fees directly through ACH debit, in addition to the existing credit card option.',
+        'Efficiency & Security: The change reduces reliance on checks and money orders, cutting down on processing delays, fraud, and lost payments.',
+        'Transition Period: USCIS will continue to accept paper checks and money orders until October 28, 2025. After that date, only ACH debit (Form G-1650) or credit card payments (Form G-1450) will be accepted.',
+        'Updated Guidance: The USCIS Policy Manual now recognizes ACH debit as an official form of payment. Applicants should ensure accounts have enough funds to avoid rejected filings.'
       ]},
-      { type: 'paragraph', content: 'Rock samples show signs of organic compounds that could be precursors to life, opening new possibilities for understanding life beyond Earth.' },
-      { type: 'heading', content: 'Future Exploration Plans' },
-      { type: 'numberedList', content: [
-        'Deploy additional rovers to promising sites',
-        'Collect and return samples to Earth by 2028',
-        'Search for microbial life signatures',
-        'Map underground water reserves'
-      ]},
-      { type: 'quote', content: '"We\'re not just studying rocks – we\'re uncovering the story of a planet that may have once harbored life." - Dr. Lisa Rodriguez' }
-    ]
-  },
-  {
-    id: '4',
-    title: 'Quantum Computing Milestone Achieved',
-    excerpt: 'Researchers successfully demonstrate quantum advantage in solving complex optimization problems.',
-    coverImage: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop',
-    author: 'Dr. James Park',
-    publishDate: '2024-08-05',
-    readTime: '7 min',
-    category: 'Technology',
-    content: [
-      { type: 'heading', content: 'Quantum Computing Revolution' },
-      { type: 'paragraph', content: 'A major milestone in quantum computing has been achieved, demonstrating clear advantages over classical computers in specific problem-solving scenarios.' },
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
       { type: 'mixedText', content: [
-        { type: 'text', content: 'The quantum processor solved optimization problems ' },
-        { type: 'bold', content: '1000 times faster' },
-        { type: 'text', content: ' than the most advanced ' },
-        { type: 'underline', content: 'classical supercomputers' },
-        { type: 'text', content: '.' }
+        { type: 'text', content: 'As with all USCIS programs, applicants are encouraged to stay alert to ' },
+        { type: 'bold', content: 'potential fraud or payment scams' },
+        { type: 'text', content: '. Concerns may be reported using the USCIS online tip form.' }
       ]},
-      { type: 'bulletPoints', content: [
-        'Successfully solved 50-qubit optimization problems',
-        'Demonstrated quantum error correction',
-        'Achieved 99.9% gate fidelity',
-        'Maintained quantum coherence for extended periods'
-      ]},
-      { type: 'quote', content: '"This is the moment when quantum computing moves from theory to practical reality." - Dr. James Park' }
-    ]
-  },
-  {
-    id: '5',
-    title: 'Ocean Conservation: New Marine Protected Areas',
-    excerpt: 'International collaboration leads to the establishment of the world\'s largest marine protected area.',
-    coverImage: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop',
-    author: 'Marine Biologist Team',
-    publishDate: '2024-08-04',
-    readTime: '5 min',
-    category: 'Environment',
-    content: [
-      { type: 'heading', content: 'Protecting Our Oceans' },
-      { type: 'paragraph', content: 'A groundbreaking international agreement has established new marine protected areas covering over 2 million square kilometers of ocean.' },
-      { type: 'mixedText', content: [
-        { type: 'text', content: 'This ' },
-        { type: 'bold', content: 'historic achievement' },
-        { type: 'text', content: ' represents the ' },
-        { type: 'underline', content: 'largest marine conservation effort' },
-        { type: 'text', content: ' in human history.' }
-      ]},
-      { type: 'numberedList', content: [
-        'Establish no-fishing zones in critical habitats',
-        'Protect endangered marine species',
-        'Research climate change impacts on oceans',
-        'Promote sustainable fishing practices'
-      ]}
-    ]
-  },
-  {
-    id: '6',
-    title: 'Breakthrough in Cancer Treatment Research',
-    excerpt: 'New immunotherapy approach shows promising results in clinical trials for multiple cancer types.',
-    coverImage: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop',
-    author: 'Dr. Amanda Foster',
-    publishDate: '2024-08-03',
-    readTime: '8 min',
-    category: 'Health',
-    content: [
-      { type: 'heading', content: 'Revolutionary Cancer Treatment' },
-      { type: 'paragraph', content: 'Scientists have developed a new immunotherapy approach that harnesses the body\'s immune system to fight cancer more effectively.' },
-      { type: 'bulletPoints', content: [
-        '85% success rate in early trials',
-        'Fewer side effects than traditional chemotherapy',
-        'Effective against multiple cancer types',
-        'Personalized treatment protocols'
-      ]},
-      { type: 'quote', content: '"This treatment gives hope to patients who previously had limited options." - Dr. Amanda Foster' }
-    ]
-  },
-  {
-    id: '7',
-    title: 'Economic Impact of Digital Currency',
-    excerpt: 'Analysis of how cryptocurrency adoption is affecting global financial markets and traditional banking.',
-    coverImage: 'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=600&h=400&fit=crop',
-    author: 'Financial Analysis Team',
-    publishDate: '2024-08-02',
-    readTime: '6 min',
-    category: 'Business',
-    content: [
-      { type: 'heading', content: 'The Digital Currency Revolution' },
-      { type: 'paragraph', content: 'Cryptocurrency adoption continues to reshape financial markets worldwide, with both opportunities and challenges emerging.' },
-      { type: 'mixedText', content: [
-        { type: 'text', content: 'Digital currencies now represent ' },
-        { type: 'bold', content: 'over $2 trillion' },
-        { type: 'text', content: ' in market capitalization, with ' },
-        { type: 'underline', content: 'institutional adoption' },
-        { type: 'text', content: ' driving mainstream acceptance.' }
-      ]}
-    ]
-  },
-  {
-    id: '8',
-    title: 'Advances in Renewable Energy Storage',
-    excerpt: 'New battery technology promises to solve the intermittency problem of solar and wind energy.',
-    coverImage: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop',
-    author: 'Energy Research Institute',
-    publishDate: '2024-08-01',
-    readTime: '5 min',
-    category: 'Environment',
-    content: [
-      { type: 'heading', content: 'Next-Generation Energy Storage' },
-      { type: 'paragraph', content: 'Revolutionary battery technology is set to transform how we store and use renewable energy, making green power more reliable than ever.' },
-      { type: 'numberedList', content: [
-        'Develop solid-state battery technology',
-        'Increase storage capacity by 300%',
-        'Reduce charging time to under 10 minutes',
-        'Lower production costs significantly'
-      ]}
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'paragraph', content: 'For full details, see the updated Policy Manual and official announcement on USCIS news page.' }
     ]
   },
   {
