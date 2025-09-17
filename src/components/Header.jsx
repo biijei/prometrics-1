@@ -24,7 +24,7 @@ const  Header = () =>{
     <div className= {showMenu ? 'bg-tertiary  homeHeader ' : 'bg-tertiary homeHeader'}>
       <div className='flex justify-center items-center gap-2'>
         <Link to='/'><img src={logo} alt="logo" className='w-[39px]'/></Link> 
-        <p className='text-[#15110D] text-[25px] font-bold'>Prometrics Legal Hub, LLC</p>
+        <p className='text-[#15110D] text-[20px] font-bold'>Prometrics Legal Hub, LLC</p>
       </div>
       {/* mobile Menu */}
       <div className="md:hidden text-right" >
@@ -109,9 +109,8 @@ const  Header = () =>{
         </ul>
       </nav>
       <Link to="/contact" className='hidden md:flex justify-center items-center'> 
-        <button className='full-rounded contained-button text-base w-[218px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-5'>
+        <button className='text-base w-[150px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-2'>
           <span>Get in touch</span>
-          <div className="outside-border full-rounded"></div>
         </button>
       </Link>
     </div>
