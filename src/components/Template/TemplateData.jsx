@@ -148,7 +148,7 @@ export const templates = [
     id: 'REC-006',
     name: 'Independent Recommendation Letter Template 2',
     category: 'Recommendation letters',
-    price: 1,
+    price: 1000,
     description: 'Independent recommendation letter template, version 2.'
   },
   {
