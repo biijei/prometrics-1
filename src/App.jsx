@@ -19,7 +19,6 @@ import NewsDetail from "./pages/NewsDetail";
 import Testimonial from "./pages/Testimonial";
 import TestimonialDetail from "./pages/TestimonialDetail";
 import Template from "./pages/Template";
-import DownloadTemplate from "./pages/DownloadTemplate";
 import Gallery from "./pages/Gallery";
 
 function App() {
@@ -43,8 +42,7 @@ function App() {
         <Route path="/testimonials" element={<Testimonial />} />
         <Route path="/testimonials/:slug" element={<TestimonialDetail />} />
         <Route path="/gallery" element={<Gallery/>} />
-        <Route path="/template" element={<Template />} />
-        <Route path="/get-template" element={<DownloadTemplate />} />
+        <Route path="/get-template" element={<Template />} />
 
       </Routes>
     </BrowserRouter>

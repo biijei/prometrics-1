@@ -48,6 +48,7 @@ const  Header = () =>{
                 <NavLink to='/pa-notarization'  className='text-[14px] font-medium hover:text-primary'>Notarization</NavLink>
               </div>
             </li>
+            <li className='hover:text-primary'><NavLink to="/get-template">Templates</NavLink></li>
             <li className='hover:text-primary'><NavLink to="/faqs">FAQS</NavLink></li>
             <li className='mb-4 hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
             <li className='mb-4 hover:text-primary'><NavLink to="/gallery">Gallery</NavLink></li>
@@ -111,7 +112,7 @@ const  Header = () =>{
         </ul>
       </nav>
       <Link to="/contact" className='hidden md:flex justify-center items-center'> 
-        <button className='full-rounded contained-button text-base w-[200px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-5'>
+        <button className='full-rounded contained-button text-base w-[218px] rounded-[40px] bg-[#C39F76] text-white font-semibold px-4 py-5'>
           <span>Get in touch</span>
           <div className="outside-border full-rounded"></div>
         </button>
