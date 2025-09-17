@@ -91,7 +91,7 @@ const TestimonialPage = () => {
           </div>
 
           {/* Industry Filter */}
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <div className="flex items-center gap-2 mb-4">
               <Filter className="w-5 h-5 text-gray-600" />
               <span className="font-medium text-gray-700">Filter by Industry:</span>
@@ -116,7 +116,7 @@ const TestimonialPage = () => {
                 </button>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Current Filter Info */}
           {selectedIndustry !== 'All' && (

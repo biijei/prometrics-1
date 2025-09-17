@@ -1,34 +1,84 @@
 // TestimonialData.js
 export const testimonialData = [
   {
-    id: '5',
-    name: 'Akinjide Akinnuga',
-    position: '',
-    company: '',
-    industry: 'Legal Services',
-    location: '',
-    avatar: '',
-    rating: 4,
-    date: '2025-01-15',
-    excerpt: 'Dr Fola competently handled my EB1 and I-485 applications after my initial attempt was denied. Her knowledge and commitment made the difference.',
-    fullTestimonial: [
-      { type: 'paragraph', content: 'Dr Fola is a competent lawyer with knowledge of solving complex immigration matters. I initially applied for EB1 on my own and it was denied. As a result, a friend recommended Dr Fola and she advised that I should apply for the EB1 with I-485 concurrently with my family inclusive. The EB1 and I-485 applications were approved through the involvement of a knowledgeable and committed lawyer, Dr Fola. I am grateful for the job well done, clear communications and cheap services rendered by Prometrics Legal Hub.' }
-    ]
-  },
-  {
-    id: '6',
-    name: 'Francisca Udegbe',
+    id: '14',
+    name: 'Emmah Muema',
     position: '',
     company: '',
     industry: 'Legal Services',
     location: '',
     avatar: '',
     rating: 5,
-    date: '2025-03-22',
-    excerpt: 'Working with Dr. Fola was a great experience. Her thoughtful approach and responsiveness made the process seamless and successful.',
+    date: '2025-10-21',
+    excerpt: 'Her professionalism and support were invaluable in guiding me through immigration matters. Truly grateful for her assistance.',
     fullTestimonial: [
-      { type: 'paragraph', content: 'Working with Dr. Fola was a great experience. I’m very pleased that she was the attorney handling my case. At the beginning, I wasn’t familiar with how the process works or what to expect, but she took the time to explain everything clearly. Her thoughtful approach and attention to detail really made a difference and contributed to the positive outcome.' },
-      { type: 'paragraph', content: 'I also appreciate how responsive she was to my questions via email and messages, even with her busy schedule. Her support and guidance helped me stay focused and at ease throughout the process. With her help, and by God’s grace, I was able to achieve the result we were working toward. I couldn\'t be happier with the outcome!' }
+      { type: 'paragraph', content: 'Her professionalism and support were invaluable in guiding me through immigration matters. Truly grateful for her assistance.' }
+    ]
+  },
+  {
+    id: '13',
+    name: 'Joshua Alahira',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2025-09-03',
+    excerpt: 'Dr. Fola expertly guided me through EB-1 and EB-2 petitions with patience and clarity. Her dedication gave me confidence throughout.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'I highly recommend Dr. Fola Odion for any immigration-related legal needs! Dr. Odion expertly guided me through the complex process of filing both EB-1 and EB-2 petitions. Her patience and ability to explain intricate details in a clear, concise manner made all the difference.' },
+      { type: 'paragraph', content: 'Dr. Odion took the time to thoroughly discuss my options, ensuring I understood the pros and cons of each path. Her attention to detail and thoroughness made the entire process seamless and easy to navigate.' },
+      { type: 'paragraph', content: 'Thanks to Dr. Odion\'s expertise and dedication, I felt confident and supported throughout the petition process. Her exceptional service and commitment to excellence are truly appreciated!' },
+      { type: 'paragraph', content: 'If you\'re seeking a knowledgeable, compassionate, and detail-oriented immigration attorney, look no further than Dr. Fola Odion. I\'m grateful for her assistance and highly recommend her to anyone in need of top-notch immigration legal services.' }
+    ]
+  },
+  {
+    id: '12',
+    name: 'Blessing Olatoyan',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 4,
+    date: '2025-08-14',
+    excerpt: 'Fola responded promptly and professionally, giving me confidence to proceed. My case was successfully approved on time.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Fola came highly recommended by a member of my church community. When I contacted her, she responded promptly and professionally—an immediate contrast to the other attorney I had been communicating with at the time. Her responsiveness and attentiveness gave me the confidence to proceed with her. She efficiently filed my petition, and through the expedited process, my case was successfully approved on time. I’m truly grateful for Fola’s support and expertise.' }
+    ]
+  },
+  {
+    id: '8',
+    name: 'Alex Olanrewaju Adekanmbi',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 4,
+    date: '2025-07-18',
+    excerpt: 'Dr. Fola’s deep knowledge, flexibility, and support led to my EB1 approval. She prioritized trust over money and guided me every step.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'I was introduced to the EB2/NIW Group 9 Forum by my friend, Aderemi Ziggy, and was immediately impressed by Dr. Fola’s active engagement and insightful responses. Her passion and deep knowledge stood out, so I reached out and booked a one-on-one consultation.' },
+      { type: 'paragraph', content: 'Although my initial goal was an EB2 petition, Dr. Fola reviewed my credentials and confidently advised we pursue the more prestigious and faster EB1 route. She was transparent about the work required but encouraged me to trust the process. What amazed me was her flexibility—she allowed a personalized payment plan and never pressured me, even when I faced delays. She prioritized trust over money, and in fact, covered certain expenses herself just to keep things moving.' },
+      { type: 'paragraph', content: 'Throughout the petition process, Dr. Fola kept me fully involved, revised drafts with care, and gave spiritual support, reminding me to "back it with prayers." When an RFE came, she handled it calmly and with expertise. Eventually, I received the golden call—"Congratulations, you’ve been approved!"' },
+      { type: 'paragraph', content: 'I’m grateful for her guidance and commitment. I’ve referred others already and will continue to do so. Thank you, Dr. Fola. Wishing you more wins and greater heights. God bless you' }
+    ]
+  },
+  {
+    id: '11',
+    name: 'Olakunle Abimbola Kumuyi',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2025-06-05',
+    excerpt: 'Her competence outshines any small hiccups. Her skills and attention to detail made the experience outstanding.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Her competence outshines any small hiccups. Her skills and attention to details made the experience outstanding, making her expertise overcomes all else.' }
     ]
   },
   {
@@ -51,39 +101,6 @@ export const testimonialData = [
     ]
   },
   {
-    id: '8',
-    name: 'Alex Olanrewaju Adekanmbi',
-    position: '',
-    company: '',
-    industry: 'Legal Services',
-    location: '',
-    avatar: '',
-    rating: 4,
-    date: '2025-07-18',
-    excerpt: 'Dr. Fola’s deep knowledge, flexibility, and support led to my EB1 approval. She prioritized trust over money and guided me every step.',
-    fullTestimonial: [
-      { type: 'paragraph', content: 'I was introduced to the EB2/NIW Group 9 Forum by my friend, Aderemi Ziggy, and was immediately impressed by Dr. Fola’s active engagement and insightful responses. Her passion and deep knowledge stood out, so I reached out and booked a one-on-one consultation.' },
-      { type: 'paragraph', content: 'Although my initial goal was an EB2 petition, Dr. Fola reviewed my credentials and confidently advised we pursue the more prestigious and faster EB1 route. She was transparent about the work required but encouraged me to trust the process. What amazed me was her flexibility—she allowed a personalized payment plan and never pressured me, even when I faced delays. She prioritized trust over money, and in fact, covered certain expenses herself just to keep things moving.' },
-      { type: 'paragraph', content: 'Throughout the petition process, Dr. Fola kept me fully involved, revised drafts with care, and gave spiritual support, reminding me to "back it with prayers." When an RFE came, she handled it calmly and with expertise. Eventually, I received the golden call—"Congratulations, you’ve been approved!"' },
-      { type: 'paragraph', content: 'I’m grateful for her guidance and commitment. I’ve referred others already and will continue to do so. Thank you, Dr. Fola. Wishing you more wins and greater heights. God bless you' }
-    ]
-  },
-  {
-    id: '9',
-    name: 'Victoria Idehai',
-    position: '',
-    company: '',
-    industry: 'Legal Services',
-    location: '',
-    avatar: '',
-    rating: 5,
-    date: '2025-02-28',
-    excerpt: 'Dr. Fola is a highly knowledgeable and skilled expert who combines professionalism with empathy. She made the entire process seamless.',
-    fullTestimonial: [
-      { type: 'paragraph', content: 'Dr. Fola is a highly knowledgeable and skilled expert in her field. She combines professionalism with genuine empathy, making the entire experience seamless. It was a pleasure working with her, and I would confidently recommend her to friends and family.' }
-    ]
-  },
-  {
     id: '10',
     name: 'Adebunmi Adewusi',
     position: '',
@@ -102,66 +119,49 @@ export const testimonialData = [
     ]
   },
   {
-    id: '11',
-    name: 'Olakunle Abimbola Kumuyi',
+    id: '6',
+    name: 'Francisca Udegbe',
     position: '',
     company: '',
     industry: 'Legal Services',
     location: '',
     avatar: '',
     rating: 5,
-    date: '2025-06-05',
-    excerpt: 'Her competence outshines any small hiccups. Her skills and attention to detail made the experience outstanding.',
+    date: '2025-03-22',
+    excerpt: 'Working with Dr. Fola was a great experience. Her thoughtful approach and responsiveness made the process seamless and successful.',
     fullTestimonial: [
-      { type: 'paragraph', content: 'Her competence outshines any small hiccups. Her skills and attention to details made the experience outstanding, making her expertise overcomes all else.' }
+      { type: 'paragraph', content: 'Working with Dr. Fola was a great experience. I’m very pleased that she was the attorney handling my case. At the beginning, I wasn’t familiar with how the process works or what to expect, but she took the time to explain everything clearly. Her thoughtful approach and attention to detail really made a difference and contributed to the positive outcome.' },
+      { type: 'paragraph', content: 'I also appreciate how responsive she was to my questions via email and messages, even with her busy schedule. Her support and guidance helped me stay focused and at ease throughout the process. With her help, and by God’s grace, I was able to achieve the result we were working toward. I couldn\'t be happier with the outcome!' }
     ]
   },
   {
-    id: '12',
-    name: 'Blessing Olatoyan',
+    id: '9',
+    name: 'Victoria Idehai',
+    position: '',
+    company: '',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2025-02-28',
+    excerpt: 'Dr. Fola is a highly knowledgeable and skilled expert who combines professionalism with empathy. She made the entire process seamless.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Dr. Fola is a highly knowledgeable and skilled expert in her field. She combines professionalism with genuine empathy, making the entire experience seamless. It was a pleasure working with her, and I would confidently recommend her to friends and family.' }
+    ]
+  },
+  {
+    id: '5',
+    name: 'Akinjide Akinnuga',
     position: '',
     company: '',
     industry: 'Legal Services',
     location: '',
     avatar: '',
     rating: 4,
-    date: '2025-08-14',
-    excerpt: 'Fola responded promptly and professionally, giving me confidence to proceed. My case was successfully approved on time.',
+    date: '2025-01-15',
+    excerpt: 'Dr Fola competently handled my EB1 and I-485 applications after my initial attempt was denied. Her knowledge and commitment made the difference.',
     fullTestimonial: [
-      { type: 'paragraph', content: 'Fola came highly recommended by a member of my church community. When I contacted her, she responded promptly and professionally—an immediate contrast to the other attorney I had been communicating with at the time. Her responsiveness and attentiveness gave me the confidence to proceed with her. She efficiently filed my petition, and through the expedited process, my case was successfully approved on time. I’m truly grateful for Fola’s support and expertise.' }
-    ]
-  },
-  {
-    id: '13',
-    name: 'Joshua Alahira',
-    position: '',
-    company: '',
-    industry: 'Legal Services',
-    location: '',
-    avatar: '',
-    rating: 5,
-    date: '2025-09-03',
-    excerpt: 'Dr. Fola expertly guided me through EB-1 and EB-2 petitions with patience and clarity. Her dedication gave me confidence throughout.',
-    fullTestimonial: [
-      { type: 'paragraph', content: 'I highly recommend Dr. Fola Odion for any immigration-related legal needs! Dr. Odion expertly guided me through the complex process of filing both EB-1 and EB-2 petitions. Her patience and ability to explain intricate details in a clear, concise manner made all the difference.' },
-      { type: 'paragraph', content: 'Dr. Odion took the time to thoroughly discuss my options, ensuring I understood the pros and cons of each path. Her attention to detail and thoroughness made the entire process seamless and easy to navigate.' },
-      { type: 'paragraph', content: 'Thanks to Dr. Odion\'s expertise and dedication, I felt confident and supported throughout the petition process. Her exceptional service and commitment to excellence are truly appreciated!' },
-      { type: 'paragraph', content: 'If you\'re seeking a knowledgeable, compassionate, and detail-oriented immigration attorney, look no further than Dr. Fola Odion. I\'m grateful for her assistance and highly recommend her to anyone in need of top-notch immigration legal services.' }
-    ]
-  },
-  {
-    id: '14',
-    name: 'Emmah Muema',
-    position: '',
-    company: '',
-    industry: 'Legal Services',
-    location: '',
-    avatar: '',
-    rating: 5,
-    date: '2025-10-21',
-    excerpt: 'Her professionalism and support were invaluable in guiding me through immigration matters. Truly grateful for her assistance.',
-    fullTestimonial: [
-      { type: 'paragraph', content: 'Her professionalism and support were invaluable in guiding me through immigration matters. Truly grateful for her assistance.' }
+      { type: 'paragraph', content: 'Dr Fola is a competent lawyer with knowledge of solving complex immigration matters. I initially applied for EB1 on my own and it was denied. As a result, a friend recommended Dr Fola and she advised that I should apply for the EB1 with I-485 concurrently with my family inclusive. The EB1 and I-485 applications were approved through the involvement of a knowledgeable and committed lawyer, Dr Fola. I am grateful for the job well done, clear communications and cheap services rendered by Prometrics Legal Hub.' }
     ]
   },
   {
@@ -282,111 +282,8 @@ export const testimonialData = [
       { type: 'quote', content: 'The level of customization and attention to detail in this platform is remarkable. It feels like it was built specifically for our unique needs.' }
     ],
   },
-  // {
-  //   id: '5',
-  //   name: 'Lisa Park',
-  //   position: 'Head of Learning & Development',
-  //   company: 'EduTech Innovations',
-  //   industry: 'Education',
-  //   location: 'Austin, TX',
-  //   avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
-  //   rating: 5,
-  //   date: '2024-07-10',
-  //   excerpt: 'The e-learning platform they created has revolutionized our educational delivery, increasing student engagement by 300% and completion rates by 85%.',
-  //   fullTestimonial: [
-  //     { type: 'paragraph', content: 'As an educator with over 15 years of experience, I have seen many attempts at digital learning solutions. This team has created something truly special – a platform that not only delivers content effectively but actually enhances the learning experience.' },
-  //     { type: 'highlight', content: 'Student completion rates increased from 45% to 85% after implementing the new platform.' },
-  //     { type: 'paragraph', content: 'The platform incorporates cutting-edge educational psychology principles, making learning more engaging and effective. Features like adaptive learning paths, gamification elements, and real-time progress tracking have transformed how our students interact with course material.' },
-  //     { type: 'bulletPoints', content: [
-  //       'Interactive multimedia content with video, audio, and simulations',
-  //       'Personalized learning paths based on individual progress',
-  //       'Comprehensive analytics for instructors and administrators',
-  //       'Mobile-responsive design for learning on any device',
-  //       'Integration with existing academic management systems'
-  //     ]},
-  //     { type: 'paragraph', content: 'The team worked closely with our faculty to understand pedagogical requirements and student needs. Their collaborative approach ensured that the final product truly served our educational mission while being technically robust and user-friendly.' },
-  //     { type: 'quote', content: 'This platform has not just digitized our courses – it has enhanced the entire educational experience for both students and instructors.' }
-  //   ],
-  //   tags: ['Educational Technology', 'User Experience', 'Student Engagement', 'Learning Analytics']
-  // },
-  // {
-  //   id: '6',
-  //   name: 'David Wilson',
-  //   position: 'Operations Manager',
-  //   company: 'Industrial Solutions Corp',
-  //   industry: 'Manufacturing',
-  //   location: 'Detroit, MI',
-  //   avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
-  //   rating: 5,
-  //   date: '2024-07-02',
-  //   excerpt: 'Their industrial automation system increased our production efficiency by 45% while reducing waste and improving workplace safety.',
-  //   fullTestimonial: [
-  //     { type: 'paragraph', content: 'Manufacturing is all about precision, efficiency, and safety. This team delivered an automation solution that addressed all these concerns while exceeding our performance expectations.' },
-  //     { type: 'mixedText', content: [
-  //       { type: 'text', content: 'Production efficiency increased by ' },
-  //       { type: 'bold', content: '45%' },
-  //       { type: 'text', content: ', while reducing material waste by ' },
-  //       { type: 'bold', content: '30%' },
-  //       { type: 'text', content: ' and improving overall equipment effectiveness to ' },
-  //       { type: 'bold', content: '92%' },
-  //       { type: 'text', content: '.' }
-  //     ]},
-  //     { type: 'paragraph', content: 'The system they implemented integrates seamlessly with our existing machinery while adding intelligent monitoring and control capabilities. Real-time data analytics help us identify potential issues before they become problems, reducing downtime significantly.' },
-  //     { type: 'numberedList', content: [
-  //       'Automated quality control with machine vision systems',
-  //       'Predictive maintenance scheduling based on equipment data',
-  //       'Real-time production monitoring and reporting dashboards',
-  //       'Integration with supply chain management systems',
-  //       'Enhanced safety protocols with automated shutdown procedures'
-  //     ]},
-  //     { type: 'quote', content: 'The return on investment has been remarkable. The system paid for itself within eight months through efficiency gains and waste reduction.' }
-  //   ],
-  //   tags: ['Industrial Automation', 'Efficiency Optimization', 'Safety Systems', 'ROI']
-  // },
-  // {
-  //   id: '7',
-  //   name: 'Amanda Foster',
-  //   position: 'Retail Operations Director',
-  //   company: 'Fashion Forward Stores',
-  //   industry: 'Retail',
-  //   location: 'Los Angeles, CA',
-  //   avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face',
-  //   rating: 5,
-  //   date: '2024-06-25',
-  //   excerpt: 'The omnichannel retail solution transformed our customer experience and increased sales by 180% across all channels.',
-  //   fullTestimonial: [
-  //     { type: 'paragraph', content: 'Retail is evolving rapidly, and staying competitive requires innovative solutions that seamlessly integrate online and offline experiences. This team delivered exactly what we needed to thrive in today\'s market.' },
-  //     { type: 'highlight', content: 'Customer satisfaction scores reached an all-time high of 94%, while return rates dropped by 25%.' },
-  //     { type: 'bulletPoints', content: [
-  //       'Unified inventory management across all sales channels',
-  //       'Personalized shopping recommendations powered by AI',
-  //       'Seamless integration between online and in-store experiences',
-  //       'Advanced analytics for inventory optimization and trend prediction',
-  //       'Mobile app with augmented reality try-on features'
-  //     ]},
-  //     { type: 'paragraph', content: 'The solution has transformed how we understand and serve our customers. The integrated analytics provide insights we never had before, helping us make data-driven decisions about inventory, pricing, and customer experience improvements.' }
-  //   ],
-  //   tags: ['Omnichannel Retail', 'Customer Experience', 'Inventory Management', 'AI Integration']
-  // },
-  // {
-  //   id: '8',
-  //   name: 'James Miller',
-  //   position: 'Environmental Consultant',
-  //   company: 'Green Earth Solutions',
-  //   industry: 'Environmental',
-  //   location: 'Portland, OR',
-  //   avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face',
-  //   rating: 4,
-  //   date: '2024-06-20',
-  //   excerpt: 'Their environmental monitoring system has helped us track and reduce carbon emissions for our clients, resulting in significant cost savings and environmental impact.',
-  //   fullTestimonial: [
-  //     { type: 'paragraph', content: 'Environmental monitoring and compliance is becoming increasingly important for businesses across all industries. The system developed by this team has made it easier for our clients to track, measure, and reduce their environmental impact.' },
-  //     { type: 'paragraph', content: 'The real-time monitoring capabilities and comprehensive reporting features have streamlined our consulting process and provided our clients with actionable insights for sustainability improvements.' },
-  //     { type: 'quote', content: 'This system has transformed how we approach environmental consulting, making our services more effective and our clients more successful in their sustainability goals.' }
-  //   ],
-  //   tags: ['Environmental Monitoring', 'Sustainability', 'Compliance', 'Data Analytics']
-  // }
 ];
+
 
 // Get unique industries for filtering
 export const getIndustries = () => {
