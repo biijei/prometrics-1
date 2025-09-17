@@ -5,7 +5,7 @@ import { ChevronRight, ChevronLeft, Filter } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { getPublicNews } from "../util/getPublicNews";
-import NewsCard from "../components/news/NewsCard";
+import NewsCard from "../components/News/NewsCard";
 
 const NewsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
