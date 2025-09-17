@@ -20,7 +20,7 @@ const TestimonialCard = ({ testimonial, onClick }) => {
     <article className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-border">
       <div className="p-6">
         {/* Header with Avatar and Basic Info */}
-        <div className="flex items-start gap-4 mb-4">
+        <div className="flex items-center gap-4 mb-4">
           {testimonial.avatar ? (
               <img
                 src={testimonial.avatar}
@@ -35,7 +35,7 @@ const TestimonialCard = ({ testimonial, onClick }) => {
             <h3 className="text-lg font-bold text-gray-900 truncate">
               {testimonial.name}
             </h3>
-            <p className="text-sm text-gray-600 truncate">
+            {/* <p className="text-sm text-gray-600 truncate">
               {testimonial.position}
             </p>
             <div className="flex items-center gap-2 mt-1">
@@ -43,12 +43,12 @@ const TestimonialCard = ({ testimonial, onClick }) => {
               <span className="text-sm text-gray-500 truncate">
                 {testimonial.company}
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Industry and Location */}
-        <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
+        {/* <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
           <span className="bg-primary text-white px-2 py-1 rounded-full text-xs font-medium">
             {testimonial.industry}
           </span>
@@ -56,7 +56,7 @@ const TestimonialCard = ({ testimonial, onClick }) => {
             <MapPin className="w-4 h-4" />
             {testimonial.location}
           </div>
-        </div>
+        </div> */}
 
         {/* Rating */}
         <div className="flex items-center gap-2 mb-4">
