@@ -40,7 +40,11 @@ export const newsData = [
         { type: 'text', content: '.' }
       ]},
       { type: 'heading', content: 'Stay Informed' },
-      { type: 'paragraph', content: 'Employers, workers, and stakeholders are advised to stay updated on H-2B processing times and cap counts. For official updates, visit the USCIS news page.' }
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'Employers, workers, and stakeholders are advised to stay updated on H-2B processing times and cap counts. For official updates, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
     ]
   },
   {
@@ -73,7 +77,11 @@ export const newsData = [
         { type: 'text', content: '. Reports can be submitted through the USCIS online tip form.' }
       ]},
       { type: 'heading', content: 'Stay Informed' },
-      { type: 'paragraph', content: 'This rule becomes effective 30 days after publication. For full details, see the official announcement in the USCIS news page.' }
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'This rule becomes effective 30 days after publication. For full details, see the official announcement in the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
     ]
   },
   {
@@ -108,7 +116,11 @@ export const newsData = [
         { type: 'text', content: '. Concerns may be reported using the USCIS online tip form.' }
       ]},
       { type: 'heading', content: 'Stay Informed' },
-      { type: 'paragraph', content: 'For full details, see the updated Policy Manual and official announcement on USCIS news page.' }
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For full details, see the updated Policy Manual and official announcement on ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
     ]
   },
   {

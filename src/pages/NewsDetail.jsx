@@ -3,6 +3,7 @@ import { ChevronLeft, Calendar, Clock, User, Quote } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 const NewsDetailPage = () => {
   const navigate = useNavigate();
@@ -141,6 +142,14 @@ const NewsDetailPage = () => {
                       {textItem.content}
                     </em>
                   );
+                case 'link':
+                  return (
+                    <span key={textIndex} className={`cursor-pointer`}>
+                      <a href={textItem.url} target='_blank' className="text-secondary hover:text-secondary/80 underline">
+                        {textItem.content}
+                      </a>
+                    </span>
+                  );
                 default:
                   return textItem.content;
               }
@@ -159,6 +168,15 @@ const NewsDetailPage = () => {
             <p className="text-gray-800 text-lg leading-relaxed">
               {item.content}
             </p>
+          </div>
+        );
+
+      case 'link':
+        return (
+          <div key={index} className={`cursor-pointer`}>
+            <a href={item.url} target='_blank' className="text-secondary hover:text-secondary/80 underline">
+              {item.content}
+            </a>
           </div>
         );
 
