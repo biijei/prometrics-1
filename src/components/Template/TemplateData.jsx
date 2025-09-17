@@ -11,7 +11,7 @@ export const templates = [
     id: 'EB1-002',
     name: 'EB-1A Petition Brief FINAL Medical Laboratory Technology',
     category: 'EB-1A Templates',
-    price: 1000,
+    price: 1,
     description: 'Final version of EB-1A petition brief for medical laboratory technology.'
   },
   {

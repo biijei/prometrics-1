@@ -13,7 +13,8 @@ import { Link } from 'react-router-dom'
 import EBRequirementsCard from '../components/Template/EBRequirementsCard';
 
 // PayPal configuration
-const PAYPAL_CLIENT_ID ="Ade8k3M3EeXrmvoP2XVgSgTsFdwfrWxMYZ2gLqop09h8lBxs4hvlp_YLIOQxju-aKdZ3mAvDrSn92aWc"
+// const PAYPAL_CLIENT_ID ="Ade8k3M3EeXrmvoP2XVgSgTsFdwfrWxMYZ2gLqop09h8lBxs4hvlp_YLIOQxju-aKdZ3mAvDrSn92aWc"
+const PAYPAL_CLIENT_ID = "ATRneMzchsYpeaNBxp-sTcugNabm97o1fs1y4ihW8G2UkBAV9N3ZG2MKgsMHXMhtbSPo09LQqavMKW9s"
 
 // Enhanced PayPal SDK loader with retry mechanism
 const usePayPalSDK = () => {
