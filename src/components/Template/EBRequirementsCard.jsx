@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import { Search, CheckCircle, ChevronDown, ChevronUp, RefreshCw } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { p } from 'framer-motion/client'
 
 // EBRequirementsCard.jsx
 // Plain JavaScript React component (no TypeScript). Tailwind CSS utility classes assumed.
@@ -32,7 +33,7 @@ const EBNIW_ITEMS = [
 
 function Pill({ children }) {
   return (
-    <span className="inline-flex items-center gap-2 bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1 rounded-full">
+    <span className="inline-flex items-center gap-2 bg-primary text-white text-xs px-3 py-1 rounded-full">
       {children}
     </span>
   )
@@ -42,14 +43,14 @@ function RequirementItem({ text, index, checked, onToggle }) {
   return (
     <li
       className={`group flex items-center gap-4 p-4 rounded-lg border transition-shadow hover:shadow-md ${
-        checked ? 'border-emerald-300 bg-emerald-50' : 'border-slate-200 bg-white'
+        checked ? 'border-emerald-100 bg-tertiary' : 'border-slate-200 bg-white'
       }`}
     >
       <button
         aria-pressed={checked}
         onClick={() => onToggle(index)}
-        className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center ring-offset-2 focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-colors ${
-          checked ? 'bg-emerald-500 text-white' : 'bg-slate-50 text-slate-700'
+        className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center ring-offset-2 focus:outline-none focus:ring-2 focus:ring-emerald-300 transition-colors ${
+          checked ? 'bg-emerald-400 text-white' : 'bg-slate-50 text-slate-700'
         }`}
         title={checked ? 'Mark as not satisfied' : 'Mark as satisfied'}
       >
@@ -101,7 +102,6 @@ export default function EBRequirementsCard() {
   }
 
   const satisfiedCount = checked.filter(Boolean).length
-  const needed = activeTab === 'eb1a' ? 3 : '— (NIW evaluates on national interest factors)'
 
   return (
     <div className="px-[5%] mx-auto p-6">
@@ -113,9 +113,6 @@ export default function EBRequirementsCard() {
             <div className="mt-3 flex items-center gap-2">
               <Pill>
                 <strong className="mr-1">Selected:</strong> {satisfiedCount}
-              </Pill>
-              <Pill>
-                <strong className="mr-1">Minimum (EB‑1A):</strong> {needed}
               </Pill>
             </div>
           </div>
@@ -170,6 +167,17 @@ export default function EBRequirementsCard() {
             >
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="md:col-span-2">
+                  {activeTab === 'eb1a' ? (
+                    <div className='mb-4'>
+                      <h3 className="font-semibold text-slate-900 mb-2">EB-1A requirements</h3>
+                      <p className='text-sm leading-normal'>Satisfying 3 out of this list of 10 is the minimum requirement to be considered for EB-1A, after which your evidence and arguments are weighed in totality to determine whether you merit approval as a matter of discretion. Meeting the minimum criteria requirements only, does not mean the EB-1A petition will be approved.</p>
+                    </div>
+                  ) : (
+                    <div className='mb-4'>
+                      <h3 className="font-semibold text-slate-900 mb-2">EB2-NIW Requirements</h3>
+                      <p className='text-sm leading-normal'>In addition to an advanced degree (master&apos;s degree or higher or bachelor&apos;s degree + 5 years post bachelor&apos;s work experience), these are some types of things to show for a chance at success in EB2-NIW.</p>
+                    </div>
+                  )}
                   <ul className="flex flex-col gap-3">
                     {filtered.length === 0 && (
                       <li className="p-4 rounded-lg border border-slate-100 text-slate-500">No results for &quot;{query}&quot;</li>
@@ -185,16 +193,18 @@ export default function EBRequirementsCard() {
                       />
                     ))}
                   </ul>
+                  { activeTab === 'eb1a' && (
+                    <p className='text-sm leading-normal mt-4'>If the above standards do not readily apply to your occupation, you may submit comparable evidence.</p>
+                  )}
                 </div>
 
                 <aside className="rounded-lg p-4 border border-tertiary bg-tertiary">
-                  <h3 className="text-sm font-semibold text-slate-900">Checklist guidance</h3>
-                  <p className="mt-2 text-xs text-slate-600">Use this panel to keep notes about types of documents that commonly support each requirement. For example, awards (certificates), nomination letters, editorial clippings, contracts, paystubs, exhibition catalogs, or data showing commercial success.</p>
-
+                  <h3 className="font-semibold text-slate-900">Checklist guidance</h3>
+                  <p className="mt-2 text-sm text-slate-600">Use this panel to keep notes about types of documents that commonly support each requirement. For example, awards (certificates), nomination letters, editorial clippings, contracts, paystubs, exhibition catalogs, or data showing commercial success.</p>
                   <div className="mt-4 space-y-3">
                     <div>
-                      <h4 className="text-xs font-medium text-slate-800">Suggested bundle</h4>
-                      <ul className="mt-2 text-xs text-slate-600 list-disc list-inside">
+                      <h4 className="font-medium text-slate-800">Suggested bundle</h4>
+                      <ul className="mt-2 text-sm text-slate-600 list-disc list-inside">
                         <li>One-page summary of evidence</li>
                         <li>Index of exhibits (labelled A–Z)</li>
                         <li>Copies of supporting documents</li>
@@ -202,8 +212,8 @@ export default function EBRequirementsCard() {
                     </div>
 
                     <div>
-                      <h4 className="text-xs font-medium text-slate-800">Tips</h4>
-                      <ul className="mt-2 text-xs text-slate-600 list-disc list-inside">
+                      <h4 className="font-medium text-slate-800">Tips</h4>
+                      <ul className="mt-2 text-sm text-slate-600 list-disc list-inside">
                         <li>Prioritize strong third-party evidence over self-authored materials.</li>
                         <li>Where standards don’t fit, submit comparable evidence with explanation.</li>
                         <li>For EB‑1A you must meet at least three of the listed criteria, but final decision considers totality of evidence.</li>
