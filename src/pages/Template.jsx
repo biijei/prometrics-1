@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import template from '../assets/images/template.png'
 import { Link } from 'react-router-dom'
+import EBRequirementsCard from '../components/Template/EBRequirementsCard';
 
 // PayPal configuration
 const PAYPAL_CLIENT_ID ="Ade8k3M3EeXrmvoP2XVgSgTsFdwfrWxMYZ2gLqop09h8lBxs4hvlp_YLIOQxju-aKdZ3mAvDrSn92aWc"
@@ -215,19 +216,19 @@ const TemplateCard = ({ template }) => {
         <h3 className="text-l font-semibold leading-tight">{template.name}</h3>
       </div>
       
-      <p className="w-fit bg-primary text-white px-2 py-1 rounded-full text-xs font-medium mb-1">
+      <p className="w-fit bg-tertiary text-secondary px-2 py-1 rounded-full text-xs font-medium mb-1">
         {template.category}
       </p>
-      <p className="text-gray-600 mb-4">{template.description}</p>
+      <p className="text-sm text-gray-600 mb-4">{template.description}</p>
       
       <div className="border-t pt-4">
-        <div className="flex justify-between items-center mb-4">
-          <span className="text-2xl font-bold text-primary">${template.price}</span>
+        <div className="flex justify-between items-center">
+          <span className="text-xl font-bold text-primary">${template.price?.toLocaleString()}</span>
           
           {isPaid() ? (
             <button
               onClick={() => downloadFile(template.id)}
-              className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium"
+              className="bg-primary text-white text-sm px-4 py-1 rounded-lg hover:bg-primary/90 transition-colors font-medium"
             >
               Download Again
             </button>
@@ -235,7 +236,7 @@ const TemplateCard = ({ template }) => {
             <button
               onClick={handleBuyClick}
               disabled={isProcessing}
-              className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium"
+              className="bg-primary text-white text-sm px-4 py-1 rounded-lg hover:bg-primary disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium"
             >
               {isProcessing ? 'Processing...' : 'Buy Now'}
             </button>
@@ -243,13 +244,13 @@ const TemplateCard = ({ template }) => {
         </div>
         
         {paymentStatus === 'paid' && (
-          <div className="text-secondary text-sm mb-2 px-4 py-2 bg-tertiary rounded w-fit">
+          <div className="text-secondary text-sm mb-2 px-4 py-2 bg-tertiary rounded w-fit mt-4">
             Payment completed! Download started.
           </div>
         )}
         
         {paymentStatus === 'failed' && (
-          <div className="text-red-600 text-sm mb-2 p-2 bg-red-50 rounded">
+          <div className="text-red-600 text-sm mb-2 p-2 bg-red-50 rounded mt-4">
             ❌ Payment failed. Please try again.
           </div>
         )}
@@ -382,33 +383,44 @@ const Template = () => {
     <div>
       <Header/>
       <div className="min-h-screen bg-gray-50 pb-[50px] mt-[90px]">
-        <div className='flex flex-col md:flex-row justify-between items-center gap-x-14 h-[300px] bg-[#040404] text-white mt-[90px] pb-[50px] px-[5%] py-8 mb-10'>
-          <div >
-            <p>Need a Template for Your Industry?</p>
-            <h2 className='mb-6'>Get yours today for just $1000</h2>
-            <p className='text-[#a5a4a4]'>We’ve created four major template categories designed to meet needs across industries:</p>
-            <div>EB-1A Templates | EB-2 NIW Templates | Recommendation Letters | Other Professional Templates</div>
+        {/* Hero SEction */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-x-14 h-auto md:h-[300px] bg-[#040404] text-white mt-[90px] pb-[50px] px-[5%] py-8 mb-10">
+          {/* Text Section */}
+          <div className="text-center md:text-left max-w-lg">
+            <p className="text-sm sm:text-base">Need a Template for Your Industry?</p>
+            <h2 className="mb-4 sm:mb-6 text-lg sm:text-2xl font-bold">
+              Get yours today for just $1000
+            </h2>
+            <p className="text-[#a5a4a4] text-sm sm:text-base mb-4">
+              We’ve created four major template categories designed to meet needs across industries:
+            </p>
+            <div className="text-xs sm:text-sm md:text-base mb-4">
+              EB-1A Templates | EB-2 NIW Templates | Recommendation Letters | Other Professional Templates
+            </div>
             <Link to="/get-template">
-              <button type='submit' className='forward-button w-full sm:w-[218px] rounded-[40px] bg-white text-black text-base font-semibold px-4 py-3 mt-4'>
-                <span className=''>Pay Now</span>
+              <button
+                type="submit"
+                className="forward-button w-full sm:w-[218px] rounded-[40px] bg-white text-black text-sm sm:text-base font-semibold px-4 py-3 mt-2 sm:mt-4"
+              >
+                <span>Pay Now</span>
               </button>
             </Link>
           </div>
-          <div className=''>
-            <img 
-              src={template} 
+
+          {/* Image Section */}
+          <div className="mt-6 md:mt-0 flex justify-center">
+            <img
+              src={template}
               alt="Prometrics Templates"
-              className='w-[400px]'
+              className="w-[250px] sm:w-[320px] md:w-[400px] h-auto object-contain"
             />
           </div>
-  
         </div>
-        <div className="max-w-6xl mx-auto px-4">
-          {/* <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">Premium Templates</h1>
-            <p className="text-gray-600">Professional templates for your application needs</p>
-          </div> */}
-          
+
+        {/* Requirements */}
+        <EBRequirementsCard />
+
+        <div className="px-[5%] mx-auto">
           {/* PayPal Status */}
           <div className="mb-6">
             {isLoading && (
