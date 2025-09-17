@@ -1,7 +1,9 @@
 import React from 'react'
 import Header from '../components/Header'
 import ceo from '../assets/images/ceo.png'
+import ceo1 from '../assets/images/intro-profile.jpg';
 import aboutCeo from '../assets/images/about-ceo.png'
+import aboutCeo1 from '../assets/images/about-profile1.jpg'
 import practicingCeo from '../assets/images/practicing-ceo.png'
 import practicingCeo1 from '../assets/images/ceo-profile.png'
 import { MoveRight } from 'lucide-react'
@@ -29,7 +31,7 @@ const Home = () => {
       <div className='bg-tertiary mt-[250px] md:mt-[110px] py-[50px]'>
         {/* Hero Section */}
         <div className=' px-[5%] flex flex-col md:flex-row justify-between items-center gap-x-14 pb-[50px]'>
-          <div className='flex-1  xlg:max-w-full'>
+          <div className='flex-1 xlg:max-w-full'>
             <h1 className='text-[38px] sm:text-[50px] md:text-[62px] font-semibold leading-none'>Elevate Your Legal Strategy with Prometrics </h1>
             <p className='text-base mt-6'>From intricate case analyses to comprehensive regulatory compliance, we are committed to delivering exceptional results. Partner with us and unlock the full potential of your business and legal strategy.</p>
             <div className='flex flex-col sm:flex-row items-center gap-x-6 gap-y-4 mt-4'>
@@ -56,15 +58,15 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className=''>
+          <div className='flex-1 mt-6 md:mt-o'>
             {/* <div className='hidden md:block relative top-[200px] right-[100px] shadow-3xl rounded-[40px] w-[250px] h-[50px]'/> */}
-            <img src={ceo} alt="Prometrics CEO" className='' />
+            <img src={ceo1} alt="Prometrics CEO" className='h-auto w-[500px] rounded-[100%] mx-auto' />
           </div>
         </div>
 
         {/* About Section */}
         <div className=' flex flex-col-reverse lg:flex-row items-center'>
-          <img src={aboutCeo} alt="Prometrics CEO" className=''/>
+          <img src={aboutCeo1} alt="Prometrics CEO" className='min-w-full lg:min-w-[450px] xl:min-w-[700px]'/>
           <div className='px-[5%] py-[50px]'>
             <p className='text-[14px] font-medium mb-2'>ABOUT PROMETRICS LEGAL HUB</p>
             <h2 className='max-w-full mb-6'>Up Close and Personal - Discover Who We Are:</h2>
