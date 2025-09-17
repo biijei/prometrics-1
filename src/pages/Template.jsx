@@ -399,7 +399,6 @@ const Template = () => {
             </div>
             <a href="#pay">
               <button
-                type="submit"
                 className="forward-button w-full sm:w-[218px] rounded-[40px] bg-white text-black text-sm sm:text-base font-semibold px-4 py-3 mt-2 sm:mt-4"
               >
                 <span>Pay Now</span>
