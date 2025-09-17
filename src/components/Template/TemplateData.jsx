@@ -11,7 +11,7 @@ export const templates = [
     id: 'EB1-002',
     name: 'EB-1A Petition Brief FINAL Medical Laboratory Technology',
     category: 'EB-1A Templates',
-    price: 1,
+    price: 1000,
     description: 'Final version of EB-1A petition brief for medical laboratory technology.'
   },
   {
@@ -148,7 +148,7 @@ export const templates = [
     id: 'REC-006',
     name: 'Independent Recommendation Letter Template 2',
     category: 'Recommendation letters',
-    price: 1000,
+    price: 1,
     description: 'Independent recommendation letter template, version 2.'
   },
   {
