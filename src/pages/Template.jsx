@@ -389,7 +389,7 @@ const Template = () => {
           <div className="text-center md:text-left max-w-lg">
             <p className="text-sm sm:text-base">Need a Template for Your Industry?</p>
             <h2 className="mb-4 sm:mb-6 text-lg sm:text-2xl font-bold">
-              Get yours today for just $1000
+              Get yours today for just $1,000
             </h2>
             <p className="text-[#a5a4a4] text-sm sm:text-base mb-4">
               We’ve created four major template categories designed to meet needs across industries:
