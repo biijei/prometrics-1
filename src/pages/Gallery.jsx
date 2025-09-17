@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { X } from 'lucide-react';
 import Header from '../components/Header';
 import ca10 from '../assets/images/caros10.png'
 import ca11 from '../assets/images/caros11.png'

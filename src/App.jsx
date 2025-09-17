@@ -18,8 +18,8 @@ import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";
 import Testimonial from "./pages/Testimonial";
 import TestimonialDetail from "./pages/TestimonialDetail";
-import Template from "./pages/Template";
 import Gallery from "./pages/Gallery";
+import Template from "./pages/Template";
 
 function App() {
 
@@ -43,7 +43,6 @@ function App() {
         <Route path="/testimonials/:slug" element={<TestimonialDetail />} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/get-template" element={<Template />} />
-
       </Routes>
     </BrowserRouter>
     

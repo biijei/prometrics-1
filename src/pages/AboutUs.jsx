@@ -1,16 +1,9 @@
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import HeroSection from '../components/HeroSection'
-import avatar from '../assets/images/Avatar.png'
-import avatar1 from '../assets/images/Avatar (1).png'
-import avatar2 from '../assets/images/Avatar (2).png'
-import avatar3 from '../assets/images/Avatar (3).png'
-import twitterGray from '../assets/icons/twitter-gray.svg'
-import linkedInGray from '../assets/icons/linkedIn-gray.svg'
-import CoreValues from '../components/CoreValues'
-import OurTeam from '../components/OurTeam'
-import CvTable from '../components/CvTable'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import HeroSection from '../components/HeroSection';
+import CoreValues from '../components/CoreValues';
+
 
 const AboutUs = () => {
   return (

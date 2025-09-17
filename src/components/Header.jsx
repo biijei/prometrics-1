@@ -9,7 +9,6 @@ import { X } from 'lucide-react';
 const  Header = () =>{
   const [ display, setDisplay ] = useState(false)
   const [showMenu, setShowMenu] = useState(false);
-  const navigate = useNavigate();
   
   // Dropdown click event 
   const handleDropdown = () => {
@@ -61,8 +60,6 @@ const  Header = () =>{
           </button>
         </nav>
       </div>
-
-
       
       {/* Desktop Menu */}
       <nav className='hidden md:flex'>

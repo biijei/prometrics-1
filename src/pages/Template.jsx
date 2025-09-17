@@ -12,7 +12,6 @@ import template from '../assets/images/template.png'
 import { Link } from 'react-router-dom'
 
 // PayPal configuration
-// const PAYPAL_CLIENT_ID = "AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R"; 
 const PAYPAL_CLIENT_ID ="Ade8k3M3EeXrmvoP2XVgSgTsFdwfrWxMYZ2gLqop09h8lBxs4hvlp_YLIOQxju-aKdZ3mAvDrSn92aWc"
 
 // Enhanced PayPal SDK loader with retry mechanism
