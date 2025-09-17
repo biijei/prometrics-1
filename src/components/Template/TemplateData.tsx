@@ -4,49 +4,49 @@ export const templates = [
     id: 'EB1-001',
     name: 'EB-1A Petition Brief Business Compliance (sample)',
     category: 'EB-1A Templates',
-    price: 10,
+    price: 1000,
     description: 'Sample EB-1A petition brief focused on business compliance.'
   },
   {
     id: 'EB1-002',
     name: 'EB-1A Petition Brief FINAL Medical Laboratory Technology',
     category: 'EB-1A Templates',
-    price: 10,
+    price: 1000,
     description: 'Final version of EB-1A petition brief for medical laboratory technology.'
   },
   {
     id: 'EB1-003',
     name: 'EB-1A Petition Brief Template Medical Scientist (version 1)',
     category: 'EB-1A Templates',
-    price: 10,
+    price: 1000,
     description: 'Template EB-1A petition brief for medical scientists, version 1.'
   },
   {
     id: 'EB1-004',
     name: 'EB-1A Petition Template Medical Science (version 2)',
     category: 'EB-1A Templates',
-    price: 10,
+    price: 1000,
     description: 'Updated EB-1A petition template for medical science, version 2.'
   },
   {
     id: 'EB1-005',
     name: 'EB-1A RFE Response Brief FINAL Medical Laboratory Technology',
     category: 'EB-1A Templates',
-    price: 10,
+    price: 1000,
     description: 'Final EB-1A RFE response brief for medical laboratory technology.'
   },
   {
     id: 'EB1-006',
     name: 'EB-1A RFE Response Template Geography',
     category: 'EB-1A Templates',
-    price: 10,
+    price: 1000,
     description: 'Template EB-1A RFE response focused on geography.'
   },
   {
     id: 'EB1-007',
     name: 'EB-1A Sample Agriculture Technology',
     category: 'EB-1A Templates',
-    price: 10,
+    price: 1000,
     description: 'Sample EB-1A petition brief highlighting agricultural technology.'
   },
 
@@ -55,105 +55,105 @@ export const templates = [
     id: 'REC-001',
     name: 'Construction Law Recommendation letters Template',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Recommendation letter template tailored for construction law.'
   },
   {
     id: 'REC-002',
     name: 'Critical Role LOR Template',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Letter of recommendation template for critical role positions.'
   },
   {
     id: 'REC-003',
     name: 'Dependent Recommendation Letter Template 1',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Template recommendation letter for dependents, version 1.'
   },
   {
     id: 'REC-004',
     name: 'EB-1A draft letter of recommendation',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Draft recommendation letter template for EB-1A petitions.'
   },
   {
     id: 'REC-005',
     name: 'EB2-NIW Recommendation Letter Templates Supply Chain',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Recommendation letter template for EB2-NIW petitions in supply chain.'
   },
   {
     id: 'REC-006',
     name: 'Independent Recommendation Letter Template 2',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Independent recommendation letter template, version 2.'
   },
   {
     id: 'REC-007',
     name: 'LOR Samples Agriculture',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Sample recommendation letters for agriculture field.'
   },
   {
     id: 'REC-008',
     name: 'LOR Template Chemistry',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Letter of recommendation template for chemistry professionals.'
   },
   {
     id: 'REC-009',
     name: 'LOR Template EHSS',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Letter of recommendation template for EHSS domain.'
   },
   {
     id: 'REC-010',
     name: 'LOR Template Original Contributions of Significance',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Recommendation letter highlighting original contributions of significance.'
   },
   {
     id: 'REC-011',
     name: 'LOR Templates Architecture',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Letter of recommendation templates for architecture professionals.'
   },
   {
     id: 'REC-012',
     name: 'LOR Templates Civil Engineering',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Recommendation letter templates for civil engineering.'
   },
   {
     id: 'REC-013',
     name: 'Recommendation Letter Template 2',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'General recommendation letter template, version 2.'
   },
   {
     id: 'REC-014',
     name: 'Recommendation Letter Templates Education',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Recommendation letter templates for the education field.'
   },
   {
     id: 'REC-015',
     name: 'Recommendation letter templates Tax Compliance',
     category: 'Recommendation letters',
-    price: 10,
+    price: 1000,
     description: 'Templates for recommendation letters in tax compliance.'
   },
 
@@ -162,56 +162,56 @@ export const templates = [
     id: 'NIW-001',
     name: 'EB-2 NIW Petition Template Supply Chain Logistics Engineering',
     category: 'EB2-NIW Templates',
-    price: 10,
+    price: 1000,
     description: 'Petition template for EB2-NIW in supply chain logistics engineering.'
   },
   {
     id: 'NIW-002',
     name: 'EB2-NIW Petition Brief (Fraud Detection, Statistics)',
     category: 'EB2-NIW Templates',
-    price: 10,
+    price: 1000,
     description: 'EB2-NIW petition brief template for fraud detection and statistics.'
   },
   {
     id: 'NIW-003',
     name: 'EB2-NIW Petition Brief (Geography GIS Template)',
     category: 'EB2-NIW Templates',
-    price: 10,
+    price: 1000,
     description: 'EB2-NIW petition brief template with a focus on GIS and geography.'
   },
   {
     id: 'NIW-004',
     name: 'EB2-NIW Petition Brief Template (Accounting Tax Compliance)',
     category: 'EB2-NIW Templates',
-    price: 10,
+    price: 1000,
     description: 'Petition brief template for accounting and tax compliance.'
   },
   {
     id: 'NIW-005',
     name: 'EB2-NIW Petition Brief Template (Chemistry)',
     category: 'EB2-NIW Templates',
-    price: 10,
+    price: 1000,
     description: 'Petition brief template for EB2-NIW chemistry cases.'
   },
   {
     id: 'NIW-006',
     name: 'EB2-NIW Petition Template (Biotechnology)',
     category: 'EB2-NIW Templates',
-    price: 10,
+    price: 1000,
     description: 'Petition template for EB2-NIW biotechnology applications.'
   },
   {
     id: 'NIW-007',
     name: 'EB2-NIW Template (IT)',
     category: 'EB2-NIW Templates',
-    price: 10,
+    price: 1000,
     description: 'EB2-NIW petition template for information technology cases.'
   },
   {
     id: 'NIW-008',
     name: 'EB2-NIW RFE Response Template (Law)',
     category: 'EB2-NIW Templates',
-    price: 10,
+    price: 1000,
     description: 'EB2-NIW RFE response template focusing on law cases.'
   },
 
@@ -220,42 +220,42 @@ export const templates = [
     id: 'OTH-001',
     name: 'Cover Letter for I-485 Derivative Applicant',
     category: 'Others',
-    price: 10,
+    price: 1000,
     description: 'Cover letter template for I-485 derivative applicants.'
   },
   {
     id: 'OTH-002',
     name: 'Critical Role Letter Business Compliance (sample)',
     category: 'Others',
-    price: 10,
+    price: 1000,
     description: 'Sample business compliance letter for critical roles.'
   },
   {
     id: 'OTH-003',
     name: 'Template Statement of Intent for I-485 (version 1)',
     category: 'Others',
-    price: 10,
+    price: 1000,
     description: 'Statement of intent template for I-485 applications, version 1.'
   },
   {
     id: 'OTH-004',
     name: 'Template Statement of Intent for I-485 (version 2)',
     category: 'Others',
-    price: 10,
+    price: 1000,
     description: 'Updated statement of intent template for I-485 applications, version 2.'
   },
   {
     id: 'OTH-005',
     name: 'Testimonial on Significance of Original Scholarly Contributions',
     category: 'Others',
-    price: 10,
+    price: 1000,
     description: 'Template testimonial on scholarly contributions of significance.'
   },
   {
     id: 'OTH-006',
     name: 'Template Cover Letter for I-485',
     category: 'Others',
-    price: 10,
+    price: 1000,
     description: 'Cover letter template for I-485 applications.'
   }
 ];

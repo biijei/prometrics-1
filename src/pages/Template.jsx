@@ -384,10 +384,10 @@ const Template = () => {
       <div className="min-h-screen bg-gray-50 pb-[50px] mt-[90px]">
         <div className='flex flex-col md:flex-row justify-between items-center gap-x-14 h-[300px] bg-[#040404] text-white mt-[90px] pb-[50px] px-[5%] py-8 mb-10'>
           <div >
-            <p>Do you want a template for your industry?</p>
-            <h2 className='mb-6'>Get a Template for $10</h2>
-            <p className='text-[#a5a4a4]'>We have design 4 major templates categories which cut across all industries.</p>
-            <div>EB-1A Templates | Recommendation letters | EB2-NIW Templates | Others</div>
+            <p>Need a Template for Your Industry?</p>
+            <h2 className='mb-6'>Get yours today for just $1000</h2>
+            <p className='text-[#a5a4a4]'>We’ve created four major template categories designed to meet needs across industries:</p>
+            <div>EB-1A Templates | EB-2 NIW Templates | Recommendation Letters | Other Professional Templates</div>
             <Link to="/get-template">
               <button type='submit' className='forward-button w-full sm:w-[218px] rounded-[40px] bg-white text-black text-base font-semibold px-4 py-3 mt-4'>
                 <span className=''>Pay Now</span>
