@@ -397,14 +397,14 @@ const Template = () => {
             <div className="text-xs sm:text-sm md:text-base mb-4">
               EB-1A Templates | EB-2 NIW Templates | Recommendation Letters | Other Professional Templates
             </div>
-            <Link to="/get-template">
+            <a href="#pay">
               <button
                 type="submit"
                 className="forward-button w-full sm:w-[218px] rounded-[40px] bg-white text-black text-sm sm:text-base font-semibold px-4 py-3 mt-2 sm:mt-4"
               >
                 <span>Pay Now</span>
               </button>
-            </Link>
+            </a>
           </div>
 
           {/* Image Section */}
@@ -459,7 +459,7 @@ const Template = () => {
               <Filter className="w-5 h-5 text-gray-600" />
               <span className="font-medium text-gray-700">Filter by Category:</span>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div id="pay" className="flex flex-wrap gap-2">
               {categories.map(category => (
                 <button
                   key={category}
