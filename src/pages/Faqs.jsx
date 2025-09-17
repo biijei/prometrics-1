@@ -2,6 +2,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import practicingCeo from '../assets/images/practicing-ceo.png'
+import practicingCeo1 from '../assets/images/ceo-profile.png'
 import facebook from '../assets/icons/facebook.svg'
 import twitter from '../assets/icons/twitter.svg'
 import instagram from '../assets/icons/instagram.svg'
@@ -64,7 +65,7 @@ const Faqs = () => {
             </div>
           </div>
           <div className='md:h-[435px]'>
-            <img src={practicingCeo} alt="Practing CEO of Promrtrics" className='relative md:top-[-100px]' />
+            <img src={practicingCeo1} alt="Practing CEO of Promrtrics" className='relative md:top-[-100px]' />
           </div>
         </div>
         
