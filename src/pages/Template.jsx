@@ -388,21 +388,18 @@ const Template = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-x-14 h-auto md:h-[300px] bg-[#040404] text-white mt-[90px] pb-[50px] px-[5%] py-8 mb-10">
           {/* Text Section */}
           <div className="text-center md:text-left max-w-lg">
-            <p className="text-sm sm:text-base">Need a Template for Your Industry?</p>
-            <h2 className="mb-4 sm:mb-6 text-lg sm:text-2xl font-bold">
-              Get yours today for just $1,000
-            </h2>
+            <p className="text-xl sm:text-3xl mb-2">Need a Template to Get Started?</p>
             <p className="text-[#a5a4a4] text-sm sm:text-base mb-4">
               We’ve created four major template categories designed to meet needs across industries:
             </p>
-            <div className="text-xs sm:text-sm md:text-base mb-4">
+            <p className="text-xs sm:text-sm md:text-base mb-4">
               EB-1A Templates | EB-2 NIW Templates | Recommendation Letters | Other Professional Templates
-            </div>
+            </p>
             <a href="#pay">
               <button
                 className="forward-button w-full sm:w-[218px] rounded-[40px] bg-white text-black text-sm sm:text-base font-semibold px-4 py-3 mt-2 sm:mt-4"
               >
-                <span>Pay Now</span>
+                <span>Get Yours Now</span>
               </button>
             </a>
           </div>
