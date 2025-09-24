@@ -9,7 +9,6 @@ import { ChevronLeft } from 'lucide-react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import template from '../assets/images/template.png'
-import { Link } from 'react-router-dom'
 import EBRequirementsCard from '../components/Template/EBRequirementsCard';
 
 // PayPal configuration
@@ -443,11 +442,11 @@ const Template = () => {
               </div>
             )}
             
-            {isLoaded && (
+            {/* {isLoaded && (
               <div className="bg-tertiary border border-border rounded-lg p-4">
                 <span className="text-primary">Payment system ready</span>
               </div>
-            )}
+            )} */}
           </div>
           
           {/* Category Filter */}

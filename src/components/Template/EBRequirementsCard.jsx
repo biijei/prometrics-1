@@ -59,7 +59,7 @@ function RequirementItem({ text, index, checked, onToggle }) {
 
       <div className="flex-1">
         <div className="flex items-center justify-between gap-4">
-          <p className="text-sm font-medium text-slate-900">{text}</p>
+          <p className="text-base font-medium text-slate-900">{text}</p>
         </div>
       </div>
     </li>
@@ -231,7 +231,7 @@ export default function EBRequirementsCard() {
         </AnimatePresence>
       </div>
 
-      <footer className="mt-4 text-center text-xs text-slate-500">Guidance is for checklist organization only and not legal advice.</footer>
+      <footer className="mt-4 text-center text-sm text-slate-500">Guidance is for checklist organization only and not legal advice.</footer>
     </div>
   )
 }
