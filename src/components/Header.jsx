@@ -24,7 +24,7 @@ const  Header = () =>{
     <div className= {showMenu ? 'bg-tertiary  homeHeader ' : 'bg-tertiary homeHeader'}>
       <div className='flex justify-center items-center gap-2'>
         <Link to='/'><img src={logo} alt="logo" className='w-[39px]'/></Link> 
-        <p className='text-[#15110D] text-[20px] font-bold'>Prometrics Legal Hub, LLC</p>
+        <p className='text-[#15110D] text-[20px] font-semibold'>PROMETRICS LEGAL HUB, LLC</p>
       </div>
       {/* mobile Menu */}
       <div className="md:hidden text-right" >

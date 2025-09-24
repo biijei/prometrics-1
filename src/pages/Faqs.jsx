@@ -14,7 +14,12 @@ const Faqs = () => {
     <div>
       <Header/>
       <div className='bg-tertiary mt-[90px] pb-[50px]'>
-        <HeroSection subtitile='FAQs' titile='Ask Us Anything' menu='FAQs' bgimage='aboutbg'/>
+        <HeroSection 
+          subtitile='FAQs' 
+          titile='Ask Us Questions' 
+          menu='FAQs' bgimage='aboutbg'
+          link = 'https://calendly.com/prometricspro/legal-consult'
+        />
 
         {/* FAQ */}
         <div className='px-[5%] pt-[100px] pb-[50px]'>
@@ -38,7 +43,7 @@ const Faqs = () => {
         </div>
 
         {/* FAQ bar */}
-        <div className='md:mx-[5%] rounded-[16px] bg-white flex flex-col md:flex-row justify-between md:items-center min-h-[125px] px-8 md:px-[32px] py-[32px] mb-[100px]'>
+        <div className='md:mx-[5%] rounded-[16px] bg-white flex flex-col md:flex-row justify-between md:items-center min-h-[125px] px-8 md:px-[32px] py-[32px] mb-[30px]'>
           <div>
             <p className='text-[23px] text-[#15110D] font-semibold mb-4 '>Still have questions?</p>
             <p className='text-[18px] mb-2'>Can’t find the answer you’re looking for? Please book an appointment with our team.</p>
@@ -47,6 +52,18 @@ const Faqs = () => {
           <Link to="https://calendly.com/prometricspro/legal-consult" target='_blank'>
             <button className='forward-button bg-primary w-[150px] h-[42px] rounded-[8px] font-semibold text-white mt-4 md:mt-0 '>
               <span>Book Now</span>
+            </button>
+          </Link>
+        </div>
+
+        {/* Template bar */}
+        <div className='md:mx-[5%] rounded-[16px] bg-white flex flex-col md:flex-row justify-between md:items-center min-h-[125px] px-8 md:px-[32px] py-[32px] mb-[150px]'>
+          <div>
+            <p className='text-[23px] text-[#15110D] font-semibold mb-4 '>Looking for templates to get started?</p>
+          </div>
+          <Link to="/get-template">
+            <button className='forward-button bg-primary w-[150px] h-[42px] rounded-[8px] font-semibold text-white mt-4 md:mt-0 '>
+              <span>Get Template</span>
             </button>
           </Link>
         </div>
