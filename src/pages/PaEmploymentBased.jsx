@@ -7,7 +7,7 @@ import pa from '../assets/images/employment-based.png'
 import member from '../assets/images/member.jpg'
 import { Link } from 'react-router-dom'
 import AccordionFaq from '../components/AccordionFaq'
-import Testimonials from '../components/Testimonials'
+import HomeTestimonials from '../components/HomeTestimonials'
 
 const PaEmploymentBased = () => {
   return (
@@ -109,7 +109,7 @@ const PaEmploymentBased = () => {
         </div>
 
         {/* Testimonial */}
-        <Testimonials/>
+        <HomeTestimonials/>
         
       </div>
       <Footer/>

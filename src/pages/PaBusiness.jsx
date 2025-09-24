@@ -6,7 +6,7 @@ import AccordionFaq from '../components/AccordionFaq'
 import Accordion from '../components/Accordion'
 import { Link } from 'react-router-dom'
 import pa from '../assets/images/employment-consult.png'
-import Testimonials from '../components/Testimonials'
+import HomeTestimonials from '../components/HomeTestimonials'
 
 const PaBusiness = () => {
   return (
@@ -103,7 +103,7 @@ const PaBusiness = () => {
         </div>
 
         {/* Testimonial */}
-        <Testimonials/>
+        <HomeTestimonials/>
         
       </div>
       <Footer/>

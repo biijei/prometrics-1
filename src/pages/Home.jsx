@@ -14,11 +14,11 @@ import linkedIn from '../assets/icons/linkedIn.svg'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 import CoreValues from '../components/CoreValues'
-import Testimonials from '../components/Testimonials'
 import Slider from '../components/Slider'
 import NewsSection from '../components/News/NewsSection'
 import { ChevronRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import HomeTestimonials from '../components/HomeTestimonials';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -155,7 +155,7 @@ const Home = () => {
         </div>
 
         {/* Testimonial */}
-        <Testimonials/>
+        <HomeTestimonials/>
 
         <div className="px-[5%] py-[50px]">
           <NewsSection/>

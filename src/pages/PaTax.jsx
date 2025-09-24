@@ -6,7 +6,7 @@ import AccordionFaq from '../components/AccordionFaq'
 import { Link } from 'react-router-dom'
 import Accordion from '../components/Accordion'
 import pa from '../assets/images/employment-based.png'
-import Testimonials from '../components/Testimonials'
+import HomeTestimonials from '../components/HomeTestimonials'
 
 const PaTax = () => {
   return (
@@ -103,7 +103,7 @@ const PaTax = () => {
         </div>
 
         {/* Testimonial */}
-        <Testimonials/>
+        <HomeTestimonials/>
 
       </div>
       <Footer/>

@@ -220,42 +220,42 @@ export const templates = [
     id: 'OTH-001',
     name: 'Cover Letter for I-485 Derivative Applicant',
     category: 'Others',
-    price: 1499.99,
+    price: 199.99,
     description: 'Cover letter template for I-485 derivative applicants.'
   },
   {
     id: 'OTH-002',
     name: 'Critical Role Letter Business Compliance (sample)',
     category: 'Others',
-    price: 1499.99,
+    price: 199.99,
     description: 'Sample business compliance letter for critical roles.'
   },
   {
     id: 'OTH-003',
     name: 'Template Statement of Intent for I-485 (version 1)',
     category: 'Others',
-    price: 1499.99,
+    price: 199.99,
     description: 'Statement of intent template for I-485 applications, version 1.'
   },
   {
     id: 'OTH-004',
     name: 'Template Statement of Intent for I-485 (version 2)',
     category: 'Others',
-    price: 1499.99,
+    price: 199.99,
     description: 'Updated statement of intent template for I-485 applications, version 2.'
   },
   {
     id: 'OTH-005',
     name: 'Testimonial on Significance of Original Scholarly Contributions',
     category: 'Others',
-    price: 1499.99,
+    price: 199.99,
     description: 'Template testimonial on scholarly contributions of significance.'
   },
   {
     id: 'OTH-006',
     name: 'Template Cover Letter for I-485',
     category: 'Others',
-    price: 1499.99,
+    price: 199.99,
     description: 'Cover letter template for I-485 applications.'
   },
 ];
