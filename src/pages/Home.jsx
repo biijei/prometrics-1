@@ -36,8 +36,8 @@ const Home = () => {
             <p className='text-base mt-6'>From intricate case analyses to comprehensive regulatory compliance, we are committed to delivering exceptional results. Partner with us and unlock the full potential of your business and legal strategy.</p>
             <div className='flex flex-col sm:flex-row items-center gap-x-6 gap-y-4 mt-4'>
               <button className='full-rounded contained-button w-full sm:w-[218px] bg-primary rounded-[40px] text-white text-base px-4 py-5 font-semibold'>
-                <Link to='/pa-employment-based'>
-                <span>Practice Areas</span>
+                <Link to='/get-template'>
+                <span>Get Template</span>
                 <div className="outside-border full-rounded"></div>
                 </Link>
               </button>
