@@ -1,77 +1,89 @@
 import React from "react";
 
 const CoreValues = () => {
+  const values = [
+    {
+      title: "EXCELLENCE",
+      description: "You can bank on our expertise to implement tailor-fit, practical strategies that deliver the desired results to you."
+    },
+    {
+      title: "INTEGRITY",
+      description: "We draw the line at cutting corners. We simply won't do it for anyone!"
+    },
+    {
+      title: "RESPONSIVENESS",
+      description: "We pride ourselves in being accessible to our clients at all times."
+    },
+    {
+      title: "PASSION",
+      description: "Our passion always shines through to our clients."
+    },
+    {
+      title: "EFFICIENCY",
+      description: "We favor practical speedy solutions over bureaucratic legal jargons."
+    },
+    {
+      title: "SIMPLICITY",
+      description: "We keep it simple. Our mantra is that if a 10-year old cannot understand your documents, you haven't communicated."
+    },
+    {
+      title: "CONVENIENCE",
+      description: "We take up your legal burdens and have sleepless nights so you can rest easy."
+    },
+    {
+      title: "AUTHENTICITY",
+      description: "We keep it real. You always know where you stand with us."
+    },
+    {
+      title: "AFFORDABILITY",
+      description: "We are affordable, providing you with fit-for-purpose strategy, practical valuable outcomes, and positive results leveraging our expertise in law, business and strategy, that far exceeds any price you pay."
+    }
+  ];
+
   return (
-    <div className="px-[5%] py-[100px] bg-[#15110D] text-white">
-      <p className="text-[14px] font-medium mb-2">OUR CORE VALUES</p>
-      <h2 className="max-w-[451px] mb-8">
-        Prometrics Legal Hub: Our Guiding Pillars
-      </h2>
-      <div className="flex flex-col md:flex-row gap-x-10 gap-y-8 mb-8">
-        <div className="flex-1">
-          <h4 className="mb-2">EXCELLENCE</h4>
-          <p className="text-[14px]">
-            You can bank on our expertise to implement tailor-fit, practical
-            strategies that deliver the desired results to you.
-          </p>
+    <div className="px-[5%] py-[100px] bg-[#15110D] text-white relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl"></div>
+      
+      <div className="relative z-10">
+        {/* Header section with enhanced styling */}
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="h-[2px] w-12 bg-primary"></div>
+            <p className="text-[14px] font-medium tracking-wider text-primary">OUR CORE VALUES</p>
+          </div>
+          <h2 className="max-w-[451px]">
+            Prometrics Legal Hub: Our Guiding Pillars
+          </h2>
         </div>
-        <div className="flex-1">
-          <h4 className="mb-2">INTEGRITY</h4>
-          <p className="text-[14px]">
-            We draw the line at cutting corners. We simply won’t do it for
-            anyone!
-          </p>
-        </div>
-        <div className="flex-1">
-          <h4 className="mb-2">RESPONSIVENESS</h4>
-          <p className="text-[14px]">
-            We pride ourselves in being accessible to our clients at all times.
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row gap-x-10 gap-y-8 mb-8">
-        <div className="flex-1">
-          <h4 className="mb-2">PASSION</h4>
-          <p className="text-[14px]">
-            Our passion always shines through to our clients.
-          </p>
-        </div>
-        <div className="flex-1">
-          <h4 className="mb-2">EFFICIENCY</h4>
-          <p className="text-[14px]">
-            We favor practical speedy solutions over bureaucratic legal jargons.
-          </p>
-        </div>
-        <div className="flex-1">
-          <h4 className="mb-2">SIMPLICITY</h4>
-          <p className="text-[14px]">
-            We keep it simple. Our mantra is that if a 10-year old cannot
-            understand your documents, you haven&apos;t communicated.
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row gap-x-10 gap-y-8">
-        <div className="flex-1">
-          <h4 className="mb-2">CONVENIENCE</h4>
-          <p className="text-[14px]">
-            We take up your legal burdens and have sleepless nights so you can
-            rest easy.
-          </p>
-        </div>
-        <div className="flex-1">
-          <h4 className="mb-2">AUTHENTICITY</h4>
-          <p className="text-[14px]">
-            We keep it real. You always know where you stand with us.
-          </p>
-        </div>
-        <div className="flex-1">
-          <h4 className="mb-2">AFFORDABILITY</h4>
-          <p className="text-[14px]">
-            We are affordable, providing you with
-            fit-for-purpose strategy, practical valuable outcomes, and positive
-            results leveraging our expertise in law, business and strategy, that
-            far exceeds any price you pay.
-          </p>
+
+        {/* Values grid with enhanced cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {values.map((value, index) => (
+            <div
+              key={index}
+              className="group relative bg-secondary bg-opacity-30 border border-border border-opacity-20 rounded-lg p-6 hover:bg-opacity-50 hover:border-primary hover:border-opacity-40 transition-all duration-300 hover:transform hover:-translate-y-1"
+            >
+              {/* Decorative corner accent */}
+              <div className="absolute top-0 left-0 w-1 h-12 bg-primary rounded-tr-lg transition-all duration-300 group-hover:h-full"></div>
+              
+              <div className="relative">
+                {/* Number badge */}
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-primary bg-opacity-10 rounded-full mb-4 border border-primary border-opacity-20">
+                  <span className="text-primary text-sm font-bold">{String(index + 1).padStart(2, '0')}</span>
+                </div>
+                
+                <h4 className="mb-3 text-xl font-bold text-primary tracking-wide">
+                  {value.title}
+                </h4>
+                
+                <p className="text-[14px] leading-relaxed text-gray-300">
+                  {value.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -67,7 +67,7 @@ const  Header = () =>{
         <ul className="flex items-center gap-4 text-sm text-[#15110D] font-medium">
           <li className="hover:text-primary"><NavLink to="/">Home</NavLink></li>
           <li className='hover:text-primary whitespace-nowrap'><NavLink to="/about-us">About us</NavLink></li>
-          <li className='dropdown py-8'>
+          <li className='dropdown py-8 mt-1'>
             <button  className="flex whitespace-nowrap">Practice Areas <ChevronDown /></button>
             <div className="hidden absolute top-[92px] left-0 w-full z-10">
             {/* <div className={display ? "absolute top-[110px] left-0 w-full z-10" : "hidden absolute top-[110px] left-0 w-full z-10"}> */}
