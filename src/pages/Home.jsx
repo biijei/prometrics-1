@@ -28,7 +28,7 @@ const Home = () => {
       <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-4 md:py-0 text-center text-[#FFFFFF] fixed top-[90px] left-0 right-0 z-20'>
         `We&apos;re back and better than ever— now fully digital and at your service!` <Link to="/contact" className='text-primary'> Contact us today.</Link>
       </div>
-      <div className='bg-tertiary mt-[190px] sm:mt-[160px] md:mt-[140px] pb-[50px]'>
+      <div className='bg-tertiary mt-[190px] sm:mt-[160px] md:mt-[140px]'>
         {/* Hero Section */}
         <div className='bg-secondary px-[5%] flex flex-col md:flex-row justify-between items-center gap-x-14 py-[50px]'>
           <div className='flex-1 xlg:max-w-full text-white'>
