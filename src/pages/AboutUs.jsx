@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import CoreValues from '../components/CoreValues';
+import HistorySection from '../components/About/HistorySection';
+import MeetOurTeam from '../components/About/MeetOurTeam';
 
 
 const AboutUs = () => {
@@ -40,7 +42,8 @@ const AboutUs = () => {
         </div>
 
         {/* Our History */}
-        <div className='px-[5%] py-[50px]'>
+        <HistorySection/>
+        {/* <div className='px-[5%] py-[50px]'>
           <p className='text-[14px] font-medium mb-2'>OUR HISTORY</p>
           <h2 className='max-w-[451px] mb-8'>Care To Know How We Got Here?</h2>
           <p className='font-semibold mb-4'>Our General Counsel is the visioner behind PROMETRICS LEGAL HUB</p>
@@ -49,13 +52,14 @@ const AboutUs = () => {
           <p className='mb-4 leading-loose'>Dr. Fola has a PhD in Business Law, an MBA and is an Ohio Notary Public. In addition, she is a Fellow of the Chartered Institute of Arbitrators, UK (FCIArb), Fellow of the Institute of Chartered Secretaries and Administrators (ICSAN), Fellow of The Chartered Institute of Taxation (FCTI) and Full Member of the Chartered Institute of Personnel Management (MCIPM) with a Human Resources Professional License (HRPL).</p>
           <p className='mb-4 leading-loose'>She enrolled in the U.S. Attorney licensing exams, passed it, got admitted and leveraging on her in-depth legal skills, business acumen, proactiveness, professionalism and thoroughness from working at multinational oil and gas giant, Shell plc for five years, applied that to create a business venture to address the pain points of fellow immigrants. Dr. Fola leverages her legal and analytical skills combined with her business acumen to find practical answers to nagging questions encountered by non-immigrants who seek to make the United States their permanent home and applies these skills to provide tailor-fit solutions to her network and business clients. As the saying goes, charity begins at home. Dr. Fola applied her learnings to secure permanent residence in the United States of America, understand the business and employment terrain of U.S. and is now committed to ensuring that immigrants have access to information and strategies that can position them to make the best of United States of America – the great land of opportunities.</p>
           <p className='font-medium'>And that&apos;s how we got here!</p>
-        </div>
+        </div> */}
 
         {/* Our Core Values */}
         <CoreValues/>
 
         {/* Meet Our Team */}
-        <div className='px-[5%] bg-[#F9FAFB] py-[100px] '>
+        <MeetOurTeam/>
+        {/* <div className='px-[5%] bg-[#F9FAFB] py-[100px] '>
           <div className='max-w-[654px] text-left sm:text-center mx-auto mb-20'>
             <p className='text-[14px] font-medium mb-2'>THE BRAINS BEHIND PROMETRICS LEGAL HUB</p>
             <h2>Meet Our General Counsel</h2>
@@ -64,11 +68,8 @@ const AboutUs = () => {
             <p className='mb-4 leading-loose'>We have a team of diverse thorough bred experienced professionals to serve your varied consultation needs. We have Ph.D. Holders, MBA Holders, Attorneys, Licensed HR Practitioners, Scientists, Engineers, and Cybersecurity Experts on our team. </p>
             <p className='mb-4 leading-loose'>Our General Counsel, Dr. (Mrs.) Fola Odion, PhD (Law), MBA is a multi-skilled, dual-qualified business attorney, licensed in New York and Nigeria as an Attorney, and registered as a Corporate Counsel in Ohio with legal experience spanning 15 years. Dr. Fola&apos;s career has been highlighted by a series of achievements in guiding prominent organizations through complex legal landscapes while driving strategic growth initiatives. She has provided strategic legal advice to shareholders and board of directors of prominent multinational companies, including Shell plc and does likewise to small and medium businesses, providing skilled guidance on contract drafting and negotiations, ensuring optimal protection of clients&apos; interests and ensuring compliance with relevant laws and regulations. Dr. Fola advises clients on complex business transactions, including mergers, acquisitions, and other restructuring schemes, with a keen focus on minimizing risks and maximizing opportunities for growth. Dr. Fola collaborates closely with business owners and executives to develop and implement innovative legal and business solutions tailored to the unique needs of businesses and individuals, and represents business clients in negotiations, mediations and dispute resolution proceedings, demonstrating strong advocacy skills.</p>
             <p className='leading-loose'>Dr. Fola has a Doctor of Philosophy degree (Ph.D.) in Business Law from University of Lagos, Nigeria, and holds an MBA from Bowling Green State University, Ohio, USA. She is a Notary Public, Fellow of the Chartered Taxation Institute, Fellow of the Corporate Governance Institute and Fellow of the Chartered Institute of Arbitrators, UK. She also holds an advanced diploma in international tax from the Chartered Institute of Taxation, UK and holds a human resources professional license (MCIPM, HRPL). She is a licensed insolvency & business restructuring practitioner</p>
-
           </div>
-
-        </div>
-
+        </div> */}
       </div>
       <Footer/>
     </div>

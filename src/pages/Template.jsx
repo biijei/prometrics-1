@@ -216,7 +216,7 @@ const TemplateCard = ({ template }) => {
         <h3 className="text-l font-semibold leading-tight">{template.name}</h3>
       </div>
       
-      <p className="w-fit bg-tertiary text-secondary px-2 py-1 rounded-full text-xs font-medium mb-1">
+      <p className="w-fit bg-tertiary text-white px-2 py-1 rounded-full text-xs font-medium mb-1">
         {template.category}
       </p>
       <p className="text-sm text-gray-600 mb-4">{template.description}</p>
@@ -312,7 +312,7 @@ const PaymentHistory = () => {
 
   if (payments.length === 0) {
     return (
-      <div className="text-center py-8">
+      <div className="text-white text-center py-8">
         <p className="text-gray-500 text-lg">No purchases yet</p>
         <p className="text-gray-400 text-sm">Your purchased templates will appear here</p>
       </div>
@@ -382,7 +382,7 @@ const Template = () => {
   return (
     <div>
       <Header/>
-      <div className="min-h-screen bg-gray-50 pb-[50px] mt-[90px]">
+      <div className="min-h-screen bg-gray-50 mt-[90px]">
         {/* Hero SEction */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-x-14 h-auto md:h-[300px] bg-[#040404] text-white mt-[90px] pb-[50px] px-[5%] py-8 mb-10">
           {/* Text Section */}
@@ -416,7 +416,7 @@ const Template = () => {
         {/* Requirements */}
         <EBRequirementsCard />
 
-        <div className="px-[5%] mx-auto">
+        <div className="bg-secondary px-[5%] pt-[20px] mx-auto">
           {/* PayPal Status */}
           <div className="mb-6">
             {isLoading && (
@@ -450,7 +450,7 @@ const Template = () => {
           </div>
           
           {/* Category Filter */}
-          <div className="mb-8">
+          <div className="text-white mb-8">
             <div className="flex items-center gap-2 mb-4">
               <Filter className="w-5 h-5 text-gray-600" />
               <span className="font-medium text-gray-700">Filter by Category:</span>
@@ -489,11 +489,11 @@ const Template = () => {
             
             {/* Pagination */}
             {totalPages > 1 && (
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-2 text-white">
                 <button
                   onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                   disabled={currentPage === 1}
-                  className="p-2 rounded-lg border disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+                  className="p-2 rounded-lg border border-primary disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
@@ -517,7 +517,7 @@ const Template = () => {
                   disabled={currentPage === totalPages}
                   className="p-2 rounded-lg border border-primary disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
                 >
-                  <ChevronRight className="w-5 h-5 text-primary" />
+                  <ChevronRight className="w-5 h-5" />
                 </button>
               </div>
             )}

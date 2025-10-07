@@ -14,6 +14,7 @@ import { Phone } from 'lucide-react'
 import { Mail } from 'lucide-react'
 import emailjs from '@emailjs/browser';
 import { AlertTriangle } from "lucide-react";
+import CeoProfileSection from "../components/CeoProfileSection";
 
 
 const Contact = () => {
@@ -45,7 +46,7 @@ const Contact = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-tertiary mt-[90px] pb-[50px]'>
+      <div className='bg-tertiary mt-[90px]'>
         <HeroSection subtitile='Reach Out' titile='Contact Us' menu='Contact' bgimage='aboutbg'/>
         {/* Contact Cards */}
         <div className='px-[5%] flex flex-col md:flex-row justify-center items-center gap-8 md:absolute left-0 right-0'>
@@ -108,7 +109,8 @@ const Contact = () => {
         </div>
 
         {/* CEO profile */}
-        <div className='px-[5%] md:mx-[5%] pt-[50px] md:py-0 bg-[#E2E7ED] my-[50px] rounded-[24px] flex flex-col md:flex-row flex-wrap justify-center items-center gap-x-[60px] '>
+        <CeoProfileSection/>
+        {/* <div className='px-[5%] md:mx-[5%] pt-[50px] md:py-0 bg-[#E2E7ED] my-[50px] rounded-[24px] flex flex-col md:flex-row flex-wrap justify-center items-center gap-x-[60px] '>
           <div className='max-w-[530px] '>
             <p className=' text-[18px] md:text-[23px] text-[#555758] leading-tight mb-8'> Prometrics represents clients in employment consult, employment based immigration consult, estate planning, tax planning, business planning and notarization.</p>
             <p className='text-[23px] md:text-[28px] font-semibold mb-2 '>Dr. Fola Odion, PhD (Law), MBA</p>
@@ -123,7 +125,7 @@ const Contact = () => {
           <div className='md:h-[435px]'>
             <img src={practicingCeo} alt="Practing CEO of Promrtrics" className='relative md:top-[-100px]' />
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer/>
 

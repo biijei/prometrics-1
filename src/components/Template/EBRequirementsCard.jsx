@@ -104,7 +104,7 @@ export default function EBRequirementsCard() {
   const satisfiedCount = checked.filter(Boolean).length
 
   return (
-    <div className="px-[5%] mx-auto p-6">
+    <div className="px-[5%] mx-auto pb-6">
       <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-100">
         <div className="bg-gradient-to-r from-tertiary via-white to-tertiary p-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>

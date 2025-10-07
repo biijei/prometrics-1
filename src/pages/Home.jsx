@@ -19,6 +19,7 @@ import NewsSection from '../components/News/NewsSection'
 import { ChevronRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import HomeTestimonials from '../components/HomeTestimonials';
+import CeoProfileSection from '../components/CeoProfileSection';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -141,22 +142,7 @@ const Home = () => {
         </div>
 
         {/* CEO profile */}
-        <div className='px-[5%] md:mx-[5%] pt-[50px] md:py-0 bg-[#E2E7ED] my-[50px] rounded-[24px] flex flex-col md:flex-row flex-wrap justify-center items-center gap-x-[60px] '>
-          <div className='max-w-[530px] '>
-            <p className=' text-[18px] md:text-[23px] text-[#555758] leading-tight mb-8'> Prometrics represents clients in employment consult, employment based immigration consult, estate planning, tax planning, business planning and notarization.</p>
-            <p className='text-[23px] md:text-[28px] font-semibold mb-2 '>Dr. (Mrs.). Fola Odion, PhD (Law), MBA</p>
-            <p className='text-[16px] md:text-[18px] md:[20px] font-medium mb-8 '>Ph.D. in Law l MBA l General Counsel l Licensed Attorney in New York & Texas</p>
-            <div className='flex gap-x-2'>
-              <a href="https://www.facebook.com/prometricspro?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Prometrics Facebook" /></a>
-              <a href="https://x.com/prometricspro?s=21" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Prometrics twitter" /></a>
-              <a href="https://www.instagram.com/prometricspro/?igsh=MTc1dXd0a2tlYTZreg%3D%3D" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Prometrics instagram" /></a>
-              <a href="https://www.linkedin.com/company/prometrics-professional-hub/" target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt="Prometrics linkedIn" /></a>
-            </div>
-          </div>
-          <div className='md:h-[435px]'>
-            <img src={practicingCeo1} alt="Practing CEO of Promrtrics" className='relative md:top-[-100px]' />
-          </div>
-        </div>
+        <CeoProfileSection/>
 
         {/* Testimonial */}
         <HomeTestimonials/>
