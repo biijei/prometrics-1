@@ -25,7 +25,7 @@ const HomeTestimonials = () => {
   ];
 
   return (
-    <div className="px-[5%] bg-[#F9FAFB] py-[80px] overflow-hidden">
+    <div className="px-[5%] bg-secondary py-[80px] overflow-hidden">
       {/* Header Section */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-3 mb-4">
@@ -33,7 +33,7 @@ const HomeTestimonials = () => {
           <p className="text-[14px] font-medium tracking-wider text-primary">TESTIMONIALS</p>
           <div className="h-[2px] w-12 bg-primary"></div>
         </div>
-        <h2 className="text-secondary max-w-[600px] mx-auto">
+        <h2 className="text-white max-w-[600px] mx-auto">
           What Our Clients Are Saying About Us
         </h2>
       </div>
@@ -90,9 +90,9 @@ const HomeTestimonials = () => {
       <div className="flex justify-center">
         <button
           onClick={() => navigate('/testimonials')}
-          className="group relative w-[250px] bg-primary hover:bg-secondary rounded-[40px] text-white text-base px-6 py-4 font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 overflow-hidden"
+          className="group relative w-[250px] bg-primary rounded-[40px] text-white text-base px-6 py-4 font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 overflow-hidden"
         >
-          <span className="absolute inset-0 w-0 bg-secondary transition-all duration-300 ease-out group-hover:w-full"></span>
+          <span className="absolute inset-0 w-0 bg-secondary/40 transition-all duration-300 ease-out group-hover:w-full"></span>
           <span className="relative flex items-center justify-center gap-2">
             View All Testimonials
             <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />

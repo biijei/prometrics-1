@@ -28,10 +28,10 @@ const Home = () => {
       <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-4 md:py-0 text-center text-[#FFFFFF] fixed top-[90px] left-0 right-0 z-10'>
         `We&apos;re back and better than ever— now fully digital and at your service!` <Link to="/contact" className='text-primary'> Contact us today.</Link>
       </div>
-      <div className='bg-tertiary mt-[250px] md:mt-[110px] py-[50px]'>
+      <div className='bg-tertiary mt-[250px] md:mt-[90px] py-[50px]'>
         {/* Hero Section */}
-        <div className=' px-[5%] flex flex-col md:flex-row justify-between items-center gap-x-14 pb-[50px]'>
-          <div className='flex-1 xlg:max-w-full'>
+        <div className='bg-secondary px-[5%] flex flex-col md:flex-row justify-between items-center gap-x-14 pb-[50px]'>
+          <div className='flex-1 xlg:max-w-full text-white'>
             <h1 className='text-[38px] sm:text-[50px] md:text-[62px] font-semibold leading-none'>Elevate Your Legal Strategy with Prometrics </h1>
             <p className='text-base mt-6'>From intricate case analyses to comprehensive regulatory compliance, we are committed to delivering exceptional results. Partner with us and unlock the full potential of your business and legal strategy.</p>
             <div className='flex flex-col sm:flex-row items-center gap-x-6 gap-y-4 mt-4'>
@@ -48,11 +48,11 @@ const Home = () => {
               </button>
             </div>
             <div className='flex items-center gap-4 mt-4'>
-              <div className='text-[#555758] flex items-center gap-x-1'>
+              <div className='text-white/70 flex items-center gap-x-1'>
                 <span className='text-xl font-semibold'>1,000+</span> 
                 <span className='text-base font-medium'> Satisfied Clients</span>
               </div>
-              <div className='text-[#555758] flex items-center gap-x-1'>
+              <div className='text-white/70 flex items-center gap-x-1'>
                 <span className='text-xl font-semibold'>10+</span> 
                 <span className='text-base font-medium'> Industries Served</span>
               </div>
@@ -84,9 +84,13 @@ const Home = () => {
         <CoreValues/>
 
         {/* Practice Areas */}
-        <div className='px-[5%] py-[100px]'>
-          <div className='max-w-[654px] text-left md:text-center mx-auto'>
-            <p className='text-[14px] font-medium mb-2'>PRACTICE AREAS</p>
+        <div className='bg-secondary px-[5%] py-[100px]'>
+          <div className='text-white max-w-[654px] text-left md:text-center mx-auto'>
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <div className="h-[2px] w-12 bg-primary"></div>
+                <p className='text-[14px] font-medium'>PRACTICE AREAS</p>
+                <div className="h-[2px] w-12 bg-primary"></div>
+            </div>
             <h2 className='mb-8'>We Are Especially Skilled in the Following Practice Areas</h2>
           </div>
           <div className='flex flex-col md:flex-row justify-evenly items-center flex-wrap gap-7 mb-7'>
@@ -159,20 +163,30 @@ const Home = () => {
 
         <div className="px-[5%] py-[50px]">
           <NewsSection/>
-          <button 
-            onClick={() => navigate('/news')}
-            className='w-[200px] bg-primary hover:bg-secondary rounded-[40px] text-white text-base px-3 py-3 font-semibold'
-          >
-            View All News
-            <ChevronRight className="inline-block ml-1 -mt-1" />
-          </button>
+          {/* CTA Button */}
+          <div className="flex justify-center">
+            <button
+              onClick={() => navigate('/news')}
+              className="group relative w-[200px] bg-primary rounded-[40px] text-white text-base px-6 py-4 font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 overflow-hidden"
+            >
+              <span className="absolute inset-0 w-0 bg-secondary/40 transition-all duration-300 ease-out group-hover:w-full"></span>
+              <span className="relative flex items-center justify-center gap-2">
+              View All News
+                <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </span>
+            </button>
+          </div>
         </div>
 
         {/* Recent Wins Carousel */}
-        <div className='px-[5%] py-[100px] bg-[#F9FAFB]'>
+        <div className='px-[5%] py-[100px] bg-secondary'>
           <div className='max-w-[654px] text-left md:text-center mx-auto'>
-            {/* <p className='text-[14px] font-medium mb-2'>Recent Wins</p> */}
-            <h2 className='mb-4'>Some Of Our Recent Wins</h2>
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="h-[2px] w-12 bg-primary"></div>
+              <p className="text-[14px] font-medium tracking-wider text-primary">RRCENT WINS</p>
+              <div className="h-[2px] w-12 bg-primary"></div>
+            </div>
+            <h2 className='text-white mb-4'>Some Of Our Recent Wins</h2>
           </div>
           <Slider/>
         </div>
