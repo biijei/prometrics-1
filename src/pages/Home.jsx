@@ -25,12 +25,12 @@ const Home = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-4 md:py-0 text-center text-[#FFFFFF] fixed top-[90px] left-0 right-0 z-10'>
+      <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-4 md:py-0 text-center text-[#FFFFFF] fixed top-[90px] left-0 right-0 z-20'>
         `We&apos;re back and better than ever— now fully digital and at your service!` <Link to="/contact" className='text-primary'> Contact us today.</Link>
       </div>
-      <div className='bg-tertiary mt-[250px] md:mt-[90px] py-[50px]'>
+      <div className='bg-tertiary mt-[190px] sm:mt-[160px] md:mt-[140px] pb-[50px]'>
         {/* Hero Section */}
-        <div className='bg-secondary px-[5%] flex flex-col md:flex-row justify-between items-center gap-x-14 pb-[50px]'>
+        <div className='bg-secondary px-[5%] flex flex-col md:flex-row justify-between items-center gap-x-14 py-[50px]'>
           <div className='flex-1 xlg:max-w-full text-white'>
             <h1 className='text-[38px] sm:text-[50px] md:text-[62px] font-semibold leading-none'>Elevate Your Legal Strategy with Prometrics </h1>
             <p className='text-base mt-6'>From intricate case analyses to comprehensive regulatory compliance, we are committed to delivering exceptional results. Partner with us and unlock the full potential of your business and legal strategy.</p>
@@ -58,7 +58,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='flex-1 mt-6 md:mt-o'>
+          <div className='flex-1 mt-6 md:mt-0'>
             {/* <div className='hidden md:block relative top-[200px] right-[100px] shadow-3xl rounded-[40px] w-[250px] h-[50px]'/> */}
             <img src={ceo1} alt="Prometrics CEO" className='h-auto w-[500px] rounded-[100%] mx-auto' />
           </div>
