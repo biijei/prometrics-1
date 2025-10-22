@@ -39,10 +39,10 @@ const Faqs = () => {
                   Still have questions?
                 </h3>
                 <p className='text-gray text-base mb-2'>
-                  Can`t find the answer you`re looking for? Please book an appointment with our team.
+                  Can`t find the answer you`re looking for? You can book an appointment with our team.
                 </p>
                 <p className='text-sm font-semibold text-secondary/80 mb-4'>
-                  These FAQs or booking a consult does not constitute legal advice or create an attorney-client relationship.
+                  These FAQs or booking a consult do not constitute legal advice or create an attorney-client relationship.
                 </p>
                 <Link to='https://calendly.com/prometricspro/legal-consult' target='_blank'>
                   <button className='bg-primary hover:bg-secondary text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg'>

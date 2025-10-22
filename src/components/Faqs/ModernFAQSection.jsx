@@ -159,7 +159,7 @@ const faqs = [
   },
   {
     question: "Can I do freelance work on OPT or STEM OPT?",
-    answer: "You can on OPT if it is related to your degree. The regulations allow self-employment, independent work for hire and other independent contractor type work on OPT. For STEM OPT, the extant regulations require a bona fide employer-employee relationship (with supervision, training plan, and E-Verify for STEM). This makes it impracticable for freelance work to be viable with STEM OPT. Freelance work during STEM OPT could also trigger additional scrutiny or challenges during a change of status or adjustment of status process.",
+    answer: "You can do freelance work on OPT if it is related to your degree. The regulations allow self-employment, independent work for hire and other independent contractor type work on OPT. For STEM OPT, the extant regulations require a bona fide employer-employee relationship (with supervision, training plan, and E-Verify for STEM). This makes it impracticable for freelance work to be viable with STEM OPT. Freelance work during STEM OPT could also trigger additional scrutiny or challenges during a change of status or adjustment of status process.",
     link: "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students"
   },
   {
