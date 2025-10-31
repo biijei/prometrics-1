@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-tertiary mt-[90px] by-[50px]'>
+      <div className='bg-tertiary mt-[90px] pt-[50px]'>
         <HeroSection subtitile='About Prometrics' titile='About Us' menu='About' bgimage='aboutbg'/>
         {/* Mission and Vission */}
         <div className='flex flex-col items-center py-[50px] '>

@@ -41,17 +41,13 @@ const CoreValues = () => {
   ];
 
   return (
-    <div className="px-[5%] py-[100px] bg-[#15110D] text-white relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl"></div>
-      
-      <div className="relative z-10">
+    <div className="px-[5%] py-[100px] bg-tertiary text-white overflow-hidden">
+      <div>
         {/* Header section with enhanced styling */}
-        <div className="mb-16">
+        <div className="text-secondary mb-16">
           <div className="flex items-center gap-3 mb-4">
             <div className="h-[2px] w-12 bg-primary"></div>
-            <p className="text-[14px] font-medium tracking-wider text-primary">OUR CORE VALUES</p>
+            <p className="text-[14px] font-medium tracking-wider ">OUR CORE VALUES</p>
           </div>
           <h2 className="max-w-[451px]">
             Prometrics Legal Hub: Our Guiding Pillars
@@ -63,7 +59,7 @@ const CoreValues = () => {
           {values.map((value, index) => (
             <div
               key={index}
-              className="group relative bg-secondary bg-opacity-30 border border-border border-opacity-20 rounded-lg p-6 hover:bg-opacity-50 hover:border-primary hover:border-opacity-40 transition-all duration-300 hover:transform hover:-translate-y-1"
+              className="group relative bg-secondary border border-border border-opacity-20 rounded-lg p-6 hover:border-primary hover:border-opacity-40 transition-all duration-300 hover:transform hover:-translate-y-1"
             >
               {/* Decorative corner accent */}
               <div className="absolute top-0 left-0 w-1 h-12 bg-primary rounded-tr-lg transition-all duration-300 group-hover:h-full"></div>
@@ -78,7 +74,7 @@ const CoreValues = () => {
                   {value.title}
                 </h4>
                 
-                <p className="text-[14px] leading-relaxed text-gray-300 text-justify">
+                <p className="text-sm font-medium leading-relaxed text-gray-300 text-justify">
                   {value.description}
                 </p>
               </div>

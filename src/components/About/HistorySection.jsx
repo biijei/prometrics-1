@@ -10,7 +10,7 @@ const HistorySection = () => {
   ];
 
   return (
-    <div className="bg-secondary px-[5%] py-[100px] bg-opacity-20 overflow-hidden">
+    <div className="bg-secondary px-[5%] pt-[100px] pb-[30px] bg-opacity-20 overflow-hidden">
       <div className="mx-auto">
         {/* Header Section */}
         <div className="mb-2">

@@ -69,7 +69,7 @@ const usePayPalSDK = () => {
 
   useEffect(() => {
     loadSDK();
-  }, []);
+  }, []);// eslint-disable-line react-hooks/exhaustive-deps
 
   const retry = () => {
     retryCountRef.current = 0;
