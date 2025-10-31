@@ -170,7 +170,7 @@ export default function EBRequirementsCard() {
                   {activeTab === 'eb1a' ? (
                     <div className='mb-4'>
                       <h3 className="font-semibold text-slate-900 mb-2">EB-1A requirements</h3>
-                      <p className='text-sm leading-normal'>Satisfying 3 out of this list of 10 is the minimum requirement to be considered for EB-1A, after which your evidence and arguments are weighed in totality to determine whether you merit approval as a matter of discretion. Meeting the minimum criteria requirements only, does not mean the EB-1A petition will be approved.</p>
+                      <p className='text-sm leading-normal text-justify'>Satisfying 3 out of this list of 10 is the minimum requirement to be considered for EB-1A, after which your evidence and arguments are weighed in totality to determine whether you merit approval as a matter of discretion. Meeting the minimum criteria requirements only, does not mean the EB-1A petition will be approved.</p>
                     </div>
                   ) : (
                     <div className='mb-4'>

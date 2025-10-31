@@ -4,28 +4,29 @@ import facebook from '../assets/icons/facebook.svg'
 import twitter from '../assets/icons/twitter.svg'
 import instagram from '../assets/icons/instagram.svg'
 import linkedIn from '../assets/icons/linkedIn.svg'
+import { Dot } from 'lucide-react'
 
 const CeoProfileSection = () => {
   return (
      <div className='px-[5%] py-16'>
       <div className='bg-white rounded-3xl overflow-hidden shadow-xl'>
-        <div className='flex flex-col md:flex-row justify-center items-center'>
+        <div className='flex flex-col md:flex-row justify-center items-center h-[600px]'>
           {/* Content Side */}
           <div className='max-w-[500px] px-8 md:px-12 py-20'>
             <div className='inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6'>
               Meet Our Founder
             </div>
             
-            <p className='text-gray text-base md:text-lg leading-relaxed mb-8'>
+            <p className='text-gray text-base md:text-lg leading-relaxed mb-8 text-justify'>
               PROMETRICS LEGAL HUB, LLC represents clients in employment consult, employment based immigration consult, estate planning, tax planning, business planning and notarization.
             </p>
             
-            <h3 className='text-2xl md:text-3xl font-bold text-secondary mb-2'>
+            <h3 className='text-2xl md:text-2xl font-bold text-secondary mb-2'>
               Dr. Fola Odion, PhD (Law), MBA
             </h3>
             
             <p className='text-gray font-medium text-base md:text-lg mb-8'>
-              Ph.D. in Law | MBA | General Counsel | Licensed Attorney in New York & Texas
+              Ph.D. in Law <Dot className='inline'/> MBA <Dot className='inline'/>  General Counsel <Dot className='inline'/>  Licensed Attorney in New York & Texas
             </p>
             
             <div className='flex gap-3'>
@@ -66,7 +67,7 @@ const CeoProfileSection = () => {
 
           {/* Image Side */}
           <div className='md:w-[30%] relative'>
-            <div className='md:absolute -top-[280px]'>
+            <div className='md:absolute -top-[290px]'>
               <img 
                 src={practicingCeo1} 
                 alt='Dr. Fola Odion, CEO of Prometrics' 

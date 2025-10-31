@@ -157,7 +157,7 @@ const Home = () => {
             >
               <span className="absolute inset-0 w-0 bg-secondary/40 transition-all duration-300 ease-out group-hover:w-full"></span>
               <span className="relative flex items-center justify-center gap-2">
-              View All News
+                View All News
                 <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
             </button>
@@ -175,6 +175,18 @@ const Home = () => {
             <h2 className='text-white mb-4'>Some Of Our Recent Wins</h2>
           </div>
           <Slider/>
+          <div className="flex justify-center">
+            <button
+              onClick={() => navigate('/gallery')}
+              className="group relative w-[200px] bg-primary rounded-[40px] text-white text-base px-6 py-4 font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 overflow-hidden"
+            >
+              <span className="absolute inset-0 w-0 bg-secondary/40 transition-all duration-300 ease-out group-hover:w-full"></span>
+              <span className="relative flex items-center justify-center gap-2">
+                View All Wins
+                <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </span>
+            </button>
+          </div>
         </div>
       </div>
       <Footer/>
