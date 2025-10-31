@@ -78,7 +78,7 @@ const CoreValues = () => {
                   {value.title}
                 </h4>
                 
-                <p className="text-[14px] leading-relaxed text-gray-300">
+                <p className="text-[14px] leading-relaxed text-gray-300 text-justify">
                   {value.description}
                 </p>
               </div>

@@ -55,7 +55,7 @@ const HomeTestimonials = () => {
             
             <div className="relative">
               {/* Testimonial text */}
-              <p className="text-base mb-2 leading-relaxed text-gray-700 min-h-[120px]">
+              <p className="text-base mb-2 leading-relaxed text-gray-700 min-h-[120px] text-justify">
                 {testimonial.text}
               </p>
               

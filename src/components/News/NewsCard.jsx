@@ -30,7 +30,7 @@ const NewsCard = ({ news, onClick, showExcerpt = true }) => (
       </h3>
       
       {showExcerpt && (
-        <p className="text-gray-600 mb-4 line-clamp-3">{news.excerpt}</p>
+        <p className="text-gray-600 mb-4 line-clamp-3 text-justify">{news.excerpt}</p>
       )}
       
       <div className="flex items-center justify-between">

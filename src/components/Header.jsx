@@ -69,7 +69,7 @@ const  Header = () =>{
           <li className='hover:text-primary whitespace-nowrap'><NavLink to="/about-us">About us</NavLink></li>
           <li className='dropdown py-8 mt-1'>
             <button  className="flex whitespace-nowrap">Practice Areas <ChevronDown /></button>
-            <div className="hidden absolute top-[92px] left-0 w-full z-10">
+            <div className="hidden absolute top-[92px] left-0 w-full z-20">
             {/* <div className={display ? "absolute top-[110px] left-0 w-full z-10" : "hidden absolute top-[110px] left-0 w-full z-10"}> */}
               <div className='flex justify-around items-center gap-24 p-8 bg-[#faf6f3] rounded-[40px] mx-[5%]'>
                 <div className='flex flex-col gap-5'>

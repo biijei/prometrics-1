@@ -59,7 +59,7 @@ const MeetOurTeam = () => {
             <Users className="w-6 h-6 text-primary" />
             <h3 className="text-xl font-bold text-secondary">Our Diverse Team of Experts</h3>
           </div>
-          <p className="mb-6 leading-loose text-gray">
+          <p className="mb-6 leading-loose text-gray text-justify">
             We have a team of diverse thorough bred experienced professionals to serve your varied consultation needs. We have Ph.D. Holders, MBA Holders, Attorneys, Licensed HR Practitioners, Scientists, Engineers, and Cybersecurity Experts on our team.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
@@ -142,7 +142,7 @@ const MeetOurTeam = () => {
                 <Briefcase className="w-5 h-5 text-primary" />
                 <h4 className="font-bold text-lg text-secondary">Professional Experience</h4>
               </div>
-              <p className="mb-6 leading-loose text-gray">
+              <p className="mb-6 leading-loose text-gray text-justify">
                 Our General Counsel, Dr. (Mrs.) Fola Odion, PhD (Law), MBA is a multi-skilled, dual-qualified business attorney, licensed in New York and Nigeria as an Attorney, and registered as a Corporate Counsel in Ohio with legal experience spanning 15 years. Dr. Fola`s career has been highlighted by a series of achievements in guiding prominent organizations through complex legal landscapes while driving strategic growth initiatives. She has provided strategic legal advice to shareholders and board of directors of prominent multinational companies, including Shell plc and does likewise to small and medium businesses, providing skilled guidance on contract drafting and negotiations, ensuring optimal protection of clients` interests and ensuring compliance with relevant laws and regulations. Dr. Fola advises clients on complex business transactions, including mergers, acquisitions, and other restructuring schemes, with a keen focus on minimizing risks and maximizing opportunities for growth. Dr. Fola collaborates closely with business owners and executives to develop and implement innovative legal and business solutions tailored to the unique needs of businesses and individuals, and represents business clients in negotiations, mediations and dispute resolution proceedings, demonstrating strong advocacy skills.
               </p>
             </div>
@@ -152,7 +152,7 @@ const MeetOurTeam = () => {
                 <GraduationCap className="w-5 h-5 text-primary" />
                 <h4 className="font-bold text-lg text-secondary">Education & Qualifications</h4>
               </div>
-              <p className="leading-loose text-gray">
+              <p className="leading-loose text-gray text-justify">
                 Dr. Fola has a Doctor of Philosophy degree (Ph.D.) in Business Law from University of Lagos, Nigeria, and holds an MBA from Bowling Green State University, Ohio, USA. She is a Notary Public, Fellow of the Chartered Taxation Institute, Fellow of the Corporate Governance Institute and Fellow of the Chartered Institute of Arbitrators, UK. She also holds an advanced diploma in international tax from the Chartered Institute of Taxation, UK and holds a human resources professional license (MCIPM, HRPL). She is a licensed insolvency & business restructuring practitioner
               </p>
             </div>

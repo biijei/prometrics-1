@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-4 md:py-0 text-center text-[#FFFFFF] fixed top-[90px] left-0 right-0 z-20'>
+      <div className='bg-[#15110D] min-h-[50px] flex flex-col md:flex-row justify-evenly items-center px-[5%] py-4 md:py-0 text-center text-[#FFFFFF] fixed top-[90px] left-0 right-0 z-10'>
         `We&apos;re back and better than ever— now fully digital and at your service!` <Link to="/contact" className='text-primary'> Contact us today.</Link>
       </div>
       <div className='bg-tertiary mt-[190px] sm:mt-[160px] md:mt-[140px]'>
@@ -95,48 +95,48 @@ const Home = () => {
             <h2 className='mb-8'>We Are Especially Skilled in the Following Practice Areas</h2>
           </div>
           <div className='flex flex-col md:flex-row justify-evenly items-center flex-wrap gap-7 mb-7'>
-            <div className='flex flex-col border border-[#2A6EDB] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
-              <div className='bg-[#2A6EDB] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>1</div>
+            <div className='flex flex-col border border-[#F7966B] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
+              <div className='bg-[#F7966B] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>1</div>
               <h4 className='mb-2 text-[20px] font-semibold leading-tight'>Employment Based Immigration Consult (EB2-NIW & EB-1A)</h4>
-              <p className='mb-auto text-[14px]'>Specializing in EB2-NIW and EB-1A visa categories, our expert team offers comprehensive guidance to professionals seeking employment-based immigration opportunities in the United States, ensuring a seamless transition and successful visa application process.</p>
-            <Link to='/pa-employment-based'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#2A6EDB] font-semibold '>READ MORE <MoveRight /> </div></Link>
+              <p className='mb-auto text-[14px]text-justify text-justify'>Specializing in EB2-NIW and EB-1A visa categories, our expert team offers comprehensive guidance to professionals seeking employment-based immigration opportunities in the United States, ensuring a seamless transition and successful visa application process.</p>
+            <Link to='/pa-employment-based'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#F7966B] font-semibold '>READ MORE <MoveRight /> </div></Link>
             </div>
 
             <div className='flex flex-col border border-[#F7966B] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
               <div className='bg-[#F7966B] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>2</div>
               <h4 className='mb-4 text-[20px] font-semibold leading-tight'>Employment Consultation</h4>
-              <p className='mb-auto text-[14px]'>Our employment consultation services provide personalized support to businesses and individuals, offering strategic guidance on various employment matters, including recruitment, employee relations, compliance, and workforce management, to foster a productive and harmonious work environment.</p>
+              <p className='mb-auto text-[14px] text-justify'>Our employment consultation services provide personalized support to businesses and individuals, offering strategic guidance on various employment matters, including recruitment, employee relations, compliance, and workforce management, to foster a productive and harmonious work environment.</p>
               <Link to='/pa-employment-consult'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#F7966B] font-semibold '>READ MORE <MoveRight /> </div></Link>
             </div>
 
-            <div className='flex flex-col border border-[#00B2FF] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
-              <div className='bg-[#00B2FF] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>3</div>
+            <div className='flex flex-col border border-[#F7966B] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
+              <div className='bg-[#F7966B] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>3</div>
               <h4 className='mb-4 text-[20px] font-semibold leading-tight'>Tax Planning</h4>
-              <p className='mb-auto text-[14px]'>Tailored tax planning solutions crafted by our experienced in-house tax professionals, help individuals and businesses navigate complex tax laws, minimize tax liabilities, maximize savings, and optimize financial outcomes, ensuring compliance with regulations while enhancing overall financial well-being.</p>
-              <Link to='/pa-tax'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#00B2FF] font-semibold '>READ MORE <MoveRight /> </div></Link>
+              <p className='mb-auto text-[14px] text-justify'>Tailored tax planning solutions crafted by our experienced in-house tax professionals, help individuals and businesses navigate complex tax laws, minimize tax liabilities, maximize savings, and optimize financial outcomes, ensuring compliance with regulations while enhancing overall financial well-being.</p>
+              <Link to='/pa-tax'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#F7966B] font-semibold '>READ MORE <MoveRight /> </div></Link>
             </div>
           </div>
 
           <div className='flex flex-col md:flex-row justify-evenly items-center flex-wrap gap-7'>
-            <div className='flex flex-col border border-[#3B88C3] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
-              <div className='bg-[#3B88C3] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>4</div>
+            <div className='flex flex-col border border-[#F7966B] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
+              <div className='bg-[#F7966B] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>4</div>
               <h4 className='mb-2 text-[20px] font-semibold leading-tight'>Business Planning</h4>
-              <p className='mb-auto text-[14px]'>Our business planning services empower entrepreneurs and organizations to develop comprehensive strategies, establish solid foundations, and achieve their business objectives. From startup guidance to growth strategies and succession planning, we provide the expertise needed to drive success and sustainability in today&apos;s competitive landscape.</p>
-              <Link to='/pa-business'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#3B88C3] font-semibold '>READ MORE <MoveRight /> </div></Link>
+              <p className='mb-auto text-[14px] text-justify'>Our business planning services empower entrepreneurs and organizations to develop comprehensive strategies, establish solid foundations, and achieve their business objectives. From startup guidance to growth strategies and succession planning, we provide the expertise needed to drive success and sustainability in today&apos;s competitive landscape.</p>
+              <Link to='/pa-business'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#F7966B] font-semibold '>READ MORE <MoveRight /> </div></Link>
             </div>
 
             <div className='flex flex-col border border-[#F7966B] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
               <div className='bg-[#F7966B] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>5</div>
               <h4 className='mb-4 text-[20px] font-semibold leading-tight'>Estate Planning</h4>
-              <p className='mb-auto text-[14px]'>With our estate planning services, individuals and families can protect their assets, preserve wealth, and plan for the future. Our team works closely with clients to create customized estate plans that address their unique needs and goals, ensuring peace of mind and a smooth transfer of wealth to future generations.</p>
+              <p className='mb-auto text-[14px] text-justify'>With our estate planning services, individuals and families can protect their assets, preserve wealth, and plan for the future. Our team works closely with clients to create customized estate plans that address their unique needs and goals, ensuring peace of mind and a smooth transfer of wealth to future generations.</p>
               <Link to='/pa-estate'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#F7966B] font-semibold '>READ MORE <MoveRight /> </div></Link>
             </div>
 
-            <div className='flex flex-col border border-[#1563B1] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
-              <div className='bg-[#1563B1] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>6</div>
+            <div className='flex flex-col border border-[#F7966B] rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
+              <div className='bg-[#F7966B] mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>6</div>
               <h4 className='mb-4 text-[20px] font-semibold leading-tight'>Notarization</h4>
-              <p className='mb-auto text-[14px]'>Our reliable notarization services offer authentication and verification for a wide range of legal documents, contracts, and agreements. With meticulous attention to detail and adherence to legal requirements, we provide trusted notarization services to meet our clients&apos; needs with efficiency and professionalism.</p>
-              <Link to='/pa-notarization'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#1563B1] font-semibold '>READ MORE <MoveRight /> </div></Link>
+              <p className='mb-auto text-[14px] text-justify'>Our reliable notarization services offer authentication and verification for a wide range of legal documents, contracts, and agreements. With meticulous attention to detail and adherence to legal requirements, we provide trusted notarization services to meet our clients&apos; needs with efficiency and professionalism.</p>
+              <Link to='/pa-notarization'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-[#F7966B] font-semibold '>READ MORE <MoveRight /> </div></Link>
             </div>
           </div>
         </div>

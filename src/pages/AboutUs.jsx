@@ -24,12 +24,12 @@ const AboutUs = () => {
             </div>
 
             <div className='max-w-[600px] md:w-[400px] lg:w-[600px] h-[250px] md:h-[300px] bg-[#31281E] rounded-b-[20px] md:rounded-bl-none md:rounded-r-[20px] flex flex-col justify-center items-center '>
-              <p className='text-[#F2F8FC] max-w-[444px] px-8'>Our mission is to make your US employment journey and business goals execution seamless whether by helping you in your employment-based immigration journey, tax strategy, financial planning, business strategy, HR-strategy or estate planning.</p>
+              <p className='text-[#F2F8FC] text-justify max-w-[444px] px-8'>Our mission is to make your US employment journey and business goals execution seamless whether by helping you in your employment-based immigration journey, tax strategy, financial planning, business strategy, HR-strategy or estate planning.</p>
             </div>
           </div>
           <div className='flex flex-col-reverse md:flex-row '>
             <div className='max-w-[600px] md:w-[400px] lg:w-[600px] h-[250px] md:h-[300px] bg-[#31281E] rounded-b-[20px] md:rounded-br-none md:rounded-l-[20px] flex flex-col justify-center items-center '>
-              <p className='text-[#F2F8FC] max-w-[444px] px-8'>At Prometrics Legal Hub, we pride ourselves in our commitment to excellence and our unwavering dedication to client satisfaction. We are aware that a satisfied client is a business’ best marketing tool.</p>
+              <p className='text-[#F2F8FC] text-justify max-w-[444px] px-8'>At Prometrics Legal Hub, we pride ourselves in our commitment to excellence and our unwavering dedication to client satisfaction. We are aware that a satisfied client is a business’ best marketing tool.</p>
             </div>
 
             <div className='max-w-[600px] md:w-[400px] lg:w-[600px] h-[250px] md:h-[300px] bg-[#FBFDFE] rounded-t-[20px] md:rounded-tl-none md:rounded-r-[20px] flex flex-col justify-center items-center '>
