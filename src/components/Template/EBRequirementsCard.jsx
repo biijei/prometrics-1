@@ -117,7 +117,7 @@ export default function EBRequirementsCard() {
             </div>
           </div>
 
-          <div className="mt-4 md:mt-0 flex items-center gap-3">
+          <div className="mt-4 md:mt-0 flex flex-wrap items-center gap-3">
             <div className="relative">
               <label htmlFor="search" className="sr-only">Search requirements</label>
               <div className="flex items-center bg-white border border-slate-200 rounded-lg px-3 shadow-sm">
@@ -127,7 +127,7 @@ export default function EBRequirementsCard() {
                   value={query}
                   onChange={e => setQuery(e.target.value)}
                   placeholder="Search requirements..."
-                  className="w-56 md:w-72 text-sm placeholder:text-slate-400 bg-transparent border-none outline-none"
+                  className="w-[200px] md:w-72 text-sm placeholder:text-slate-400 bg-transparent border-none outline-none"
                 />
               </div>
             </div>
