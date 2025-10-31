@@ -1,7 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
-import practicingCeo1 from '../assets/images/new-ceo.png'
 import facebook from '../assets/icons/facebook.svg'
 import twitter from '../assets/icons/twitter.svg'
 import instagram from '../assets/icons/instagram.svg'
@@ -39,7 +38,7 @@ const Faqs = () => {
                   Still have questions?
                 </h3>
                 <p className='text-gray text-base mb-2'>
-                  Can't find the answer you're looking for? You can book an appointment with our team.
+                  Can&apos;t find the answer you&apos;re looking for? You can book an appointment with our team.
                 </p>
                 <p className='text-sm font-semibold text-secondary/80 mb-4'>
                   These FAQs or booking a consult do not constitute legal advice or create an attorney-client relationship.

@@ -18,7 +18,7 @@ const CeoProfileSection = () => {
             </div>
             
             <p className='text-gray text-base md:text-lg leading-relaxed mb-8 text-justify'>
-              PROMETRICS LEGAL HUB, LLC represents clients in employment consult, employment based immigration consult, estate planning, tax planning, business planning and notarization.
+              Prometrics represents clients in employment consult, employment based immigration consult, estate planning, tax planning, business planning and notarization.
             </p>
             
             <h3 className='text-2xl md:text-2xl font-bold text-secondary mb-2'>

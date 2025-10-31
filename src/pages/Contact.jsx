@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import practicingCeo from '../assets/images/practicing-ceo.png'
+import practicingCeo1 from '../assets/images/ceo-profile.png'
 import facebook from '../assets/icons/facebook.svg'
 import twitter from '../assets/icons/twitter.svg'
 import instagram from '../assets/icons/instagram.svg'
@@ -109,8 +110,8 @@ const Contact = () => {
         </div>
 
         {/* CEO profile */}
-        <CeoProfileSection/>
-        {/* <div className='px-[5%] md:mx-[5%] pt-[50px] md:py-0 bg-[#E2E7ED] my-[50px] rounded-[24px] flex flex-col md:flex-row flex-wrap justify-center items-center gap-x-[60px] '>
+        {/* <CeoProfileSection/> */}
+        <div className='px-[5%] md:mx-[5%] pt-[50px] md:py-0 bg-[#E2E7ED] my-[50px] rounded-[24px] flex flex-col md:flex-row flex-wrap justify-center items-center gap-x-[60px] '>
           <div className='max-w-[530px] '>
             <p className=' text-[18px] md:text-[23px] text-[#555758] leading-tight mb-8'> Prometrics represents clients in employment consult, employment based immigration consult, estate planning, tax planning, business planning and notarization.</p>
             <p className='text-[23px] md:text-[28px] font-semibold mb-2 '>Dr. Fola Odion, PhD (Law), MBA</p>
@@ -123,9 +124,9 @@ const Contact = () => {
             </div>
           </div>
           <div className='md:h-[435px]'>
-            <img src={practicingCeo} alt="Practing CEO of Promrtrics" className='relative md:top-[-100px]' />
+            <img src={practicingCeo1} alt="Practing CEO of Promrtrics" className='relative md:top-[-100px]' />
           </div>
-        </div> */}
+        </div>
       </div>
       <Footer/>
 
