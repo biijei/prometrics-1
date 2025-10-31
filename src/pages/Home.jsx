@@ -98,8 +98,8 @@ const Home = () => {
             <div className='flex flex-col border border-primary rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
               <div className='bg-primary mb-4 w-[40px] h-[40px] rounded-[40px] text-white flex justify-center items-center font-semibold text-[20px] '>1</div>
               <h4 className='mb-2 text-[20px] font-semibold leading-tight'>Employment Based Immigration Consult (EB2-NIW & EB-1A)</h4>
-              <p className='mb-auto text-[14px]text-justify text-justify'>Specializing in EB2-NIW and EB-1A visa categories, our expert team offers comprehensive guidance to professionals seeking employment-based immigration opportunities in the United States, ensuring a seamless transition and successful visa application process.</p>
-            <Link to='/pa-employment-based'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-primary font-semibold '>READ MORE <MoveRight /> </div></Link>
+              <p className='mb-auto text-[14px] text-justify'>Specializing in EB2-NIW and EB-1A visa categories, our expert team offers comprehensive guidance to professionals seeking employment-based immigration opportunities in the United States, ensuring a seamless transition and successful visa application process.</p>
+              <Link to='/pa-employment-based'><div className='flex gap-x-2 hover:gap-x-6 transition-all duration-200 cursor-pointer text-primary font-semibold '>READ MORE <MoveRight /> </div></Link>
             </div>
 
             <div className='flex flex-col border border-primary rounded-[18px] bg-white max-w-[384px] 2xl:max-w-[600px] min-h-[350px] p-6 '>
