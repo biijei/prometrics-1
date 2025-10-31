@@ -109,7 +109,7 @@ const HistorySection = () => {
         {/* Closing Statement */}
         <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-center shadow-lg">
           <Heart className="w-12 h-12 text-white mx-auto mb-4" fill="currentColor" />
-          <p className="font-bold text-2xl text-white">And that`s how we got here!</p>
+          <p className="font-bold text-2xl text-white">And that&apos;s how we got here!</p>
         </div>
       </div>
     </div>

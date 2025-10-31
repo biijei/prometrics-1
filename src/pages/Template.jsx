@@ -94,16 +94,6 @@ const TemplateCard = ({ template }) => {
       toast.error('Template file not found!');
       return;
     }
-
-    // if (templateFile.data) {
-    //   const link = document.createElement('a');
-    //   link.href = templateFile.data;
-    //   link.download = templateFile.name;
-    //   document.body.appendChild(link);
-    //   link.click();
-    //   document.body.removeChild(link);
-    //   toast.success('Download started!');
-    // }
     
     if (templateFile.url) {
       window.open(templateFile.url, '_blank');

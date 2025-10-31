@@ -169,7 +169,7 @@ const Home = () => {
           <div className='max-w-[654px] text-left md:text-center mx-auto'>
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-[2px] w-12 bg-primary"></div>
-              <p className="text-[14px] font-medium tracking-wider text-primary">RRCENT WINS</p>
+              <p className="text-[14px] font-medium tracking-wider text-primary">RECENT WINS</p>
               <div className="h-[2px] w-12 bg-primary"></div>
             </div>
             <h2 className='text-white mb-4'>Some Of Our Recent Wins</h2>

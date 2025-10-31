@@ -200,7 +200,7 @@ export default function EBRequirementsCard() {
 
                 <aside className="rounded-lg p-4 border border-tertiary bg-tertiary">
                   <h3 className="font-semibold text-slate-900">Checklist guidance</h3>
-                  <p className="mt-2 text-sm text-slate-600">Use this panel to keep notes about types of documents that commonly support each requirement. For example, awards (certificates), nomination letters, editorial clippings, contracts, paystubs, exhibition catalogs, or data showing commercial success.</p>
+                  <p className="mt-2 text-sm text-slate-600 text-justify">Use this panel to keep notes about types of documents that commonly support each requirement. For example, awards (certificates), nomination letters, editorial clippings, contracts, paystubs, exhibition catalogs, or data showing commercial success.</p>
                   <div className="mt-4 space-y-3">
                     <div>
                       <h4 className="font-medium text-slate-800">Suggested bundle</h4>
