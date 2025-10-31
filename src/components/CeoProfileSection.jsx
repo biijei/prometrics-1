@@ -1,18 +1,19 @@
 import React from 'react'
 import practicingCeo1 from '../assets/images/new-ceo.png'
+import practicingCeo from '../assets/images/ceo-profile.png'
 import facebook from '../assets/icons/facebook.svg'
 import twitter from '../assets/icons/twitter.svg'
 import instagram from '../assets/icons/instagram.svg'
 import linkedIn from '../assets/icons/linkedIn.svg'
 import { Dot } from 'lucide-react'
 
-const CeoProfileSection = () => {
+const CeoProfileSection = ({brandedTop}) => {
   return (
      <div className='px-[5%] py-16'>
       <div className='bg-white rounded-3xl overflow-hidden shadow-xl'>
-        <div className='flex flex-col md:flex-row justify-center items-center h-[600px]'>
+        <div className='flex flex-col md:flex-row justify-center items-center min-h-[600px]'>
           {/* Content Side */}
-          <div className='max-w-[500px] px-8 md:px-12 py-20'>
+          <div className='max-w-[500px] px-8 md:px-12 py-10'>
             <div className='inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6'>
               Meet Our Founder
             </div>
@@ -66,15 +67,21 @@ const CeoProfileSection = () => {
           </div>
 
           {/* Image Side */}
-          <div className='md:w-[30%] relative'>
-            <div className='md:absolute -top-[290px]'>
-              <img 
-                src={practicingCeo1} 
-                alt='Dr. Fola Odion, CEO of Prometrics' 
-                className='w-[500px] h-full'
-              />
-            </div>
+          { brandedTop ? (
+            <div className='md:h-[435px]'>
+            <img src={practicingCeo} alt="Practing CEO of Promrtrics" className='relative md:top-[-65px]' />
           </div>
+          ) : (
+            <div className='md:w-[35%] lg:w-[30%] xl:w-[20%] relative'>
+              <div className='md:absolute -top-[290px]'>
+                <img 
+                  src={practicingCeo1} 
+                  alt='Dr. Fola Odion, CEO of Prometrics' 
+                  className='w-[500px] h-full'
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
