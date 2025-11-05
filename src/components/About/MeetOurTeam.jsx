@@ -15,7 +15,7 @@ const MeetOurTeam = () => {
   const credentials = [
     "Ph.D. in Business Law - University of Lagos, Nigeria",
     "MBA - Bowling Green State University, Ohio, USA",
-    "Licensed Attorney in New York and Nigeria",
+    "Licensed Attorney in New York, Texas, and Nigeria",
     "Registered Corporate Counsel in Ohio",
     "Notary Public",
     "Fellow of the Chartered Taxation Institute",
@@ -28,7 +28,7 @@ const MeetOurTeam = () => {
 
   const highlights = [
     { number: "15+", label: "Years Legal Experience" },
-    { number: "2", label: "Bar Admissions" },
+    { number: "3", label: "Bar Admissions" },
     { number: "11+", label: "Professional Credentials" }
   ];
 

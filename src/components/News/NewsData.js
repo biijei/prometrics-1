@@ -3,6 +3,50 @@ import specialAgent from '../../assets/images/news/news_2.PNG';
 import modernizeFees from '../../assets/images/news/news_3.PNG';
 
 export const newsData = [
+  // {
+  //   id: '003',
+  //   title: 'DHS Ends Automatic EAD Extensions to Strengthen Vetting and Screening',
+  //   excerpt: 'USCIS has confirmed that it has received enough petitions to meet the H-2B visa cap for the first half of fiscal year 2026, with final receipt date of September 12, 2025.',
+  //   coverImage: h2b,
+  //   author: 'USCIS',
+  //   publishDate: '2025-09-12',
+  //   readTime: '3 min',
+  //   category: 'Immigration',
+  //   content: [
+  //     { type: 'paragraph', content: '📅 September 12, 2025' },
+  //     { type: 'paragraph', content: 'U.S. Citizenship and Immigration Services (USCIS) has confirmed that it has received enough petitions to meet the H-2B visa cap for the first half of fiscal year 2026. This cap sets the maximum number of H-2B visas that can be issued during a specific period.' },
+  //     { type: 'mixedText', content: [
+  //       { type: 'text', content: 'The ' },
+  //       { type: 'bold', content: 'final receipt date' },
+  //       { type: 'text', content: ' for new petitions was ' },
+  //       { type: 'bold', content: 'September 12, 2025' },
+  //       { type: 'text', content: '. Any petitions filed after this date requesting employment start dates ' },
+  //       { type: 'bold', content: 'before April 1, 2026' },
+  //       { type: 'text', content: ' will be rejected.' }
+  //     ]},
+  //     { type: 'paragraph', content: 'Employers who still wish to petition for H-2B workers will need to plan for start dates on or after April 1, 2026.' },
+  //     { type: 'heading', content: 'What This Means' },
+  //     { type: 'bulletPoints', content: [
+  //       'Cap Reached: The limit for H-2B visas for the first half of FY 2026 has been filled.',
+  //       'Petition Cut-Off: Petitions submitted after September 12, 2025, for employment before April 1, 2026, will not be considered.',
+  //       'Next Window: Employers may still prepare petitions for workers whose employment will begin on or after April 1, 2026.'
+  //     ]},
+  //     { type: 'heading', content: 'Fraud and Abuse Reporting' },
+  //     { type: 'mixedText', content: [
+  //       { type: 'text', content: 'USCIS encourages both ' },
+  //       { type: 'bold', content: 'U.S. workers and H-2B workers' },
+  //       { type: 'text', content: ' to share information about potential fraud, abuse, or violations related to the H-2B program. Reports can be submitted securely through the ' },
+  //       { type: 'bold', content: 'USCIS online tip form' },
+  //       { type: 'text', content: '.' }
+  //     ]},
+  //     { type: 'heading', content: 'Stay Informed' },
+  //     { type: 'mixedText', content: [
+  //       { type: 'text', content: 'Employers, workers, and stakeholders are advised to stay updated on H-2B processing times and cap counts. For official updates, visit the ' },
+  //       { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+  //       { type: 'text', content: '.' },
+  //     ]},
+  //   ]
+  // },
   {
     id: '001',
     title: 'USCIS Reaches H-2B Cap for First Half of Fiscal Year 2026',

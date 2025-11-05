@@ -182,7 +182,7 @@ const Home = () => {
             >
               <span className="absolute inset-0 w-0 bg-secondary/40 transition-all duration-300 ease-out group-hover:w-full"></span>
               <span className="relative flex items-center justify-center gap-2">
-                View All Wins
+                View More Wins
                 <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
             </button>
