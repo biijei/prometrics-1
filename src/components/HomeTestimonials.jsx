@@ -7,20 +7,20 @@ const HomeTestimonials = () => {
   
   const testimonials = [
     {
+      text: "It was an amazing experience working with Dr. Fola. She was exceptionally good and always on spot.",
+      name: "Tsefiat  Ojiko"
+    },
+    {
+      text: "Dr. Fola Odion’s professionalism, meticulous preparation and clear advice were invaluable during what can be a complex and stressful process. Her dedication made a significant difference in achieving this positive outcome. I am truly grateful for all she did.",
+      name: "Anthony Opoku"
+    },
+    {
+      text: "My experience was amazingggg. Dr. Fola left no stone unturned. She is very knowledgeable, responsive, and she helped me navigate the complex process of my case with ease. Her expertise and guidance gave me confidence in my application, and the outcome exceeded my expectations.",
+      name: "Queen Enahoro"
+    },
+    {
       text: "Her professionalism and support were invaluable in guiding me through immigration matters. Truly grateful for her assistance.",
       name: "Emmah Muema"
-    },
-    {
-      text: "I highly recommend Dr. Fola Odion for any immigration-related legal needs! Dr. Odion expertly guided me through the complex process of filing both EB-1 and EB-2 petitions. Her patience and ability to explain intricate details in a clear, concise manner made all the difference.",
-      name: "Joshua Alahira"
-    },
-    {
-      text: "Fola came highly recommended by a member of my church community. When I contacted her, she responded promptly and professionally—an immediate contrast to the other attorney I had been communicating with at the time. I'm truly grateful for Fola's support and expertise.",
-      name: "Blessing Olatoyan"
-    },
-    {
-      text: "Dr. Fola's deep knowledge, flexibility, and support led to my EB1 approval. She prioritized trust over money and guided me every step.",
-      name: "Alex Olanrewaju Adekanmbi"
     }
   ];
 

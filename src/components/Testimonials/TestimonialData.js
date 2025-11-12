@@ -1,10 +1,57 @@
 // TestimonialData.js
 export const testimonialData = [
   {
+    id: '17',
+    name: 'Tsefiat  Ojiko',
+    position: '',
+    company: 'B1/B2 to F1',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2025-11-12',
+    excerpt: 'It was an amazing experience working with Dr. Fola.',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'It was an amazing experience working with Dr. Fola. She was exceptionally good and always on spot. ' },
+    ]
+  },
+  {
+    id: '16',
+    name: 'Anthony Opoku',
+    position: '',
+    company: 'Marriage based Greencard',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2025-11-05',
+    excerpt: 'Dr. Fola Odion’s professionalism, meticulous preparation and clear advice were invaluable during what can be a complex and stressful process',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Dr. Fola Odion’s professionalism, meticulous preparation and clear advice were invaluable during what can be a complex and stressful process. Her dedication made a significant difference in achieving this positive outcome. I am truly grateful for all she did.' },
+      { type: 'paragraph', content: 'Continue to soar high Prometrics Legal Hub.' },
+    ]
+  },
+  {
+    id: '15',
+    name: 'Queen Enahoro',
+    position: '',
+    company: 'EB2- NIW',
+    industry: 'Legal Services',
+    location: '',
+    avatar: '',
+    rating: 5,
+    date: '2025-10-27',
+    excerpt: 'My experience was amazingggg',
+    fullTestimonial: [
+      { type: 'paragraph', content: 'Dr. Fola left no stone unturned. She is very knowledgeable, responsive, and she helped me navigate the complex process of my case with ease. Her expertise and guidance gave me confidence in my application, and the outcome exceeded my expectations.' },
+      { type: 'paragraph', content: 'I highly recommend Dr. Fola of Prometrics Legal Hub to anyone seeking immigration law services. She is literally the best!' },
+    ]
+  },
+  {
     id: '14',
     name: 'Emmah Muema',
     position: '',
-    company: '',
+    company: 'EB-1A',
     industry: 'Legal Services',
     location: '',
     avatar: '',
