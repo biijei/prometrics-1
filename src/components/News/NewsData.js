@@ -1,52 +1,77 @@
 import h2b from '../../assets/images/news/news_1.PNG';
 import specialAgent from '../../assets/images/news/news_2.PNG';
 import modernizeFees from '../../assets/images/news/news_3.PNG';
+import ead from '../../assets/images/news/news_4.png';
+import asylum from '../../assets/images/news/news_5.png';
 
 export const newsData = [
-  // {
-  //   id: '003',
-  //   title: 'DHS Ends Automatic EAD Extensions to Strengthen Vetting and Screening',
-  //   excerpt: 'USCIS has confirmed that it has received enough petitions to meet the H-2B visa cap for the first half of fiscal year 2026, with final receipt date of September 12, 2025.',
-  //   coverImage: h2b,
-  //   author: 'USCIS',
-  //   publishDate: '2025-09-12',
-  //   readTime: '3 min',
-  //   category: 'Immigration',
-  //   content: [
-  //     { type: 'paragraph', content: '📅 September 12, 2025' },
-  //     { type: 'paragraph', content: 'U.S. Citizenship and Immigration Services (USCIS) has confirmed that it has received enough petitions to meet the H-2B visa cap for the first half of fiscal year 2026. This cap sets the maximum number of H-2B visas that can be issued during a specific period.' },
-  //     { type: 'mixedText', content: [
-  //       { type: 'text', content: 'The ' },
-  //       { type: 'bold', content: 'final receipt date' },
-  //       { type: 'text', content: ' for new petitions was ' },
-  //       { type: 'bold', content: 'September 12, 2025' },
-  //       { type: 'text', content: '. Any petitions filed after this date requesting employment start dates ' },
-  //       { type: 'bold', content: 'before April 1, 2026' },
-  //       { type: 'text', content: ' will be rejected.' }
-  //     ]},
-  //     { type: 'paragraph', content: 'Employers who still wish to petition for H-2B workers will need to plan for start dates on or after April 1, 2026.' },
-  //     { type: 'heading', content: 'What This Means' },
-  //     { type: 'bulletPoints', content: [
-  //       'Cap Reached: The limit for H-2B visas for the first half of FY 2026 has been filled.',
-  //       'Petition Cut-Off: Petitions submitted after September 12, 2025, for employment before April 1, 2026, will not be considered.',
-  //       'Next Window: Employers may still prepare petitions for workers whose employment will begin on or after April 1, 2026.'
-  //     ]},
-  //     { type: 'heading', content: 'Fraud and Abuse Reporting' },
-  //     { type: 'mixedText', content: [
-  //       { type: 'text', content: 'USCIS encourages both ' },
-  //       { type: 'bold', content: 'U.S. workers and H-2B workers' },
-  //       { type: 'text', content: ' to share information about potential fraud, abuse, or violations related to the H-2B program. Reports can be submitted securely through the ' },
-  //       { type: 'bold', content: 'USCIS online tip form' },
-  //       { type: 'text', content: '.' }
-  //     ]},
-  //     { type: 'heading', content: 'Stay Informed' },
-  //     { type: 'mixedText', content: [
-  //       { type: 'text', content: 'Employers, workers, and stakeholders are advised to stay updated on H-2B processing times and cap counts. For official updates, visit the ' },
-  //       { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
-  //       { type: 'text', content: '.' },
-  //     ]},
-  //   ]
-  // },
+  {
+    id: '005',
+    title: 'Court Order Temporarily Halts USCIS Annual Asylum Fee Notices',
+    excerpt: 'A new federal court order has paused USCIS’s issuance of annual asylum fee notices while litigation continues over the rule’s implementation.',
+    coverImage: asylum,
+    author: 'USCIS',
+    publishDate: '2025-11-08',
+    readTime: '3 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 November 7, 2025' },
+      { type: 'paragraph', content: 'On October 30, 2025, the United States District Court for the District of Maryland issued an order temporarily stopping USCIS from implementing the Annual Asylum Fee (AAF) requirement outlined in the Federal Register notice “USCIS Immigration Fees Required by HR-1 Reconciliation Bill.” While USCIS strongly disagrees with the decision, the agency will comply with the order while further judicial review proceeds.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'AAF Notices Paused: USCIS has temporarily stopped sending out annual asylum fee notices as instructed by the court.',
+        'No Action Required: Applicants who recently received a notice to pay the AAF may disregard that notice during the pause.',
+        'Not Retroactive: USCIS will not refund any AAF payments previously made; applicants should keep their receipts.',
+        'Future Guidance Pending: USCIS will issue updated instructions on AAF payment requirements once the litigation advances or a new order is issued.',
+        'Background on the AAF: Under the original rule, aliens with Form I-589 pending for a full fiscal year, or pending for 365 days after October 1, 2024, were required to pay the fee annually. That requirement is now temporarily on hold.'
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'This pause remains in effect until further court action. For updates or official notices, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
+  {
+    id: '004',
+    title: 'DHS Ends Automatic EAD Extensions to Strengthen Vetting and Screening',
+    excerpt: 'A new DHS rule removes automatic EAD extensions, prioritizing thorough screening before employment authorization is continued.',
+    coverImage: ead,
+    author: 'USCIS',
+    publishDate: '2025-10-31',
+    readTime: '4 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 October 30, 2025' },
+      { type: 'paragraph', content: 'The Department of Homeland Security (DHS) has issued an interim final rule ending the automatic extension of Employment Authorization Documents (EADs) for certain renewal applicants. The rule aims to enhance security by ensuring proper vetting and background screening before authorizing continued employment in the United States.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'Automatic Extensions End: Beginning October 30, 2025, renewal applicants will no longer receive automatic EAD extensions.',
+        'National Security Focus: Each renewal will undergo full screening and vetting, allowing USCIS to detect fraud, identify risks, and ensure eligibility before extending work authorization.',
+        'Exceptions Exist: Certain categories tied to statutory or Federal Register notices — such as TPS-related extensions — may still qualify for limited exceptions.',
+        'Renew Early: USCIS encourages applicants to file their EAD renewal up to 180 days before expiration to avoid gaps in employment authorization.'
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'This new rule does not affect EADs that were automatically extended before October 30, 2025. For complete details, visit the official announcement on ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
   {
     id: '001',
     title: 'USCIS Reaches H-2B Cap for First Half of Fiscal Year 2026',
