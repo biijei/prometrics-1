@@ -48,6 +48,7 @@ import ca54 from '../assets/images/caros54.png'
 import ca55 from '../assets/images/caros55.png'
 import ca56 from '../assets/images/caros56.png'
 import ca57 from '../assets/images/caros57.png'
+import ca58 from '../assets/images/caros58.png'
 import Footer from '../components/Footer';
 
 const Gallery = () => {
@@ -214,6 +215,7 @@ const images = [
   { url: ca41, alt: 'Testimonial', category: 'h1b' },
   { url: ca44, alt: 'Testimonial', category: 'h1b' },
   { url: ca45, alt: 'Testimonial', category: 'h1b' },
+  { url: ca58, alt: 'Testimonial', category: 'status-change' },
   { url: ca38, alt: 'Testimonial', category: 'status-change' },
   { url: ca16, alt: 'Testimonial', category: 'status-change' },
   { url: ca12, alt: 'Testimonial', category: 'status-change' },
