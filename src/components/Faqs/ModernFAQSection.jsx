@@ -23,7 +23,7 @@ const faqs = [
     link: "https://www.ice.gov/sevis/travel"
   },
   {
-    question: "What is automatic visa revalidation and does it apply?",
+    question: "What is automatic visa revalidation and how does it apply?",
     answer: "It allows certain nonimmigrants (including F-1 holders) to re-enter the U.S. with an expired visa after a visit of less than 30 days to Canada, Mexico, or adjacent islands. It doesn’t apply if you apply for a new visa or are from certain restricted countries.",
     link: "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/visa-expiration-date/auto-revalidate.html"
   },
