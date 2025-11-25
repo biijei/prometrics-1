@@ -12,7 +12,7 @@ const CoreValues = () => {
     },
     {
       title: "RESPONSIVENESS",
-      description: "We pride ourselves in being accessible to our clients at all times."
+      description: "We pride ourselves in being accessible to our clients."
     },
     {
       title: "PASSION",
@@ -36,7 +36,7 @@ const CoreValues = () => {
     },
     {
       title: "AFFORDABILITY",
-      description: "We are affordable, providing you with fit-for-purpose strategy, practical valuable outcomes, and positive results leveraging our expertise in law, business and strategy, that far exceeds any price you pay."
+      description: "We are affordable, providing you with fit-for-purpose strategy, leveraging our expertise in law, business and strategy, that far exceeds any price you pay."
     }
   ];
 
