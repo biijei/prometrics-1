@@ -23,7 +23,7 @@ const CeoProfileSection = ({brandedTop}) => {
             </p>
             
             <h3 className='text-2xl md:text-2xl font-bold text-secondary mb-2'>
-              Dr. Fola Odion, PhD (Law), MBA
+              Dr. (Mrs.) Fola Odion, PhD (Law), MBA
             </h3>
             
             <p className='text-gray font-medium text-base md:text-lg mb-8'>
