@@ -39,12 +39,12 @@ const faqs = [
   },
   {
     question: "I got EB-2 NIW I-140 approval—can I travel before filing I-485 or getting Advance Parole?",
-    answer: "Yes, if you're in valid nonimmigrant status (like F-1 or H-1B) and with a valid visa to re-enter, you may travel. But if you file I-485 and then travel without Advance Parole, your AOS may be considered abandoned if your non-immigrant status is not in the H or L visa category.",
+    answer: "Yes, if you're in valid nonimmigrant status (like F-1 or H-1B) and with a valid visa to re-enter, you may travel. But if you file I-485 and then travel without Advance Parole even with an 'unexpired visa', your AOS may be considered abandoned, making you unable ro re-enter USA if your non-immigrant status is not in the H or L visa category.",
     link: "https://www.uscis.gov/green-card/while-your-green-card-application-is-pending-with-uscis"
   },
   {
     question: "Can I apply for a green card while on OPT?",
-    answer: "Yes. You can file an I-140 self-petition under EB-2 NIW or EB-1A while on OPT. You must maintain valid F-1 status until your green card is approved.",
+    answer: "Yes. You can file an I-140 self-petition under EB-2 NIW or EB-1A while on OPT. You should maintain valid F-1 status or other non-immigrant status until your green card is approved. Note that 'pending asylum' is not a valid status.",
     link: "https://www.uscis.gov/green-card/how-to-apply-for-a-green-card"
   },
   {
