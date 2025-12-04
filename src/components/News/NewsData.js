@@ -34,7 +34,7 @@ export const newsData = [
       ]},
       { type: 'heading', content: 'Stay Informed' },
       { type: 'mixedText', content: [
-        { type: 'text', content: 'This pause remains in effect until further court action. For updates or official notices, visit the ' },
+        { type: 'text', content: 'For more information, visit the ' },
         { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
         { type: 'text', content: '.' },
       ]},
