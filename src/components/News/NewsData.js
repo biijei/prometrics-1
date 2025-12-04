@@ -3,8 +3,43 @@ import specialAgent from '../../assets/images/news/news_2.PNG';
 import modernizeFees from '../../assets/images/news/news_3.PNG';
 import ead from '../../assets/images/news/news_4.png';
 import asylum from '../../assets/images/news/news_5.png';
+import ead2 from '../../assets/images/news/news_6.png';
 
 export const newsData = [
+  {
+    id: '006',
+    title: 'USCIS Reduces EAD Validity Periods to Increase Screening and Vetting',
+    excerpt: 'USCIS is shortening EAD validity periods for several categories to ensure more frequent security vetting of individuals authorized to work in the United States.',
+    coverImage: ead2,
+    author: 'USCIS',
+    publishDate: '2025-12-06',
+    readTime: '4 min',
+    category: 'Employment Authorization',
+    content: [
+      { type: 'paragraph', content: '📅 December 5, 2025' },
+      { type: 'paragraph', content: 'USCIS has updated its Policy Manual to reduce the maximum validity period for Employment Authorization Documents (EADs) for certain categories of aliens. This update aligns with recent legislation and strengthens USCIS’s ability to conduct ongoing vetting and fraud detection for individuals seeking work authorization' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'Validity Period Reduced: Maximum EAD validity will decrease from 5 years to 18 months for categories including refugees, asylees, individuals granted withholding, and applicants with pending asylum, adjustment, or suspension of deportation cases.',
+        'Security-Driven Review: USCIS states that more frequent renewals allow the agency to detect fraud, assess risk, and identify individuals with potentially harmful intent.',
+        'Law-Driven Adjustments: Under the One Big Beautiful Bill Act (H.R. 1), some categories — including TPS beneficiaries, parolees, and entrepreneur parole spouses — will now receive EADs valid for one year or the end of parole/TPS period, whichever is shorter.',
+        'Applies to New and Pending Cases: These changes apply to all EAD applications pending or filed on or after December 5, 2025.',
+        'Broader Implementation: USCIS issued a Federal Register notice confirming that these requirements also apply to any I-765 filed on or after July 22, 2025, under the updated legislation.'
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'This pause remains in effect until further court action. For updates or official notices, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
   {
     id: '005',
     title: 'Court Order Temporarily Halts USCIS Annual Asylum Fee Notices',
