@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     question: "Do I have to maintain my F-1 status while green card application is pending?",
-    answer: "Yes, until you receive your green card approval, you must maintain lawful nonimmigrant status like F-1, unless you're in a dual-intent visa category like H-1B.",
+    answer: "No, but it is prudent to maintain status while your green card application is pending. When your green card application (Form I-485) is pending, you are in authorized stay, however if you do not maintain status, the status terminates. The danger with this is that if the I-485 gets denied, the authorized stay ends immediately and you begin to accrue unlawful presence. If the unlawful presence extends beyond a stated time, currently 6 months, you will be unable to adjust status in the U.S. unless adjusting through a U.S. citizen spouse family member. Note that an approved immigrant petition e.g. I-140 or I-130 by itself, is neither a status nor an authorized stay.",
     link: "https://www.uscis.gov/green-card/while-your-green-card-application-is-pending-with-uscis"
   },
   {
