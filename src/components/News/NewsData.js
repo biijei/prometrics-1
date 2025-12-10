@@ -5,19 +5,54 @@ import ead from '../../assets/images/news/news_4.png';
 import asylum from '../../assets/images/news/news_5.png';
 import ead2 from '../../assets/images/news/news_6.png';
 import vetting from '../../assets/images/news/news_7.png';
+import centVetting from '../../assets/images/news/news_8.png';
 
 export const newsData = [
+  {
+    id: '008',
+    title: 'USCIS Establishes New Vetting Center to Strengthen Immigration Screening',
+    excerpt: 'A new USCIS Vetting Center will centralize powerful security screening tools to better identify threats, fraud, and high-risk applicants across the immigration system.',
+    coverImage: centVetting,
+    author: 'USCIS',
+    publishDate: '2025-12-06',
+    readTime: '4 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 December 5, 2025' },
+      { type: 'paragraph', content: 'USCIS has announced the creation of a specialized Vetting Center headquartered in Atlanta. The center is designed to enhance the agency’s ability to screen out terrorists, criminals, fraud perpetrators, and other foreign nationals who may pose risks to public safety or national security. Once fully operational, the center will provide faster, more coordinated responses to emerging threats.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'Centralized National Screening: The new Vetting Center will consolidate USCIS vetting capabilities, improving how the agency detects fraud, criminal activity, and national security threats.',
+        'Stronger Security Posture: USCIS leadership stated that recent violent incidents underscore the need for more robust screening tools to protect the public.',
+        'Advanced Technology & Intelligence: The center will leverage classified and unclassified intelligence, DHS and law enforcement data, and cutting-edge technologies, including artificial intelligence, to review pending and approved applications.',
+        'Targeted Review of High-Risk Cases: Applications from presidentially designated countries of concern and individuals with elevated risk factors will be subject to enhanced screening.',
+        'Part of Broader Security Efforts: This initiative builds on recent DHS and USCIS actions, including updated national security guidance, pauses on certain asylum adjudications, establishment of new homeland defender programs, and the rollout of USCIS special agents with enforcement authority.'
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For more information, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
   {
     id: '007',
     title: 'USCIS Reduces EAD Validity Periods to Increase Screening and Vetting',
     excerpt: 'USCIS is shortening EAD validity periods for several categories to ensure more frequent security vetting of individuals authorized to work in the United States.',
     coverImage: ead2,
     author: 'USCIS',
-    publishDate: '2025-12-06',
+    publishDate: '2025-12-05',
     readTime: '4 min',
     category: 'Employment Authorization',
     content: [
-      { type: 'paragraph', content: '📅 December 5, 2025' },
+      { type: 'paragraph', content: '📅 December 4, 2025' },
       { type: 'paragraph', content: 'USCIS has updated its Policy Manual to reduce the maximum validity period for Employment Authorization Documents (EADs) for certain categories of aliens. This update aligns with recent legislation and strengthens USCIS’s ability to conduct ongoing vetting and fraud detection for individuals seeking work authorization' },
       { type: 'heading', content: 'What This Means' },
       { type: 'bulletPoints', content: [
