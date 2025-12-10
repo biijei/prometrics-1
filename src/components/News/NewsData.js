@@ -4,10 +4,11 @@ import modernizeFees from '../../assets/images/news/news_3.PNG';
 import ead from '../../assets/images/news/news_4.png';
 import asylum from '../../assets/images/news/news_5.png';
 import ead2 from '../../assets/images/news/news_6.png';
+import vetting from '../../assets/images/news/news_7.png';
 
 export const newsData = [
   {
-    id: '006',
+    id: '007',
     title: 'USCIS Reduces EAD Validity Periods to Increase Screening and Vetting',
     excerpt: 'USCIS is shortening EAD validity periods for several categories to ensure more frequent security vetting of individuals authorized to work in the United States.',
     coverImage: ead2,
@@ -25,6 +26,40 @@ export const newsData = [
         'Law-Driven Adjustments: Under the One Big Beautiful Bill Act (H.R. 1), some categories — including TPS beneficiaries, parolees, and entrepreneur parole spouses — will now receive EADs valid for one year or the end of parole/TPS period, whichever is shorter.',
         'Applies to New and Pending Cases: These changes apply to all EAD applications pending or filed on or after December 5, 2025.',
         'Broader Implementation: USCIS issued a Federal Register notice confirming that these requirements also apply to any I-765 filed on or after July 22, 2025, under the updated legislation.'
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For more information, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
+  {
+    id: '006',
+    title: 'USCIS Implements New National Security Vetting Measures After National Guard Shooting',
+    excerpt: 'USCIS will now consider country-specific risk factors for nationals from 19 high-risk countries when evaluating immigration requests, following heightened national security concerns.',
+    coverImage: vetting,
+    author: 'USCIS',
+    publishDate: '2025-11-28',
+    readTime: '5 min',
+    category: 'Visa',
+    content: [
+      { type: 'paragraph', content: '📅 November 27, 2025' },
+      { type: 'paragraph', content: 'In response to the shooting of two National Guard service members in Washington, D.C., by an Afghan national, USCIS has issued updated guidance directing officers to apply stricter, country-specific vetting standards when assessing immigration applications. This action follows prior decisions by the Trump administration, including the halt of refugee resettlement from Afghanistan and restrictions on Afghan nationals during its first year.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        '19 High-Risk Countries Identified: USCIS will incorporate negative discretionary factors when vetting applicants from Afghanistan, Burma, Chad, the Republic of the Congo, Equatorial Guinea, Eritrea, Haiti, Iran, Libya, Somalia, Sudan, Yemen, Burundi, Cuba, Laos, Sierra Leone, Togo, Turkmenistan, and Venezuela.',
+        '12 countries face full restrictions and limits on the entry of their nationals.',
+        '7 countries face partial restrictions but still undergo heightened vetting.',
+        'Security-Driven Discretion: Officers may weigh country-specific concerns — including document reliability and identity-verification limitations — as significant negative factors when determining immigration eligibility.',
+        'Immediate Impact: The guidance is effective immediately and applies to all immigration benefit requests filed on or after November 27, 2025.'
       ]},
       { type: 'heading', content: 'Fraud and Abuse Reporting' },
       { type: 'mixedText', content: [
