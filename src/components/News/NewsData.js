@@ -6,8 +6,44 @@ import asylum from '../../assets/images/news/news_5.png';
 import ead2 from '../../assets/images/news/news_6.png';
 import vetting from '../../assets/images/news/news_7.png';
 import centVetting from '../../assets/images/news/news_8.png';
+import photoPolicy from '../../assets/images/news/news_9.png';
 
 export const newsData = [
+  {
+    id: '009',
+    title: 'USCIS Introduces New Photo Policy to Strengthen Identity Verification',
+    excerpt: 'USCIS has updated its photo requirements to ensure immigration documents are issued using recent, secure, and verifiable photographs.',
+    coverImage: photoPolicy,
+    author: 'USCIS',
+    publishDate: '2025-12-13',
+    readTime: '5 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 December 12, 2025' },
+      { type: 'paragraph', content: 'U.S. Citizenship and Immigration Services (USCIS) has issued new guidance limiting the age of photos used for immigration documents to no more than three years old. The policy, effective immediately, is designed to enhance national security, reduce identity fraud, and strengthen the integrity of the U.S. immigration system.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'Photos used for immigration documents must be taken within three years of the date a USCIS form is filed.',
+        'Applicant-submitted photos will no longer be accepted for immigration documentation.',
+        'Only photos captured by USCIS or other authorized entities will be used.',
+        'Temporary COVID-era flexibilities that allowed photo reuse for up to 10 years have been discontinued.',
+        'A new photo will be required for certain applications, including Form I-90, Form I-485, Form N-400, and Form N-600, regardless of when a prior photo was taken.',
+        'The policy applies immediately to current and future filings as of the publication date.'
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For more information, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
   {
     id: '008',
     title: 'USCIS Establishes New Vetting Center to Strengthen Immigration Screening',
