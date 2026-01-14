@@ -14,7 +14,7 @@ import EBRequirementsCard from '../components/Template/EBRequirementsCard';
 // PayPal configuration
 const PAYPAL_CLIENT_ID= import.meta.env.VITE_PAYPAL_CLIENT_ID;
 
-// Enhanced PayPal SDK loader with retry mechanism
+// Enhanced PayPal SDK loader with retry mechanism 
 const usePayPalSDK = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
