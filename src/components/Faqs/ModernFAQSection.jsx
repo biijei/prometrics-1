@@ -78,8 +78,8 @@ const faqs = [
     link: "https://www.uscis.gov/ar-11"
   },
   {
-    question: "What if I’m out of work on EB-2 or EB-3 and waiting due to retrogression?",
-    answer: "You must maintain a valid status. If your I-140 is approved and you’ve filed I-485 but your priority date is no longer current, you can remain in the U.S. but cannot work unless you have a valid EAD.",
+    question: "Can I work with an approved EB-2 or EB-3 immigrant petition?",
+    answer: "You need a valid EAD to work. You must also maintain a valid status or be in a period of authorized stay to remain in U.S. If you have a pending I-485, it gives you authorized stay and you can apply for an EAD on that basis (category C09) but pending I-485 does not grant status. You need an independent, valid non-immigrant category to be in status while your I-485 is pending. Authorized stay allows you to remain in U.S. legally but will not prevent deportation proceedings (notice to appear) from being instituted against you.",
     link: "https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates"
   },
   {
@@ -98,7 +98,7 @@ const faqs = [
     link: "https://www.uscis.gov/policy-manual/volume-6-part-b-chapter-5"
   },
   {
-    question: "Can multiple address changes delay my asylum case?",
+    question: "Can multiple address changes delay my case?",
     answer: "Yes. Not updating your address with USCIS and EOIR (if applicable) can lead to missed notices and delays. Always submit Form AR-11 within 10 days of moving.",
     link: "https://www.uscis.gov/ar-11"
   },
