@@ -7,8 +7,55 @@ import ead2 from '../../assets/images/news/news_6.png';
 import vetting from '../../assets/images/news/news_7.png';
 import centVetting from '../../assets/images/news/news_8.png';
 import photoPolicy from '../../assets/images/news/news_9.png';
+import FyReg from '../../assets/images/news/news_10.png';
 
 export const newsData = [
+  {
+    id: '010',
+    title: 'FY 2027 H-1B Cap Initial Registration Opens March 4',
+    excerpt: 'USCIS has announced the opening dates and new selection rules for the FY 2027 H-1B cap registration season.',
+    coverImage: FyReg,
+    author: 'USCIS',
+    publishDate: '2026-01-28',
+    readTime: '5 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 January 27, 2026' },
+      { type: 'paragraph', content: 'U.S. Citizenship and Immigration Services (USCIS) has confirmed that the initial registration period for the FY 2027 H-1B cap will open at noon Eastern on March 4, 2026, and remain open until noon Eastern on March 19, 2026. During this period, employers and their representatives must electronically register each prospective H-1B beneficiary and pay the required registration fee.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'The FY 2027 H-1B registration period runs from March 4 to March 19, 2026.',
+        'Employers and attorneys must use a USCIS online account to submit registrations.',
+        'Each registration requires payment of a $215 H-1B registration fee.',
+        'Registrations must be submitted by March 19, even if employer accounts were created earlier.',
+        'USCIS plans to notify selected registrants by March 31, 2026, through online accounts.',
+        'Only employers with selected registrations may file H-1B cap-subject petitions.'
+      ]},
+      { type: 'heading', content: 'New Rules for FY 2027' },
+      { type: 'bulletPoints', content: [
+        'USCIS will apply a weighted selection process if registrations exceed the annual cap.',
+        'The new system prioritizes higher-skilled and higher-paid beneficiaries, aiming to protect U.S. wages and working conditions.',
+        'If registrations do not exceed the cap, all properly submitted registrations will be selected.',
+      ]},
+      { type: 'heading', content: 'Additional Considerations' },
+      { type: 'bulletPoints', content: [
+        'A presidential proclamation issued on September 19, 2025, introduced reforms affecting certain nonimmigrant workers.',
+        'While the proclamation does not change the registration process, selected petitioners may be required to pay an additional $100,000 fee before filing an H-1B petition, if applicable.',
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For more information, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
   {
     id: '009',
     title: 'USCIS Introduces New Photo Policy to Strengthen Identity Verification',
