@@ -8,8 +8,198 @@ import vetting from '../../assets/images/news/news_7.png';
 import centVetting from '../../assets/images/news/news_8.png';
 import photoPolicy from '../../assets/images/news/news_9.png';
 import FyReg from '../../assets/images/news/news_10.png';
+import H2Cap from '../../assets/images/news/news_11.png';
+import StrictAssylum from '../../assets/images/news/news_12.png';
+import cap2H2 from '../../assets/images/news/news_13.png';
+import vettingProcess from '../../assets/images/news/news_14.png';
+import h1b from '../../assets/images/news/news_15.png';
 
 export const newsData = [
+  {
+    id: '015',
+    title: 'FY 2027 H-1B Initial Registration Selection Process Completed',
+    excerpt: 'USCIS has completed the H-1B selection process and notified eligible registrants to proceed with petition filings.',
+    coverImage: h1b,
+    author: 'USCIS',
+    publishDate: '2026-04-01',
+    readTime: '7 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 March 31, 2026' },
+      { type: 'paragraph', content: 'U.S. Citizenship and Immigration Services (USCIS) has announced that it received enough electronic registrations to meet the fiscal year 2027 H-1B cap, including the advanced degree exemption. The agency has completed the selection process and notified petitioners whose beneficiaries were selected.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'Only beneficiaries selected in the registration process are eligible to have H-1B cap-subject petitions filed on their behalf.',
+        'Petitioners can begin filing H-1B petitions starting April 1, 2026.',
+        'Filing must be completed within the designated period, which will be at least 90 days.',
+        'Each petition must include a copy of the official selection notice.',
+      ]},
+      { type: 'heading', content: 'Important Filing Requirements' },
+      { type: 'bulletPoints', content: [
+        'USCIS will only accept the 02/27/26 edition of Form I-129 for FY 2027 H-1B petitions.',
+        'Petition details must match the information submitted during registration.',
+        'Petitioners must provide proof of the beneficiary’s valid passport or travel document used at registration.',
+        'Evidence supporting the selected wage level must also be included.',
+      ]},
+      { type: 'heading', content: 'Additional Notes' },
+      { type: 'bulletPoints', content: [
+        'Some H-1B petitions may require an additional $100,000 fee under the Presidential Proclamation on certain nonimmigrant workers.',
+        'Selection only grants eligibility to file, not automatic approval. Petitioners must still meet all eligibility requirements.',
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For more information, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
+  {
+    id: '014',
+    title: 'USCIS Issues Update on Strengthened Screening and Vetting',
+    excerpt: 'USCIS has outlined expanded actions to tighten screening and vetting processes across immigration programs to address security gaps and prevent fraud.',
+    coverImage: vettingProcess,
+    author: 'USCIS',
+    publishDate: '2026-03-31',
+    readTime: '6 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 March 30, 2026' },
+      { type: 'paragraph', content: 'U.S. Citizenship and Immigration Services (USCIS) has released an update detailing its ongoing efforts to strengthen screening and vetting of foreign nationals seeking immigration benefits. The update follows executive orders and presidential proclamations aimed at enhancing national security and public safety, particularly for applicants from high-risk regions.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'USCIS identified major gaps in prior vetting processes, including cases where individuals were approved without sufficient screening.',
+        'The agency has placed temporary holds on certain asylum, adjustment of status, and benefit applications tied to high-risk countries.',
+        'Enhanced vetting measures now include more frequent background checks, identity verification improvements, and expanded use of intelligence and biometric data.',
+        'USCIS has launched additional review processes, including re-interviews and deeper background investigations for certain applicants.',
+        'New systems are being developed to improve data sharing, biometric alerts, and detection of criminal activity.',
+        'Country-specific risk analysis is now being used to identify fraud indicators and national security concerns.',
+        'USCIS is implementing a layered vetting plan combining multiple data sources and screening methods.',
+        'Adjudicators will receive updated guidance to better assess risks tied to specific countries and security threats.',
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For more information, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
+  {
+    id: '013',
+    title: 'USCIS Reaches H-2B Cap for Second Half of FY 2026',
+    excerpt: 'USCIS has reached the H-2B visa cap for the second half of FY 2026 while releasing filing dates for upcoming supplemental visa allocations.',
+    coverImage: cap2H2,
+    author: 'USCIS',
+    publishDate: '2026-03-21',
+    readTime: '3 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 March 20, 2026' },
+      { type: 'paragraph', content: 'U.S. Citizenship and Immigration Services (USCIS) has confirmed that it has received enough petitions to meet the H-2B statutory cap for the second half of fiscal year 2026. The agency has also announced filing timelines for the second and third allocations of supplemental H-2B visas.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'The H-2B visa cap for the second half of FY 2026 has been fully reached.',
+        'March 10, 2026, was the final receipt date for cap-subject H-2B petitions with start dates between April 1 and October 1, 2026.',
+        'USCIS will reject any new cap-subject petitions received after March 10, 2026, for that employment period.',
+        'Filing dates are now available for the second and third supplemental H-2B visa allocations for FY 2026.',
+        'Employers may still have opportunities to file under supplemental visa allocations if eligible.',
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For more information, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
+  {
+    id: '012',
+    title: 'DHS Proposes Rule to Strengthen Screening of Asylum Seekers',
+    excerpt: 'DHS is proposing new rules to reduce fraudulent asylum filings and tighten work authorization eligibility for applicants.',
+    coverImage: StrictAssylum,
+    author: 'DHS',
+    publishDate: '2026-02-21',
+    readTime: '4 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 February 20, 2026' },
+      { type: 'paragraph', content: 'The Department of Homeland Security (DHS) has introduced a proposed rule aimed at reducing abuse of the asylum system by limiting incentives for filing fraudulent or meritless asylum claims. The proposal focuses on tightening eligibility for employment authorization tied to pending asylum applications and strengthening overall screening procedures.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'DHS seeks to reduce the number of fraudulent asylum claims filed primarily to obtain work permits.',
+        'The proposal would revise filing and eligibility requirements for employment authorization based on pending asylum applications.',
+        'The rule aims to decrease application backlogs and processing delays caused by meritless filings.',
+        'USCIS currently faces over 1.4 million pending asylum applications, putting significant strain on agency resources.',
+        'The changes would allow USCIS to prioritize legitimate asylum cases and allocate resources more effectively.',
+        'The proposal aligns with Executive Order 14159, focused on protecting public safety and strengthening immigration enforcement.',
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For more information, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
+  {
+    id: '011',
+    title: 'USCIS Reaches Cap for Returning Worker H-2B Visas FY 2026',
+    excerpt: 'USCIS has received enough petitions to fill the first allocation of additional H-2B visas for returning workers under the FY 2026 supplemental cap.',
+    coverImage: H2Cap,
+    author: 'USCIS',
+    publishDate: '2026-02-14',
+    readTime: '5 min',
+    category: 'Immigration',
+    content: [
+      { type: 'paragraph', content: '📅 February 13, 2026' },
+      { type: 'paragraph', content: 'U.S. Citizenship and Immigration Services (USCIS) has announced that it has reached the cap for the additional 18,490 H-2B visas allocated to returning workers for the first portion of fiscal year 2026. These visas were available for employment start dates between January 1 and March 31, 2026, under the H-2B supplemental cap temporary final rule.' },
+      { type: 'heading', content: 'What This Means' },
+      { type: 'bulletPoints', content: [
+        'The first allocation of returning worker H-2B visas for FY 2026 has been fully reached.',
+        'February 6, 2026, was the final receipt date for petitions requesting these supplemental visas.',
+        'USCIS received more petitions than available visas and conducted a computer-generated random selection process.',
+        'The selection process applied to petitions filed during the first five business days of filing, from February 2 through February 6, 2026.',
+        'Premium processing for selected petitions began after the selection process was completed.',
+      ]},
+      { type: 'heading', content: 'Fraud and Abuse Reporting' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'USCIS encourages individuals to report any concerns related to immigration fraud or abuse. Tips can be submitted through the ' },
+        { type: 'link', content: 'USCIS online tip form.', url: 'https://www.uscis.gov/report-fraud/uscis-tip-form' },
+        { type: 'text', content: '.' },
+      ]},
+      { type: 'heading', content: 'Stay Informed' },
+      { type: 'mixedText', content: [
+        { type: 'text', content: 'For more information, visit the ' },
+        { type: 'link', content: 'USCIS news page', url: 'https://www.uscis.gov/newsroom/all-news' },
+        { type: 'text', content: '.' },
+      ]},
+    ]
+  },
   {
     id: '010',
     title: 'FY 2027 H-1B Cap Initial Registration Opens March 4',
