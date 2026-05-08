@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import Accordion from '../components/Accordion'
 import pa from '../assets/images/employment-based.png'
-import member from '../assets/images/member.jpg'
+import member from '../assets/images/2026member.png'
 import { Link } from 'react-router-dom'
 import AccordionFaq from '../components/AccordionFaq'
 import HomeTestimonials from '../components/HomeTestimonials'
@@ -25,33 +25,33 @@ const PaEmploymentBased = () => {
           </div>
           <div className='md:grid grid-cols-[345px_auto] gap-x-16'>
             <div>
-            <div className='flex flex-col gap-y-4 mb-10'>
-              <Accordion 
-                title='Employment Based Immigration Consult (EB2-NIW & EB-1A)' 
-                content='Our expert team offers comprehensive guidance to professionals seeking employment-based immigration opportunities in the United States.'
-              />
-              <Accordion 
-                title='Employment Consult' 
-                content='Our employment consultation services provide personalized support to individuals and businesses offering strategic guidance'
-              />
-              <Accordion 
-                title='Tax Planning' 
-                content='Tailored tax planning solutions crafted by our experienced tax professionals help individuals and businesses navigate complex tax laws.'
-              />
-              <Accordion 
-                title='Business Planning' 
-                content='Our business planning services empower entrepreneurs and organizations to develop comprehensive strategies.'
-              />
-              <Accordion 
-                title='Estate Planning' 
-                content='With our estate planning services, individuals and families can protect their assets, preserve wealth, and plan for the future.'
-              />
-              <Accordion 
-                title='Notarization' 
-                content='Our reliable notarization services offer authentication and verification for a wide range of legal documents, contracts, and agreements.'
-              />
-            </div>
-            <img src={member} alt="Americal Immigration Lawters Association" className='mt-10 mb-6 rounded-[16px]'/>
+              <div className='flex flex-col gap-y-4 mb-10'>
+                <Accordion 
+                  title='Employment Based Immigration Consult (EB2-NIW & EB-1A)' 
+                  content='Our expert team offers comprehensive guidance to professionals seeking employment-based immigration opportunities in the United States.'
+                />
+                <Accordion 
+                  title='Employment Consult' 
+                  content='Our employment consultation services provide personalized support to individuals and businesses offering strategic guidance'
+                />
+                <Accordion 
+                  title='Tax Planning' 
+                  content='Tailored tax planning solutions crafted by our experienced tax professionals help individuals and businesses navigate complex tax laws.'
+                />
+                <Accordion 
+                  title='Business Planning' 
+                  content='Our business planning services empower entrepreneurs and organizations to develop comprehensive strategies.'
+                />
+                <Accordion 
+                  title='Estate Planning' 
+                  content='With our estate planning services, individuals and families can protect their assets, preserve wealth, and plan for the future.'
+                />
+                <Accordion 
+                  title='Notarization' 
+                  content='Our reliable notarization services offer authentication and verification for a wide range of legal documents, contracts, and agreements.'
+                />
+              </div>
+              <img src={member} alt="Americal Immigration Lawters Association" className='mt-10 mb-6 rounded-[16px]'/>
             </div>
 
             <div>
