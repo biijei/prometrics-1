@@ -4,6 +4,7 @@ import {
   Routes,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import PaEmploymentBased from "./pages/PaEmploymentBased";
@@ -20,12 +21,14 @@ import Testimonial from "./pages/Testimonial";
 import TestimonialDetail from "./pages/TestimonialDetail";
 import Gallery from "./pages/Gallery";
 import Template from "./pages/Template";
+import UscisResources from "./pages/UscisResources";
 
 function App() {
 
   return (
     <BrowserRouter>
       <ScrollToTop/>
+      <WhatsAppButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
@@ -36,6 +39,7 @@ function App() {
         <Route path="/pa-estate" element={<PaEstate />} />
         <Route path="/pa-notarization" element={<PaNotarization />} />
         <Route path="/faqs" element={<Faqs />} />
+        <Route path="/uscis-resources" element={<UscisResources />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:slug" element={<NewsDetail />} /> 

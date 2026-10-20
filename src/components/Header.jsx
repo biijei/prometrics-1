@@ -50,6 +50,7 @@ const  Header = () =>{
             <li className='hover:text-primary'><NavLink to="/get-template">Templates</NavLink></li>
             <li className='hover:text-primary'><NavLink to="/news">News</NavLink></li>
             <li className='hover:text-primary'><NavLink to="/faqs">FAQS</NavLink></li>
+            <li className='hover:text-primary'><NavLink to="/uscis-resources">USCIS</NavLink></li>
             <li className='mb-4 hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
             <li className='mb-4 hover:text-primary'><NavLink to="/gallery">Gallery</NavLink></li>
           </ul>
@@ -106,6 +107,7 @@ const  Header = () =>{
           <li className='hover:text-primary'><NavLink to="/get-template">Templates</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/news">News</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/faqs">FAQS</NavLink></li>
+          <li className='hover:text-primary'><NavLink to="/uscis-resources">USCIS</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/contact">Contact</NavLink></li>
           <li className='hover:text-primary'><NavLink to="/gallery">Gallery</NavLink></li>
         </ul>

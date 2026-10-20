@@ -37,6 +37,7 @@ const Footer = () => {
             <NavLink to="/about-us">About Us</NavLink>
             <NavLink to="/pa-employment-based">Practice Areas</NavLink>
             <NavLink to="/faqs">FAQs</NavLink>
+            <NavLink to="/uscis-resources">USCIS Resources</NavLink>
             <NavLink to="/contact">Contact</NavLink>
             <NavLink to="/gallery">Gallery</NavLink>
             <NavLink to="/get-template">Get Template</NavLink>

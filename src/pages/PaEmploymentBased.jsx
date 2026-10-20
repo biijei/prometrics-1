@@ -8,6 +8,7 @@ import member from '../assets/images/2026member.png'
 import { Link } from 'react-router-dom'
 import AccordionFaq from '../components/AccordionFaq'
 import HomeTestimonials from '../components/HomeTestimonials'
+import UscisResourceCards from '../components/UscisResourceCards'
 
 const PaEmploymentBased = () => {
   return (
@@ -76,6 +77,19 @@ const PaEmploymentBased = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className='px-[5%] pb-[50px] sm:pb-[80px]'>
+          <div className='max-w-[654px] text-left md:text-center mx-auto mb-10'>
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <div className="h-[2px] w-12 bg-primary"></div>
+              <p className='text-[14px] font-medium tracking-wider text-primary'>USCIS</p>
+              <div className="h-[2px] w-12 bg-primary"></div>
+            </div>
+            <h2 className='mb-4'>Official USCIS Resources</h2>
+            <p className='text-gray leading-relaxed'>Use these official tools to follow a filed case, estimate how long a case usually takes, or find more information from USCIS.</p>
+          </div>
+          <UscisResourceCards />
         </div>
 
         {/* FAQS */}

@@ -69,7 +69,7 @@ function RequirementItem({ text, index, checked, onToggle }) {
 export default function EBRequirementsCard() {
   const [activeTab, setActiveTab] = useState('eb1a')
   const [query, setQuery] = useState('')
-  const [expanded, setExpanded] = useState(true)
+  const [expanded, setExpanded] = useState(false)
 
   const [checkedEB1A, setCheckedEB1A] = useState(() => Array(EB1A_ITEMS.length).fill(false))
   const [checkedEBNIW, setCheckedEBNIW] = useState(() => Array(EBNIW_ITEMS.length).fill(false))
@@ -105,57 +105,92 @@ export default function EBRequirementsCard() {
 
   return (
     <div className="px-[5%] mx-auto pb-6">
-      <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-100">
-        <div className="bg-gradient-to-r from-tertiary via-white to-tertiary p-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">EB-1A & EB‑NIW Requirements</h2>
-            <p className="mt-1 text-sm text-slate-600">Quick reference and checklist to help prepare supporting evidence for petitions.</p>
-            <div className="mt-3 flex items-center gap-2">
-              <Pill>
-                <strong className="mr-1">Selected:</strong> {satisfiedCount}
-              </Pill>
-            </div>
-          </div>
-
-          <div className="mt-4 md:mt-0 flex flex-wrap items-center gap-3">
-            <div className="relative">
-              <label htmlFor="search" className="sr-only">Search requirements</label>
-              <div className="flex items-center bg-white border border-slate-200 rounded-lg px-3 shadow-sm">
-                <Search size={16} className="opacity-60" />
-                <input
-                  id="search"
-                  value={query}
-                  onChange={e => setQuery(e.target.value)}
-                  placeholder="Search requirements..."
-                  className="w-[200px] md:w-72 text-sm placeholder:text-slate-400 bg-transparent border-none outline-none"
-                />
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setActiveTab('eb1a')}
-                className={`px-3 py-2 rounded-lg text-sm font-medium ${activeTab === 'eb1a' ? 'bg-primary text-white' : 'bg-white text-slate-700 border border-slate-200'}`}
-              >
-                EB‑1A
-              </button>
-              <button
-                onClick={() => setActiveTab('ebniw')}
-                className={`px-3 py-2 rounded-lg text-sm font-medium ${activeTab === 'ebniw' ? 'bg-primary text-white' : 'bg-white text-slate-700 border border-slate-200'}`}
-              >
-                EB‑NIW
-              </button>
-            </div>
-
+      <div className={`rounded-2xl overflow-hidden border border-slate-100 shadow-lg transition-shadow duration-300 ${expanded ? '' : 'hover:shadow-[0_10px_28px_rgba(195,159,118,0.32)]'}`}>
+        {expanded ? (
+          <div className="bg-gradient-to-r from-tertiary via-white to-tertiary p-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <button
-              onClick={() => setExpanded(x => !x)}
-              aria-expanded={expanded}
-              className="ml-2 p-2 rounded-md bg-white border border-slate-200"
+              type="button"
+              onClick={() => setExpanded(false)}
+              aria-expanded="true"
+              className="text-left cursor-pointer rounded-xl -m-2 p-2 transition-colors duration-300 hover:bg-[#C39F76]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
-              {expanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+              <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">EB-1A & EB‑NIW Requirements</h2>
+              <p className="mt-1 text-sm text-slate-600">Quick reference and checklist to help prepare supporting evidence for petitions.</p>
+              <div className="mt-3 flex items-center gap-2">
+                <Pill>
+                  <strong className="mr-1">Selected:</strong> {satisfiedCount}
+                </Pill>
+              </div>
             </button>
+
+            <div className="mt-4 md:mt-0 flex flex-wrap items-center gap-3">
+              <div className="relative">
+                <label htmlFor="search" className="sr-only">Search requirements</label>
+                <div className="flex items-center bg-white border border-slate-200 rounded-lg px-3 shadow-sm">
+                  <Search size={16} className="opacity-60" />
+                  <input
+                    id="search"
+                    value={query}
+                    onChange={e => setQuery(e.target.value)}
+                    placeholder="Search requirements..."
+                    className="w-[200px] md:w-72 text-sm placeholder:text-slate-400 bg-transparent border-none outline-none"
+                  />
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setActiveTab('eb1a')}
+                  className={`px-3 py-2 rounded-lg text-sm font-medium ${activeTab === 'eb1a' ? 'bg-primary text-white' : 'bg-white text-slate-700 border border-slate-200'}`}
+                >
+                  EB‑1A
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setActiveTab('ebniw')}
+                  className={`px-3 py-2 rounded-lg text-sm font-medium ${activeTab === 'ebniw' ? 'bg-primary text-white' : 'bg-white text-slate-700 border border-slate-200'}`}
+                >
+                  EB‑NIW
+                </button>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setExpanded(false)}
+                aria-expanded="true"
+                aria-label="Hide requirements"
+                className="ml-2 flex h-10 w-10 items-center justify-center rounded-full bg-white border border-slate-200 text-secondary transition-colors duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <ChevronUp size={18} />
+              </button>
+            </div>
           </div>
-        </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setExpanded(true)}
+            aria-expanded="false"
+            className="group relative w-full cursor-pointer overflow-hidden bg-gradient-to-r from-tertiary via-white to-tertiary p-6 text-left transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary"
+          >
+            <span className="pointer-events-none absolute inset-0 bg-[#C39F76]/0 transition-colors duration-300 group-hover:bg-[#C39F76]/15" />
+            <span className="relative flex items-center justify-between gap-4">
+              <span>
+                <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">EB-1A & EB‑NIW Requirements</h2>
+                <p className="mt-1 text-sm text-slate-600">Quick reference and checklist to help prepare supporting evidence for petitions.</p>
+                <p className="mt-2 text-sm font-medium text-primary">Click to view the checklist</p>
+              </span>
+              <span className="flex shrink-0 items-center gap-3">
+                <span className="hidden translate-x-2 rounded-full border border-[#C39F76]/40 bg-white/90 px-3.5 py-1.5 text-sm font-medium text-secondary opacity-0 shadow-sm transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 md:inline-flex">
+                  View requirements
+                </span>
+                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-secondary transition-all duration-300 group-hover:translate-y-1 group-hover:border-primary group-hover:text-primary">
+                  <ChevronDown size={18} />
+                </span>
+              </span>
+            </span>
+          </button>
+        )}
 
         <AnimatePresence initial={false}>
           {expanded && (
