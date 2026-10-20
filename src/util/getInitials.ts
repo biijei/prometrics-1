@@ -5,5 +5,5 @@ export const getInitials = (name:string) => {
   const firstInitial = trimmedName.charAt(0) || ''; // First letter of the first word
   const lastInitial = trimmedName.charAt(trimmedName.lastIndexOf(' ') + 1) || ''; // First letter of the last word (if exists)
 
-  return firstInitial && lastInitial ? firstInitial + lastInitial : firstInitial || 'NA'; // Return initials or 'NA'
+  return firstInitial && lastInitial ? firstInitial + lastInitial : firstInitial || 'NA'; // Return initials or 'NA' 
 };
